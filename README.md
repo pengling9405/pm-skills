@@ -1,6 +1,5 @@
-# PM Skills Marketplace: Structured AI Workflows for Better Product Decisions
+# PM Skills Marketplace: An AI Operating System for Better Product Decisions
 
-> A structured operating system for product managers using AI.  
 > 65 domain-specific skills and 36 chained workflows across 8 PM plugins — from discovery to strategy, execution, launch, and growth.
 
 ![Plugin overview](plugins-overview.webp)
