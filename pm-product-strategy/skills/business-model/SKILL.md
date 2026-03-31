@@ -1,133 +1,132 @@
----
 name: business-model
-description: "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model."
+description: "生成包含 9 个模块的 Business Model Canvas。适用于创建商业模式、说明企业如何创造价值，或分析已有商业模式。"
 ---
 # Business Model Canvas
 
-## Metadata
-- **Name**: business-model
-- **Description**: Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.
-- **Triggers**: business model canvas, BMC, business model, how we make money
+## 元数据
+- **名称**：business-model
+- **描述**：生成包含 9 个模块的 Business Model Canvas。适用于构建商业模式、解释业务如何创造/交付/获取价值，或分析已有商业模式。
+- **触发词**：business model canvas、BMC、business model、how we make money
 
-## Instructions
+## 说明
 
-You are a business model strategist designing a Business Model Canvas for $ARGUMENTS.
+你是一名商业模式顾问，需要为 $ARGUMENTS 设计一份 Business Model Canvas。
 
-Your task is to create a comprehensive Business Model Canvas that outlines how the business creates, delivers, and captures value.
+你的任务是生成一份完整的 Business Model Canvas，说明这个业务如何创造、交付并获取价值。
 
-## Input Requirements
-- Product or service description
-- Target customer(s) and market
-- Current business operations or assumptions
-- Competitive context or industry dynamics
+## 输入要求
+- 产品或服务描述
+- 目标客户与市场
+- 当前业务运作方式或关键假设
+- 竞争背景或行业动态
 
-## Business Model Canvas Template
+## Business Model Canvas 模板
 
-### Left Side: Creating Value
+### 左侧：创造价值
 
 **1. Key Partners**
-- Who are the key strategic partners and suppliers?
-- What partnerships enable our business model?
-- Which activities do partners handle?
-- Are there joint ventures or co-creation opportunities?
+- 关键战略伙伴与供应商是谁？
+- 哪些合作关系支撑了商业模式？
+- 哪些活动由合作方承担？
+- 是否存在合资或共同创造机会？
 
 **2. Key Activities**
-- What key activities does the business perform?
-- What processes are critical to delivering value?
-- Are these activities in-house or outsourced?
-- Production, problem-solving, platform/network activities?
+- 业务最关键的活动是什么？
+- 哪些流程对价值交付至关重要？
+- 这些活动是内部完成还是外包？
+- 它们是生产、问题解决，还是平台/网络型活动？
 
 **3. Key Resources**
-- What resources are necessary to create value?
-- Physical assets, intellectual property, human capital, financial
-- What resources enable key activities and partnerships?
-- What's the minimum viable resource set?
+- 创造价值所需的关键资源有哪些？
+- 包括实体资产、知识产权、人力资本、财务资源
+- 哪些资源支撑关键活动与合作关系？
+- 最小可运转所需的资源集合是什么？
 
-### Center: The Value Proposition
+### 中间：价值主张
 
 **4. Value Propositions**
-- What value do we deliver to customers?
-- Which customer problems do we solve?
-- What needs are satisfied?
-- What products/services address each segment?
-- Quantitative (price, speed, quality) vs. qualitative (design, status)
+- 我们给客户交付了什么价值？
+- 解决了哪些客户问题？
+- 满足了哪些需求？
+- 每个 segment 对应什么产品/服务？
+- 价值体现在哪些维度：量化（价格、速度、质量）还是感知型（设计、身份感）？
 
-### Right Side: Delivering Value
+### 右侧：交付价值
 
 **5. Customer Relationships**
-- How do we establish and maintain customer relationships?
-- Personal assistance, self-service, automated, community, co-creation
-- Cost of customer acquisition and retention
-- How do we keep customers engaged?
+- 我们如何建立并维持客户关系？
+- 是人工服务、自助、自动化、社区还是共创？
+- 获客与留存成本如何？
+- 如何保持客户持续参与？
 
 **6. Channels**
-- How do customers discover and access the value?
-- Awareness: How do customers learn about us?
-- Purchase: How do they buy?
-- Delivery: How is value delivered?
-- After-sales: How do we support customers?
-- Direct vs. indirect, owned vs. partner channels
+- 客户如何发现并获得我们的价值？
+- Awareness：他们如何知道我们？
+- Purchase：他们如何购买？
+- Delivery：价值如何被交付？
+- After-sales：售后支持如何进行？
+- 渠道是 direct 还是 indirect，自有还是合作伙伴渠道？
 
 **7. Customer Segments**
-- Who are the key customer segments?
-- Mass market, niche market, segmented, multi-sided platform
-- What are their defining characteristics?
-- Distinct needs, channels, relationships, or profitability
+- 关键客户群体是谁？
+- 是大众市场、细分市场、分层市场还是双边平台？
+- 这些群体的关键特征是什么？
+- 他们在需求、渠道、关系模式或盈利性上有何差异？
 
-### Bottom: Financial Viability
+### 底部：财务可行性
 
 **8. Cost Structure**
-- What are the most important costs?
-- Fixed vs. variable costs
-- Cost drivers (scale, automation, labor, infrastructure)
-- Is this a cost-driven or value-driven business?
+- 最重要的成本项是什么？
+- 固定成本与可变成本分别是什么？
+- 主要成本驱动因素是什么（规模、自动化、人工、基础设施）？
+- 这是成本驱动型还是价值驱动型业务？
 
 **9. Revenue Streams**
-- How does the business make money?
-- Per customer, per transaction, subscription, licensing, rents
-- Pricing mechanisms (fixed, dynamic, value-based)
-- Customer lifetime value and unit economics
+- 业务如何赚钱？
+- 是按客户、按交易、订阅、授权还是租赁？
+- 定价机制是什么（固定、动态、价值定价）？
+- 客户生命周期价值与 unit economics 如何？
 
-## Output Process
-1. Identify and profile customer segments
-2. Define the core value proposition(s)
-3. Map customer relationships and channels
-4. List key activities and resources
-5. Identify key partners
-6. Outline cost structure
-7. Define revenue streams
-8. Ensure all 9 blocks align and support each other
-9. Test economic viability (LTV > 3x CAC)
-10. Identify key assumptions and risks
+## 输出流程
+1. 识别并刻画客户群体
+2. 定义核心价值主张
+3. 梳理客户关系与渠道
+4. 列出关键活动与资源
+5. 识别关键合作伙伴
+6. 梳理成本结构
+7. 定义收入来源
+8. 确保 9 个模块彼此一致、相互支撑
+9. 检查经济可行性（例如 LTV > 3x CAC）
+10. 标出关键假设与风险
 
-### Domain Context
+### 领域背景
 
-**Business Model Canvas vs Lean Canvas vs Startup Canvas**:
+**Business Model Canvas vs Lean Canvas vs Startup Canvas**：
 
-Business Model Canvas (Strategyzer, Alexander Osterwalder) is the most widely used canvas framework. It provides a balanced, holistic view of how value flows through the organization. However, it has known limitations for product strategy:
+Business Model Canvas（Strategyzer，Alexander Osterwalder）是最常见的画布框架。它能平衡地展示价值如何在组织中流动，但它在 product strategy 上有一些已知限制：
 
-- **No vision**: Why should your team wake up every day? BMC doesn't address motivation or aspiration.
-- **No Can't/Won't test**: What stops competitors from copying you? BMC lacks a defensibility section that goes beyond listing resources.
-- **No trade-offs**: What you choose NOT to do creates focus and amplifies value — BMC doesn't address this.
-- **No key metrics**: How do you know the strategy is working? BMC has no metrics section.
-- **Low-value sections for startups**: Key Partnerships and Key Resources are rarely useful for early-stage products.
+- **没有 vision**：团队为什么每天愿意投入？BMC 不回答这个问题。
+- **没有 Can't/Won't test**：竞争对手为什么不能或不会复制你？BMC 缺少真正的 defensibility 章节。
+- **没有 trade-offs**：你选择不做什么，决定了聚焦与价值放大的方向，但 BMC 不强调这一点。
+- **没有 key metrics**：如何判断战略是否奏效？BMC 没有指标模块。
+- **对创业项目价值较低的部分较多**：如 Key Partnerships 与 Key Resources，对早期产品通常帮助有限。
 
-**When to use BMC**: Established businesses, corporate strategy, investor materials where you need to articulate how all operational pieces connect.
+**何时使用 BMC**：适合成熟业务、企业战略以及需要清楚说明各运营模块如何联动的投资人材料。
 
-**Alternatives**:
-- **Lean Canvas** (Ash Maurya): Startup-focused, faster, replaces Partners/Activities/Resources with Problem/Solution/Unfair Advantage. Better for hypothesis testing but still mixes strategy and business model.
-- **Startup Canvas** (Paweł Huryn): Separates strategy (9 sections from the Product Strategy Canvas) from business model (Cost Structure + Revenue Streams). Recommended for new products where you need strategic clarity alongside the business model.
+**替代方案**：
+- **Lean Canvas**（Ash Maurya）：更偏创业、速度更快，用 Problem / Solution / Unfair Advantage 替换掉 Partners / Activities / Resources，更适合假设验证，但依然把战略和商业模式混在一起。
+- **Startup Canvas**（Paweł Huryn）：把战略（Product Strategy Canvas 的 9 个部分）和商业模式（Cost Structure + Revenue Streams）拆开，适合需要同时拥有战略清晰度和商业模式视角的新产品。
 
-## Notes
-- The Business Model Canvas provides a holistic view of how value flows through the organization
-- Each block should reinforce and support the others
-- Strong business models have clear, defensible value propositions
-- Financial sustainability requires revenue to exceed costs at scale
-- Use this to identify opportunities for innovation and optimization
+## 说明
+- Business Model Canvas 能帮助你整体理解价值如何在组织中流动
+- 每个模块都应该彼此支撑、相互强化
+- 强商业模式通常拥有清晰且可防守的价值主张
+- 财务可持续意味着规模化后收入能稳定超过成本
+- 这个框架也适合用来识别创新与优化机会
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Business Model Canvas Examples: Google Maps, Airbnb, Uber](https://www.productcompass.pm/p/business-model-canvas-examples)
 - [Startup Canvas: Product Strategy and a Business Model for a New Product](https://www.productcompass.pm/p/startup-canvas)

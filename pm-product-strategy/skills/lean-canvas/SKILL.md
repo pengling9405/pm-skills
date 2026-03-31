@@ -1,121 +1,120 @@
----
 name: lean-canvas
-description: "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture."
+description: "生成 Lean Canvas，涵盖 problem、solution、metrics、cost structure、UVP、unfair advantage、channels、segments 与 revenue。适用于探索创业假设、验证商业模式或搭建新业务轮廓。"
 ---
 # Lean Canvas
 
-## Metadata
-- **Name**: lean-canvas
-- **Description**: Generate a Lean Canvas business model with detailed sections for problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue.
-- **Triggers**: lean canvas, startup canvas, lean model, business hypothesis
+## 元数据
+- **名称**：lean-canvas
+- **描述**：生成 Lean Canvas，详细覆盖 problem、solution、metrics、cost structure、UVP、unfair advantage、channels、segments 与 revenue。
+- **触发词**：lean canvas、startup canvas、lean model、business hypothesis
 
-## Instructions
+## 说明
 
-You are a business model strategist designing a Lean Canvas for $ARGUMENTS.
+你是一名商业模式顾问，需要为 $ARGUMENTS 设计一份 Lean Canvas。
 
-Your task is to create a comprehensive Lean Canvas that outlines the business hypothesis and key business model assumptions for the product.
+你的任务是输出一份完整 Lean Canvas，用来表达这个产品的商业假设与关键业务模型假设。
 
-## Input Requirements
-- Product or feature description
-- Target customer segment(s)
-- Market context and problem space
-- Any available metrics or business constraints
+## 输入要求
+- 产品或功能描述
+- 目标客户群
+- 市场背景与问题空间
+- 已有指标或业务约束
 
-## Lean Canvas Template
+## Lean Canvas 模板
 
-### Section 1: Product Definition
+### 第一部分：产品定义
 
 **1. Problem**
-- Top 3 customer problems or needs
-- Customer pains and frustrations
-- Current unsatisfactory solutions
+- 最重要的 3 个客户问题或需求
+- 客户的痛点与挫败感
+- 当前不理想的解决方案
 
 **2. Solution**
-- Top 3 features or approaches
-- How each feature addresses the problem
-- Why this solution is novel or better
+- 最关键的 3 个功能或方法
+- 每个功能如何对应问题
+- 为什么这个方案更新颖或更优
 
 **3. Unique Value Proposition (UVP)**
-- Concise, memorable statement
-- Why customers choose you over alternatives
-- What makes you different (not just "better")
+- 简洁且有记忆点的表述
+- 为什么客户会选择你而不是替代方案
+- 你哪里不同，而不只是“更好”
 
 **4. Unfair Advantage**
-- What defensibility exists?
-- Barriers to competition (network effects, brand, IP, switching costs)
-- What competitors can't easily replicate
+- 有哪些 defensibility？
+- 竞争壁垒来自哪里（network effects、brand、IP、switching costs）
+- 哪些部分是竞争对手不容易复制的？
 
-### Section 2: Market & Traction
+### 第二部分：市场与 traction
 
 **5. Customer Segments**
-- Who is the target customer?
-- Early adopters and first segment
-- Customer personas or archetypes
-- How large is the addressable market?
+- 目标客户是谁？
+- 早期采用者与首个切入 segment 是谁？
+- 客户画像或典型角色是什么？
+- 可触达市场有多大？
 
 **6. Channels**
-- How do you reach customers?
-- Primary acquisition channels
-- Distribution and sales approach
-- How do customers find you?
+- 你如何触达客户？
+- 主要获客渠道是什么？
+- 分发与销售方式是什么？
+- 客户会如何找到你？
 
 **7. Revenue Streams**
-- How do you make money?
-- Pricing model or revenue per customer
-- Customer lifetime value (LTV)
-- Revenue growth assumptions
+- 你如何赚钱？
+- 定价模型或单客户收入如何？
+- 客户生命周期价值（LTV）
+- 收入增长假设是什么？
 
-### Section 3: Economics & Validation
+### 第三部分：经济性与验证
 
 **8. Cost Structure**
-- Fixed costs (salaries, infrastructure, facilities)
-- Variable costs (COGS, transaction costs, support)
-- Key cost drivers
-- Cost per customer acquisition (CAC)
+- 固定成本（薪资、基础设施、场地等）
+- 可变成本（COGS、交易成本、支持成本等）
+- 主要成本驱动因素
+- 单个客户获客成本（CAC）
 
 **9. Key Metrics**
-- Activation: How do users get value quickly?
-- Retention: How many users stick around?
-- Revenue: How do we measure financial success?
-- North Star metric for the business
+- Activation：用户如何快速获得价值？
+- Retention：有多少用户会持续留下？
+- Revenue：如何衡量财务成功？
+- 业务的 North Star metric 是什么？
 
-## Output Process
-1. Define the core problem(s) being solved
-2. Outline 2-3 solution approaches
-3. Craft a compelling UVP
-4. Identify what creates competitive advantage
-5. Target 1-2 customer segments
-6. Map acquisition channels
-7. Define revenue model and pricing
-8. Estimate cost structure
-9. Identify 3-5 critical metrics to track
-10. Surface key assumptions and hypotheses
-11. Suggest validation experiments (landing page, interviews, MVP)
+## 输出流程
+1. 定义核心问题
+2. 列出 2 到 3 种解决方式
+3. 写出有说服力的 UVP
+4. 识别竞争优势来自哪里
+5. 锁定 1 到 2 个目标客户群
+6. 梳理获客渠道
+7. 定义收入模型与定价
+8. 估算成本结构
+9. 找出 3 到 5 个需要持续跟踪的关键指标
+10. 标出关键假设
+11. 给出验证实验建议（landing page、访谈、MVP 等）
 
-### Domain Context
+### 领域背景
 
-**Lean Canvas vs Business Model Canvas vs Startup Canvas**:
+**Lean Canvas vs Business Model Canvas vs Startup Canvas**：
 
-Lean Canvas (Ash Maurya) is a startup-focused adaptation of the Business Model Canvas that replaces Partners/Activities/Resources with Problem/Solution/Unfair Advantage. It's fast and hypothesis-driven, but has known limitations:
+Lean Canvas（Ash Maurya）是面向创业项目的 Business Model Canvas 变体，用 Problem / Solution / Unfair Advantage 替换了 Partners / Activities / Resources。它更快、更适合假设驱动，但也有明显限制：
 
-- **Redundancy**: "Problem" overlaps with Market Segments (markets are defined by problems/JTBD), and "Solution" overlaps with Value Proposition (which by definition includes features). This can create confusion about what goes where.
-- **Missing strategic sections**: No vision (why should your team wake up every day?), no trade-offs (what you choose NOT to do), no relative costs (low cost vs unique value positioning), no key metrics.
-- **Narrow defensibility**: "Unfair Advantage" focuses on one defensive element, but strong strategy is hard to copy as an integrated whole — not because of a single advantage.
-- **No coherence check**: Doesn't address whether all strategic choices reinforce each other.
+- **存在重复**：`Problem` 与 Market Segments 实际上存在重叠，因为市场本质上由问题/JTBD 定义；`Solution` 与 Value Proposition 也有重叠，因为价值主张本来就包含了解决方式。这会导致填写时边界模糊。
+- **缺少战略部分**：没有 vision、没有 trade-offs、没有 relative costs，也没有 key metrics。
+- **防守维度过窄**：`Unfair Advantage` 只强调一个防守点，但真正强的战略，难以复制的是整个组合，而不是单一要素。
+- **没有一致性检查**：它不检查各战略选择是否彼此强化。
 
-**When to use Lean Canvas**: Quick hypothesis testing when you need speed over completeness. Best as a brainstorming tool, not a strategy document.
+**何时使用 Lean Canvas**：当你更需要速度而非完整性时，用它来快速验证假设。它更适合作为 brainstorming 工具，而不是完整战略文档。
 
-**Consider instead**: **Startup Canvas** (Paweł Huryn) separates strategy (9 sections from the Product Strategy Canvas) from business model (Cost Structure + Revenue Streams). Recommended when you need both strategic clarity AND a business model for a new product.
+**可替代方案**：**Startup Canvas**（Paweł Huryn）会把战略（Product Strategy Canvas 的 9 个部分）与商业模式（Cost Structure + Revenue Streams）拆开。当你既需要战略清晰度，又需要为新产品建立商业模式时，更推荐它。
 
-## Notes
-- The Lean Canvas is designed for rapid hypothesis testing
-- Focus on addressing the riskiest assumptions first
-- Update the canvas as you learn and validate
-- Each section should be specific and measurable where possible
-- This canvas helps align founding teams on business strategy
+## 说明
+- Lean Canvas 设计出来就是为了快速做假设验证
+- 应该先处理最危险的假设
+- 随着学习和验证推进，持续更新这张画布
+- 每一部分都尽量写得具体、可衡量
+- 这份画布很适合帮助 founding team 快速对齐业务理解
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Startup Canvas: Product Strategy and a Business Model for a New Product](https://www.productcompass.pm/p/startup-canvas)

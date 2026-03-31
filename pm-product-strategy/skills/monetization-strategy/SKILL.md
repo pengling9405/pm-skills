@@ -1,150 +1,149 @@
----
 name: monetization-strategy
-description: "Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, evaluating pricing strategies, or deciding how to monetize a product."
+description: "头脑风暴 3 到 5 种 monetization strategy，并评估受众匹配度、风险与验证实验。适用于探索收入模型、比较定价策略或决定产品如何变现。"
 ---
 # Monetization Strategy
 
-## Metadata
-- **Name**: monetization-strategy
-- **Description**: Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, pricing strategies, or business model options.
-- **Triggers**: monetization strategy, revenue model, pricing strategy, how to monetize, make money
+## 元数据
+- **名称**：monetization-strategy
+- **描述**：头脑风暴 3 到 5 种 monetization strategy，并评估受众匹配度、风险与验证实验。适用于探索 revenue model、pricing strategy 或 business model 选项。
+- **触发词**：monetization strategy、revenue model、pricing strategy、how to monetize、make money
 
-## Instructions
+## 说明
 
-You are an experienced business model strategist brainstorming monetization strategies for $ARGUMENTS.
+你是一名有经验的商业模式顾问，需要为 $ARGUMENTS 设计 monetization strategy。
 
-Your task is to develop 3-5 distinct monetization approaches that could work for the product or feature, evaluate fit with the target market, and outline low-effort validation experiments.
+你的任务是提出 3 到 5 种不同的变现方式，判断它们与目标市场的匹配度，并设计低成本验证实验。
 
-## Input Requirements
-- Product or feature description
-- Target market segment(s) and customer profile
-- Current willingness to pay or budget constraints
-- Competitive monetization approaches
-- Company priorities (revenue growth, user growth, profitability)
+## 输入要求
+- 产品或功能描述
+- 目标市场与客户画像
+- 当前支付意愿或预算约束
+- 竞争对手的变现方式
+- 公司优先级（收入增长、用户增长、盈利能力）
 
-## Monetization Framework
+## 变现框架
 
-For each strategy, include:
+对每一种策略，都应包含：
 
-### 1. Strategy Name & Description
-- What is the monetization model?
-- How does it work for this product?
-- Who pays and what do they get?
+### 1. 策略名称与说明
+- 这是什么变现模型？
+- 它如何适用于这个产品？
+- 谁来付费，他们得到什么？
 
-### 2. How It Works
-- Revenue model and pricing mechanics
-- Value exchange between company and customer
-- Payment frequency and transaction size
-- Lifecycle and retention mechanisms
+### 2. 运作机制
+- 收入模型与定价机制
+- 公司与客户之间的价值交换方式
+- 付款频率与单次交易规模
+- 生命周期与留存机制
 
 ### 3. Audience Fit
-- Why does this resonate with your target customer?
-- How does it align with customer needs and preferences?
-- What problems does it solve for the customer?
-- Addressable market size and revenue potential
+- 为什么这种模式会打动目标客户？
+- 它如何与客户需求和偏好匹配？
+- 它为客户解决了什么问题？
+- 可服务市场规模与收入潜力如何？
 
 ### 4. Unit Economics
-- Estimated customer acquisition cost (CAC)
-- Estimated customer lifetime value (LTV)
-- Break-even timeline
-- Target gross margin
+- 估算 CAC
+- 估算 LTV
+- 回本周期
+- 目标毛利率
 
-### 5. Risks & Challenges
-- Market adoption risk
-- Pricing or feature sensitivity
-- Competitive vulnerability
-- Customer churn or resistance
-- Implementation complexity
+### 5. 风险与挑战
+- 市场接受风险
+- 对价格或功能的敏感度
+- 竞争脆弱性
+- 客户流失或抗拒
+- 实施复杂度
 
 ### 6. Competitive Position
-- How do competitors monetize?
-- What makes your approach differentiated?
-- Barriers to customer switching
-- Defense against competitive pricing
+- 竞争对手是如何变现的？
+- 你的方式差异化在哪里？
+- 客户转移的门槛是什么？
+- 如何抵御竞品的价格战？
 
-### 7. Validation Experiment
-- Low-cost test to validate customer willingness to pay
-- Method: survey, landing page, pilot, freemium, waitlist
-- Success metric and decision criteria
-- Timeline and resources required
+### 7. 验证实验
+- 用低成本方式验证客户支付意愿
+- 方法可以是：survey、landing page、pilot、freemium、waitlist
+- 成功指标与决策标准
+- 所需时间与资源
 
-## Example Monetization Strategies
+## 常见变现策略示例
 
 ### 1. Freemium (Free Base + Paid Premium)
-- **How**: Free core features, premium advanced features behind paywall
-- **Fit**: Best for high-volume, low-touch products (design tools, productivity, communication)
-- **Risks**: Low conversion rates (typically 1-5%), features must be clear to justify upgrade
-- **Experiment**: Launch freemium version, track conversion rate, gather upgrade feedback
+- **How**：核心功能免费，高级功能放在付费层
+- **Fit**：适合高量级、低触达产品（设计工具、效率工具、沟通工具）
+- **Risks**：转化率通常较低（常见为 1-5%），付费理由必须非常清晰
+- **Experiment**：上线 freemium 版本，跟踪转化率并收集升级反馈
 
 ### 2. Subscription (Recurring Monthly/Annual)
-- **How**: Recurring charge for ongoing access and updates
-- **Fit**: Best for products with continuous value (software, platforms, services)
-- **Risks**: Customer churn, cannibalization from annual vs. monthly
-- **Experiment**: Offer subscription to beta customers, measure churn rate and NPS
+- **How**：按月或按年持续收费
+- **Fit**：适合持续交付价值的产品（软件、平台、服务）
+- **Risks**：客户 churn、年付和月付之间的相互蚕食
+- **Experiment**：向 beta 客户提供订阅方案，观察 churn 与 NPS
 
 ### 3. Usage-Based (Pay Per Use)
-- **How**: Customers pay based on usage volume (API calls, storage, transactions)
-- **Fit**: Best for B2B platforms, APIs, services with variable customer needs
-- **Risks**: Unpredictable revenue, customer cost anxiety, usage optimization by customers
-- **Experiment**: Implement usage tracking, pilot with 5-10 beta customers, model revenue
+- **How**：客户按使用量付费（API 调用、存储、交易量等）
+- **Fit**：适合 B2B 平台、API 与需求差异较大的服务
+- **Risks**：收入不稳定、客户对费用缺乏预期、客户可能主动压缩使用量
+- **Experiment**：先加 usage tracking，与 5 到 10 个 beta 客户试跑，再回推收入模型
 
 ### 4. Enterprise/Seat-Based (Per User/Seat)
-- **How**: Price per user, department, or seat using the product
-- **Fit**: Best for B2B SaaS with team/organization adoption
-- **Risks**: Sales complexity, contract length, implementation overhead
-- **Experiment**: Conduct 5-10 customer interviews, validate pricing per seat, define support model
+- **How**：按用户、团队或 seat 收费
+- **Fit**：适合团队/组织级采用的 B2B SaaS
+- **Risks**：销售复杂度高、合同周期长、实施成本高
+- **Experiment**：做 5 到 10 次客户访谈，验证 per-seat 定价与支持模型
 
 ### 5. One-Time Purchase (Buy Once)
-- **How**: Single upfront purchase for permanent or one-time license
-- **Fit**: Best for niche products, tools, or templates (not ongoing services)
-- **Risks**: Revenue concentration in launch period, no recurring revenue, updates/support questions
-- **Experiment**: Launch limited offering, track conversion and customer satisfaction
+- **How**：一次性购买永久或单次使用许可
+- **Fit**：适合垂直工具、模板或非持续性服务
+- **Risks**：收入集中在发布期、缺少 recurring revenue、后续更新与支持压力
+- **Experiment**：推出限量版本，跟踪转化率与满意度
 
 ### 6. Marketplace/Transaction Fee
-- **How**: Take a percentage or fixed fee from transactions between buyers and sellers
-- **Fit**: Best for platforms connecting supply and demand
-- **Risks**: Market liquidity chicken-and-egg problem, trust and safety, competitive pressure
-- **Experiment**: MVP with limited sellers, offer free period to drive initial supply, model unit economics
+- **How**：从买卖双方交易中抽取比例或固定费用
+- **Fit**：适合连接供需的平台型产品
+- **Risks**：市场流动性的鸡生蛋问题、信任与安全、竞争压力
+- **Experiment**：用少量卖家先做 MVP，设置免费期吸引供给，再测 unit economics
 
 ### 7. Advertising/Sponsorship
-- **How**: Generate revenue from ads, sponsored content, or brand partnerships
-- **Fit**: Best for high-traffic, consumer-facing products
-- **Risks**: Brand damage from intrusive ads, user experience degradation, advertiser concentration
-- **Experiment**: Test ads with small user segment, measure engagement and revenue impact
+- **How**：通过广告、赞助内容或品牌合作获得收入
+- **Fit**：适合高流量、面向消费者的产品
+- **Risks**：侵入式广告伤害品牌、降低用户体验、对少数广告主过度依赖
+- **Experiment**：在小规模用户群中测试广告，观察参与度与收入影响
 
-## Output Process
-1. Brainstorm 3-5 distinct monetization strategies (avoid repeating similar models)
-2. For each strategy:
-   - Describe how it works specifically for this product
-   - Assess fit with target customer and willingness to pay
-   - Outline key risks and challenges
-   - Estimate unit economics (CAC, LTV, timeline)
-   - Compare against competitive approaches
-3. For each strategy, design a low-effort validation experiment
-4. Prioritize by:
-   - Strategic fit (revenue, growth, profitability goals)
-   - Ease of implementation
-   - Market validation potential
-   - Competitive advantage
-5. Recommend 1-2 strategies to test first
-6. Create testing roadmap and success criteria
+## 输出流程
+1. 头脑风暴 3 到 5 种明显不同的 monetization strategy，避免只是换皮
+2. 对每种策略都说明：
+   - 如何具体适用于这个产品
+   - 与目标客户及支付意愿的匹配度
+   - 关键风险与挑战
+   - 估算 unit economics（CAC、LTV、时间周期）
+   - 与竞品方案相比的优劣
+3. 为每种策略设计一个低成本验证实验
+4. 按以下维度排序：
+   - 与战略目标的匹配度（收入、增长、盈利）
+   - 实施难度
+   - 市场验证潜力
+   - 竞争优势
+5. 推荐优先测试的 1 到 2 种策略
+6. 输出测试 roadmap 与成功标准
 
-## Strategic Considerations
-- **Revenue Goals**: How much revenue is needed? By when?
-- **Growth Goals**: Does monetization need to support user growth?
-- **Market Dynamics**: Are customers ready to pay? For what?
-- **Competitive Pressure**: How will competitors respond?
-- **Unit Economics**: What gross margin is required for viability?
+## 战略考虑点
+- **Revenue Goals**：需要多少收入？在什么时候之前达到？
+- **Growth Goals**：变现方式是否还要兼顾用户增长？
+- **Market Dynamics**：客户真的愿意为哪些东西付费？
+- **Competitive Pressure**：竞争对手可能如何回应？
+- **Unit Economics**：可行所需的毛利率是多少？
 
-## Notes
-- Best monetization strategies align with customer value and willingness to pay
-- Test early and often; don't wait for perfect product to validate pricing
-- Most products use hybrid models (e.g., freemium + upgrade, subscription + marketplace fees)
-- Pricing can be changed; customer relationships are harder to rebuild
-- Monitor competitors but don't race to the bottom on price
+## 说明
+- 最好的 monetization strategy 总是与客户价值和支付意愿一致
+- 尽早测试，不要等产品“完美”才去验证付费
+- 大多数产品最终会采用 hybrid model（例如 freemium + upgrade，subscription + marketplace fee）
+- 价格可以调整，但客户关系一旦受损更难修复
+- 可以关注竞品，但不要陷入无底线价格战
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Product Pricing Strategies 101](https://www.productcompass.pm/p/product-pricing-strategies-101)

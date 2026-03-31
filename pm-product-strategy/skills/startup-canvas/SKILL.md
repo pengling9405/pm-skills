@@ -1,53 +1,52 @@
----
 name: startup-canvas
-description: "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept."
+description: "为新产品生成 Startup Canvas，把 Product Strategy（9 个部分）与 Business Model（costs + revenue）整合在一起。它是 BMC 与 Lean Canvas 的替代方案，会把战略和商业模式拆开。适用于启动新产品或评估创业想法。"
 ---
 # Startup Canvas
 
-## Metadata
-- **Name**: startup-canvas
-- **Description**: Generate a Startup Canvas for a new product. Combines the 9-section Product Strategy Canvas with a Business Model (Cost Structure + Revenue Streams). Designed specifically for startups and new products.
-- **Triggers**: startup canvas, new product canvas, startup strategy, startup business model
+## 元数据
+- **名称**：startup-canvas
+- **描述**：为新产品生成 Startup Canvas，把 9 部分 Product Strategy Canvas 与 Business Model（Cost Structure + Revenue Streams）结合起来，专为创业项目和新产品设计。
+- **触发词**：startup canvas、new product canvas、startup strategy、startup business model
 
-## Domain Context
+## 领域背景
 
 ### Startup Canvas vs Business Model Canvas vs Lean Canvas
 
-Popular approaches like Business Model Canvas (Strategyzer) and Lean Canvas (Ash Maurya) mix strategy and business model into one artifact. The **Startup Canvas** (Paweł Huryn) separates them: 9 strategy sections from the Product Strategy Canvas + Cost Structure & Revenue Streams.
+像 Business Model Canvas（Strategyzer）和 Lean Canvas（Ash Maurya）这类常见方法，都把 strategy 与 business model 混在同一张画布里。**Startup Canvas**（Paweł Huryn）则把它们拆开：前半部分是 Product Strategy Canvas 的 9 个战略部分，后半部分是 Cost Structure 与 Revenue Streams。
 
-**Why not Business Model Canvas?**
-- No vision — why should your team wake up every day?
-- No Can't/Won't test — what stops competitors from copying you?
-- No trade-offs — what you choose NOT to do creates focus
-- No key metrics — how do you know the strategy is working?
-- Key Partnerships and Key Resources are rarely useful for early-stage products
+**为什么不优先用 Business Model Canvas？**
+- 没有 vision：团队为什么每天要投入？
+- 没有 Can't/Won't test：竞争对手为什么不能或不会复制？
+- 没有 trade-offs：你不做什么，决定了你的聚焦
+- 没有 key metrics：你如何判断战略在起作用？
+- Key Partnerships 与 Key Resources 对很多早期产品帮助有限
 
-**Why not Lean Canvas?**
-- Introduces redundancy: "Problem" overlaps with Market Segments (markets are defined by problems), "Solution" overlaps with Value Proposition (which by definition includes features)
-- No vision, no trade-offs, no relative costs
-- "Unfair Advantage" is too narrow — the entire strategy should be hard to copy, not just one element
-- Doesn't address the holistic fit of strategic choices reinforcing each other
+**为什么不优先用 Lean Canvas？**
+- 它有结构性重复：`Problem` 与 Market Segments 重叠，`Solution` 与 Value Proposition 也重叠
+- 没有 vision、没有 trade-offs、没有 relative costs
+- `Unfair Advantage` 过窄，真正难复制的应该是整套策略组合，而不是一个单点
+- 它不检查所有战略选择是否能彼此强化
 
-**When to use which:**
-- **Business Model Canvas**: Established businesses, corporate strategy, investor materials
-- **Lean Canvas**: Quick hypothesis testing when you just need speed
-- **Startup Canvas**: New products where you need both strategic clarity AND a business model — the recommended approach
+**什么时候用哪个：**
+- **Business Model Canvas**：成熟业务、企业战略、投资人材料
+- **Lean Canvas**：你只需要快速做假设测试的时候
+- **Startup Canvas**：新产品既需要战略清晰度，也需要商业模式时，优先推荐
 
-## Instructions
+## 说明
 
-You are a product strategist and startup advisor designing a Startup Canvas for $ARGUMENTS.
+你是一名产品战略顾问兼创业顾问，需要为 $ARGUMENTS 设计一份 Startup Canvas。
 
-Your task is to create a comprehensive Startup Canvas that covers both the strategic choices and the business model for a new product.
+你的任务是生成一份完整的 Startup Canvas，同时覆盖新产品的战略选择与商业模式。
 
-## Input Requirements
-- Product or startup idea
-- Target market and customer insights
-- Competitive landscape
-- Founder/team constraints and resources
+## 输入要求
+- 产品或创业想法
+- 目标市场与客户洞察
+- 竞争格局
+- 创始人/团队约束与资源
 
-## Startup Canvas Template
+## Startup Canvas 模板
 
-### Part 1: Product Strategy (9 Sections)
+### Part 1：Product Strategy（9 个部分）
 
 **1. Vision**
 - How can we inspire people? What are we aspiring to achieve? What values do we uphold?
@@ -90,7 +89,7 @@ For each market segment:
 - The entire strategy should be difficult to copy — not just one element.
 - Do all elements fit together and reinforce each other?
 
-### Part 2: Business Model
+### Part 2：Business Model
 
 **10. Cost Structure**
 - Rent, hardware, licenses, technology, marketing, subscriptions, salaries.
@@ -101,36 +100,36 @@ For each market segment:
 - Pricing approach: penetration, value-based, competitive, usage-based, SaaS?
 - Is the revenue model scalable? What are the biggest uncertainties?
 
-## Output Process
-1. Define the vision and aspirational impact
-2. Identify 2–3 target market segments with JTBD
-3. Establish cost positioning (low cost vs premium)
-4. Develop value propositions for each segment
-5. List explicit trade-offs
-6. Set North Star and quarterly OMTM
-7. Outline growth strategy and channels
-8. Document required capabilities
-9. Explain defensibility (Can't/Won't test)
-10. Estimate cost structure and revenue streams
-11. Validate strategy coherence: do all elements reinforce each other?
-12. Surface hypotheses that must be true for success
-13. Suggest low-effort experiments to test key assumptions
+## 输出流程
+1. 定义 vision 与理想影响
+2. 识别 2 到 3 个目标 market segments 及其 JTBD
+3. 明确成本定位（低成本还是 premium）
+4. 为每个 segment 设计 value proposition
+5. 列出明确 trade-offs
+6. 设定 North Star 与季度 OMTM
+7. 梳理增长策略与渠道
+8. 记录关键能力要求
+9. 解释 defensibility（Can't/Won't test）
+10. 估算成本结构与收入来源
+11. 检查战略一致性：各部分是否互相强化？
+12. 标出成功所依赖的关键假设
+13. 设计低成本实验验证这些假设
 
-## Notes
-- The Startup Canvas separates strategy from business model — keep them distinct but connected
-- Strategy should pass the Can't/Won't test: your competitors can't or won't copy the integrated set of choices
-- After drafting the first version, identify and start testing hypotheses
-- Mix and adapt approaches to suit your specific needs rather than following any canvas rigidly
+## 说明
+- Startup Canvas 的核心是把 strategy 与 business model 区分开，但又保持彼此连接
+- 你的 strategy 应该能通过 Can't/Won't test：竞争对手不能或不会复制这整套选择
+- 第一版完成后，立刻识别并验证关键假设
+- 不要僵化套模板，而要根据自己的场景灵活调整
 
 ---
 
-### Templates
+### 模板
 
 - [Startup Canvas (PPTX)](https://docs.google.com/presentation/d/1lA0SPflj5JT6jFV_jIDsqZJAYYperTFx/edit?usp=sharing&ouid=111307342557889008106&rtpof=true&sd=true)
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Startup Canvas: Product Strategy and a Business Model for a New Product](https://www.productcompass.pm/p/startup-canvas)
 - [Product Strategy Canvas](https://www.productcompass.pm/p/product-strategy-canvas)

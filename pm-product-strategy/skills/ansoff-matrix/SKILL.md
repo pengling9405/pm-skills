@@ -1,31 +1,30 @@
----
 name: ansoff-matrix
-description: "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or evaluating strategic growth paths."
+description: "生成 Ansoff Matrix 分析，覆盖 market penetration、market development、product development 与 diversification 四类增长路径。适用于评估增长选项、规划市场扩张或比较不同增长策略。"
 ---
 # Ansoff Matrix
 
-## Metadata
-- **Name**: ansoff-matrix
-- **Description**: Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification.
-- **Triggers**: Ansoff matrix, growth matrix, market expansion, growth strategy options
+## 元数据
+- **名称**：ansoff-matrix
+- **描述**：生成 Ansoff Matrix 分析，梳理 market penetration、market development、product development 与 diversification 四种增长策略。
+- **触发词**：Ansoff matrix、growth matrix、market expansion、growth strategy options
 
-## Instructions
+## 说明
 
-You are a growth strategist analyzing expansion opportunities using the Ansoff Matrix for $ARGUMENTS.
+你是一名增长战略顾问，需要针对 $ARGUMENTS 用 Ansoff Matrix 分析扩张机会。
 
-Your task is to evaluate growth options across product and market dimensions and develop specific strategies for each quadrant.
+你的任务是从产品与市场两个维度评估增长选项，并为每个象限提出具体策略。
 
-## Input Requirements
-- Current product(s) and market definition
-- Current market penetration and performance
-- Customer insights and market opportunities
-- Company capabilities and constraints
-- Growth targets and timelines
-- Competitive dynamics
+## 输入要求
+- 当前产品及其市场定义
+- 目前的 market penetration 与表现
+- 客户洞察与市场机会
+- 公司能力与约束
+- 增长目标与时间线
+- 竞争格局
 
-## Ansoff Matrix Framework
+## Ansoff Matrix 框架
 
-### 2x2 Matrix: Products vs. Markets
+### 2x2 矩阵：Products vs. Markets
 
 |  | Current Market | New Market |
 |---|---|---|
@@ -34,34 +33,34 @@ Your task is to evaluate growth options across product and market dimensions and
 
 ---
 
-### 1. Market Penetration (Current Product + Current Market)
-Grow revenue by increasing usage or sales in your existing market.
+### 1. Market Penetration（当前产品 + 当前市场）
+通过提升现有市场中的使用频率或销量来增长收入。
 
-**Strategies:**
-- Increase frequency of product usage
-- Expand use cases within existing customer base
-- Acquire competitors' customers
-- Reduce churn and improve retention
-- Upsell and cross-sell existing customers
-- Lower prices to capture price-sensitive segments
-- Increase marketing and brand awareness
-- Improve customer experience to drive referrals
+**可选策略：**
+- 提高产品使用频率
+- 在现有客户群内扩展更多 use cases
+- 抢占竞争对手客户
+- 降低 churn、提升留存
+- 对现有客户做 upsell 与 cross-sell
+- 通过降价覆盖价格敏感人群
+- 增强营销与品牌认知
+- 改善客户体验，促进转介绍
 
-**Examples:**
+**示例：**
 - Netflix adding games to increase engagement
 - Starbucks encouraging multiple visits per week
 - Adobe expanding Adobe Creative Cloud subscriptions
 
-**Risk Level:** Low (familiar market, product, capabilities)
+**风险等级：** Low（市场、产品、能力都相对熟悉）
 
-**Typical Timeline:** 6-12 months
+**典型周期：** 6-12 个月
 
 ---
 
-### 2. Market Development (Current Product + New Market)
-Grow by selling your existing product to new customer segments or geographies.
+### 2. Market Development（当前产品 + 新市场）
+通过把现有产品卖给新的客户群体或新地区来实现增长。
 
-**Strategies:**
+**可选策略：**
 - Expand into new geographies or regions
 - Target new customer segments or personas
 - Sell through new channels or partnerships
@@ -70,21 +69,21 @@ Grow by selling your existing product to new customer segments or geographies.
 - Localize product for new markets
 - Build brand awareness in new markets
 
-**Examples:**
+**示例：**
 - Facebook expanding internationally
 - Uber moving into new cities and countries
 - Slack selling to non-tech industries
 
-**Risk Level:** Medium (new market dynamics, but proven product)
+**风险等级：** Medium（市场是新的，但产品已被验证）
 
-**Typical Timeline:** 12-24 months
+**典型周期：** 12-24 个月
 
 ---
 
-### 3. Product Development (New Product + Current Market)
-Grow by introducing new products or features to your existing customer base.
+### 3. Product Development（新产品 + 当前市场）
+通过向现有客户推出新产品或新功能来实现增长。
 
-**Strategies:**
+**可选策略：**
 - Add new features to existing product
 - Create adjacent product lines
 - Bundle products for greater value
@@ -93,21 +92,21 @@ Grow by introducing new products or features to your existing customer base.
 - Create complementary products
 - Upgrade product experience or performance
 
-**Examples:**
+**示例：**
 - Spotify adding podcasts
 - Amazon Prime expanding services (video, music, grocery)
 - Figma adding prototyping and FigJam
 
-**Risk Level:** Medium (existing customers but new product)
+**风险等级：** Medium（客户已知，但产品是新的）
 
-**Typical Timeline:** 12-18 months
+**典型周期：** 12-18 个月
 
 ---
 
-### 4. Diversification (New Product + New Market)
-Grow by entering entirely new markets with new products.
+### 4. Diversification（新产品 + 新市场）
+通过新产品进入全新的市场来获得增长。
 
-**Strategies:**
+**可选策略：**
 - Related diversification: leveraging existing competencies
 - Unrelated diversification: entering new domains
 - Acquire companies in new markets/products
@@ -115,52 +114,52 @@ Grow by entering entirely new markets with new products.
 - Build new business units
 - Apply capabilities to adjacent problems
 
-**Examples:**
+**示例：**
 - Amazon expanding from books to cloud services (AWS)
 - Apple expanding from computers to phones, wearables, services
 - Microsoft moving from software to cloud (Azure) and gaming (Xbox)
 
-**Risk Level:** High (new market, new product, new capabilities)
+**风险等级：** High（新市场、新产品、新能力）
 
-**Typical Timeline:** 24+ months, requires significant investment
-
----
-
-## Output Process
-1. Define current market and product clearly
-2. Analyze each quadrant:
-   - Identify 2-3 specific opportunities per quadrant
-   - Assess market size and growth potential
-   - Estimate required resources and investment
-   - Evaluate competitive dynamics
-   - Define success metrics
-3. Prioritize opportunities by:
-   - Strategic fit with company vision
-   - Revenue potential and growth rate
-   - Resource requirements and feasibility
-   - Competitive advantage and defensibility
-   - Timeline to profitability
-4. Develop go-to-market strategy for top 2-3 opportunities
-5. Create phased roadmap and milestones
-6. Identify risks and mitigation plans
-7. Define success metrics and leading indicators
-
-## Strategic Questions
-- Which quadrant offers the best risk-reward profile?
-- Where do our capabilities give us competitive advantage?
-- Which opportunities align best with our vision and values?
-- What partnerships or acquisitions would accelerate growth?
-- How does each option impact our brand and positioning?
-
-## Notes
-- Market penetration is lowest risk; diversification is highest risk
-- Most companies should excel in one quadrant before expanding
-- Avoid spreading too thin across all four quadrants simultaneously
-- Consider sequential strategy: penetration first, then market development
-- Reassess Ansoff Matrix annually or when market conditions shift
+**典型周期：** 24 个月以上，通常需要较大投入
 
 ---
 
-### Further Reading
+## 输出流程
+1. 清晰定义当前市场与当前产品
+2. 逐个分析四个象限：
+   - 每个象限识别 2 到 3 个具体机会
+   - 评估市场规模与增长潜力
+   - 估算所需资源与投入
+   - 判断竞争态势
+   - 定义成功指标
+3. 按以下维度对机会排序：
+   - 与公司 vision 的战略匹配度
+   - 收入潜力与增长速度
+   - 资源要求与可行性
+   - 竞争优势与 defensibility
+   - 达到盈利的时间
+4. 为优先级最高的 2 到 3 个机会制定 go-to-market 策略
+5. 给出分阶段 roadmap 与里程碑
+6. 识别风险与缓解方案
+7. 定义成功指标与领先指标
+
+## 关键战略问题
+- 哪个象限的风险回报比最好？
+- 我们现有能力在哪些地方真正构成竞争优势？
+- 哪些机会与我们的 vision 和 values 最一致？
+- 哪些合作或收购可以加速增长？
+- 每个选项会如何影响品牌与定位？
+
+## 说明
+- Market penetration 风险最低，diversification 风险最高
+- 大多数公司应该先在一个象限做深，再考虑扩展
+- 避免同时在四个象限全面铺开，容易分散资源
+- 可以考虑顺序型策略：先 penetration，再 market development
+- 建议每年，或在市场明显变化时，重新评估一次 Ansoff Matrix
+
+---
+
+### 延伸阅读
 
 - [The Product Management Frameworks Compendium + Templates](https://www.productcompass.pm/p/the-product-frameworks-compendium)
