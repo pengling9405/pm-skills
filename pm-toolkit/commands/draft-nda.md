@@ -1,66 +1,42 @@
 ---
-description: Draft a Non-Disclosure Agreement between two parties with jurisdiction-appropriate clauses
-argument-hint: "<parties and context>"
+description: 生成 NDA 草稿，并标出需要律师复核的条款
+argument-hint: "<双方背景与保密场景>"
 ---
 
 # /draft-nda -- NDA Drafting
 
-Draft a professional Non-Disclosure Agreement customized to your situation. Covers information types, jurisdiction, term, and clearly marks clauses that need legal review.
+根据双方角色、披露范围和使用场景生成 NDA 草稿，并额外指出法律复核重点。
 
 ## Invocation
 
-```
-/draft-nda Mutual NDA between our startup and a potential enterprise customer
-/draft-nda One-way NDA for a freelance contractor accessing our codebase
+```text
+/draft-nda 创业公司与顾问之间的产品评估 NDA
 ```
 
 ## Workflow
 
 ### Step 1: Gather Context
 
-Ask:
-- Who are the parties? (company names and roles)
-- Mutual or one-way NDA?
-- What information is being protected? (trade secrets, code, business data, customer data)
-- Jurisdiction? (state/country for governing law)
-- Duration? (how long should confidentiality last)
-- Any specific concerns? (non-compete, non-solicit, IP ownership)
+收集：
+- 双方身份
+- 披露信息类型
+- 使用目的
+- 地域 / 法域要求
 
 ### Step 2: Draft the NDA
 
-Apply the **draft-nda** skill:
-
-Generate a complete NDA covering:
-- Parties and recitals
-- Definition of confidential information (with specific examples)
-- Obligations of the receiving party
-- Exclusions (public knowledge, independent development, etc.)
-- Term and survival
-- Return/destruction of materials
-- Remedies
-- Governing law and jurisdiction
-- Standard boilerplate (severability, entire agreement, amendments)
+生成：
+- NDA 正文
+- 需要法律审查的条款
 
 ### Step 3: Deliver
 
-```
+```markdown
 ## Non-Disclosure Agreement
-
-[Full NDA text with marked sections]
-
 ### Clauses Requiring Legal Review
-| Clause | Why It Needs Review | Consideration |
-|--------|-------------------|--------------|
-
 ### Plain-Language Summary
-[What this NDA means in simple terms for non-lawyers]
 ```
-
-Save as markdown. Offer to export as DOCX for signing.
 
 ## Notes
 
-- This is a starting point — always recommend review by qualified legal counsel
-- Mark any clause that involves significant legal risk with a ⚠️ flag
-- Include plain-language annotations so non-lawyers understand what they're agreeing to
-- Mutual NDAs are generally preferred — they're fairer and faster to negotiate
+- 这是草稿，不替代法律意见

@@ -1,67 +1,36 @@
 ---
-description: Check grammar, logic, and flow in any text — targeted fixes without rewriting
-argument-hint: "<text to check>"
+description: 检查文本中的语法、逻辑和流畅度问题
+argument-hint: "<需要审校的文本>"
 ---
 
 # /proofread -- Grammar & Flow Check
 
-Identify grammar, logical, and flow errors in text. Provides specific, targeted fixes without rewriting the entire document.
+对文本做轻量审校，识别语法、逻辑和表达流畅性问题。
 
 ## Invocation
 
-```
-/proofread [paste text]
-/proofread [upload a document]
+```text
+/proofread [粘贴一段文本]
 ```
 
 ## Workflow
 
 ### Step 1: Accept Text
-
-Accept text in any form: pasted, uploaded document (DOCX, PDF, markdown), or email draft.
-
 ### Step 2: Analyze
-
-Apply the **grammar-check** skill:
-
-Scan for three categories of issues:
-
-**Grammar**: Spelling, punctuation, subject-verb agreement, tense consistency, article usage
-**Logic**: Contradictions, unsupported claims, circular reasoning, unclear references
-**Flow**: Awkward transitions, sentence rhythm, paragraph structure, redundancy, readability
-
 ### Step 3: Report Issues
 
-```
+```markdown
 ## Proofread Report
-
-**Text length**: [word count]
-**Issues found**: [count by category]
-
 ### Issues
-
 #### 1. [Category: Grammar/Logic/Flow]
-- **Location**: "[quoted text with issue]"
-- **Issue**: [what's wrong]
-- **Fix**: "[corrected text]"
-
-[Repeat for each issue]
-
 ### Summary
-- Grammar: [X] issues
-- Logic: [X] issues
-- Flow: [X] issues
-- Overall quality: [assessment]
 ```
 
 ### Step 4: Offer
 
-- "Want me to **apply all fixes** and return the cleaned text?"
-- "Should I **focus on a specific section** in more detail?"
+- 继续重写
+- 保留原意做 polish
 
 ## Notes
 
-- Fix suggestions should be minimal — change only what's needed, preserve the author's voice
-- For non-native English speakers, be especially clear about *why* a change is suggested
-- Don't over-correct style preferences — there's a difference between wrong and different
-- For professional documents, also check for tone consistency and audience appropriateness
+- 优先指出问题，不要默认整段重写
