@@ -1,13 +1,12 @@
+description: 为测试生成真实感较强的 dummy datasets，可输出为 CSV、JSON、SQL inserts 或 Python 脚本
+argument-hint: "<你需要的数据描述>"
 ---
-description: Generate realistic dummy datasets for testing — CSV, JSON, SQL inserts, or Python scripts
-argument-hint: "<description of the data you need>"
----
 
-# /generate-data -- Test Data Generator
+# /generate-data -- 测试数据生成器
 
-Create realistic dummy datasets for development, testing, demos, or prototyping. Outputs as ready-to-use files in your preferred format.
+为开发、测试、演示或原型验证生成具有真实感的 dummy datasets，并以你需要的格式直接输出可用文件。
 
-## Invocation
+## 调用方式
 
 ```
 /generate-data 1000 users with names, emails, plan tier, signup date, and activity score
@@ -15,35 +14,35 @@ Create realistic dummy datasets for development, testing, demos, or prototyping.
 /generate-data Sample data matching this schema: [paste table definition]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Define the Dataset
+### Step 1：定义数据集
 
-Understand:
-- What entities? (users, orders, events, products, etc.)
-- What columns? (with data types and constraints)
-- How many rows?
-- Any relationships between tables?
-- Any specific distributions? (e.g., "80% should be on the free plan")
-- Any realistic constraints? (emails should be unique, dates should be chronological)
+需要明确：
+- 有哪些实体？（users、orders、events、products 等）
+- 有哪些字段？（含数据类型与约束）
+- 需要多少行？
+- 表之间有没有关系？
+- 是否需要特定分布？（例如“80% 用户应处于 free plan”）
+- 是否有现实约束？（如 email 必须唯一，日期必须按时间顺序）
 
-### Step 2: Generate the Data
+### Step 2：生成数据
 
-Apply the **dummy-dataset** skill:
+调用 **dummy-dataset** skill：
 
-- Create a Python script that generates the dataset
-- Use realistic-looking data (not random strings): proper names, valid email formats, real-seeming dates
-- Respect constraints: unique IDs, foreign key relationships, chronological ordering
-- Apply specified distributions
-- Execute the script and produce the output file
+- 生成一个用于创建数据集的 Python 脚本
+- 使用真实感较强的数据，而不是随机字符串：真实姓名格式、有效 email、看起来合理的日期
+- 遵守约束：唯一 ID、外键关系、时间顺序
+- 应用指定的数据分布
+- 执行脚本并产出结果文件
 
-### Step 3: Deliver
+### Step 3：交付结果
 
-Output in the requested format (or ask):
-- **CSV**: Most common, works everywhere
-- **JSON**: For API testing or frontend development
-- **SQL INSERT**: For populating test databases
-- **Python script**: For reproducible generation (user can tweak and re-run)
+按用户要求输出（如果未指定就主动询问）：
+- **CSV**：最通用，兼容性最好
+- **JSON**：适合 API 测试或前端开发
+- **SQL INSERT**：适合直接填充测试数据库
+- **Python script**：适合可重复生成，用户也能自行调整重跑
 
 ```
 ## Generated Dataset: [Description]
@@ -56,27 +55,27 @@ Output in the requested format (or ask):
 | Column | Type | Constraints | Distribution |
 |--------|------|-----------|-------------|
 
-### Sample (first 5 rows)
-[Preview of the data]
+### 样例（前 5 行）
+[数据预览]
 
-### Files
-- [data file]
-- [generator script, if applicable]
+### 文件
+- [数据文件]
+- [生成脚本，如适用]
 ```
 
-Save data file and generator script to the user's workspace.
+把数据文件与生成脚本保存到用户工作区。
 
-### Step 4: Offer Follow-ups
+### Step 4：提供后续动作
 
-- "Want me to **add more columns** or **increase the dataset size**?"
-- "Should I **create related tables** (e.g., orders for these users)?"
-- "Want me to **write test scenarios** that use this data?"
-- "Should I **create SQL queries** to analyze this dataset?"
+- “要不要我**增加字段**或**扩大数据量**？”
+- “要不要我继续**生成关联表**（比如这些用户对应的 orders）？”
+- “要不要我基于这批数据**编写 test scenarios**？”
+- “要不要我**写 SQL queries** 来分析这份数据集？”
 
-## Notes
+## 说明
 
-- Always provide the generator script so the user can regenerate with different parameters
-- For demo datasets, make the data tell a story (e.g., seasonal trends, a retention problem, a power user segment)
-- Respect realistic cardinality: 1000 users don't have 1000 unique cities
-- For financial data, use realistic price distributions — not uniform random
-- Never include real personal data — all names, emails, and identifiers must be fake
+- 始终提供生成脚本，方便用户换参数后重新生成
+- 演示数据最好能讲故事，例如季节性波动、留存问题、power user 分层
+- 尊重真实基数关系，例如 1000 个用户通常不会对应 1000 个唯一城市
+- 金融类数据要采用合理的价格分布，不要用均匀随机
+- 绝不要包含真实个人数据，所有姓名、邮箱和标识都必须是虚构的

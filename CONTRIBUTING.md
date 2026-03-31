@@ -1,22 +1,22 @@
-# Contributing
+# 贡献指南
 
-PM Skills Marketplace is maintained by [Paweł Huryn](https://www.productcompass.pm) (pawel@productcompass.pm). Contributions are welcome — whether it's a bug fix, a typo, or a new skill idea.
+PM Skills Marketplace 由 [Paweł Huryn](https://www.productcompass.pm)（pawel@productcompass.pm）维护。欢迎任何形式的贡献，无论是修复 bug、修正文案错误，还是提出新的 skill 想法。
 
-## How to Contribute
+## 如何贡献
 
-- **Bugs and small fixes** — open a PR directly.
-- **New skills, commands, or larger changes** — open an issue first so we can discuss the approach.
+- **Bug 和小修复**：可以直接提 PR。
+- **新的 skills、commands 或较大改动**：请先开 issue，方便先讨论实现方式。
 
-## Guidelines
+## 指南
 
-- Keep PRs focused — one change per PR.
-- Follow existing patterns: skills are nouns (domain knowledge), commands are verbs (workflows).
-- Every skill needs frontmatter with `name` and `description`. Every command needs `description` and `argument-hint`.
-- Skill `name` must match its directory name.
-- No cross-plugin references in commands. Suggest follow-ups in natural language only.
-- Every contributor will be listed publicly.
-- Run the validator before submitting: `python3 validate_plugins.py`
+- 保持 PR 聚焦，每个 PR 只做一件事。
+- 遵循现有模式：skills 使用名词（领域知识），commands 使用动词（工作流）。
+- 每个 skill 都必须有包含 `name` 和 `description` 的 frontmatter。每个 command 都必须有 `description` 和 `argument-hint`。
+- Skill 的 `name` 必须与目录名一致。
+- commands 中不要跨插件引用。后续建议只用自然语言表达。
+- 所有贡献者都会被公开列出。
+- 提交前请先运行校验器：`python3 validate_plugins.py`
 
-## License
+## 许可证
 
-By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+提交贡献即表示你同意这些内容将以 [MIT License](LICENSE) 进行授权。

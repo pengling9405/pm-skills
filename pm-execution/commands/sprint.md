@@ -1,13 +1,12 @@
+description: Sprint 全周期工作流，可用于 sprint planning、retrospective 或生成 release notes
+argument-hint: "[plan|retro|release-notes] <上下文>"
 ---
-description: Sprint lifecycle — plan a sprint, run a retrospective, or generate release notes
-argument-hint: "[plan|retro|release-notes] <context>"
----
 
-# /sprint -- Sprint Lifecycle
+# /sprint -- Sprint 全周期
 
-Three modes covering the sprint lifecycle: **plan** for sprint planning, **retro** for retrospectives, **release-notes** for shipping communication.
+这个命令提供覆盖 sprint 全周期的三个模式：**plan** 用于 sprint planning，**retro** 用于 retrospective，**release-notes** 用于发布沟通。
 
-## Invocation
+## 调用方式
 
 ```
 /sprint plan 2-week sprint, 4 engineers, focus on checkout improvements
@@ -16,41 +15,41 @@ Three modes covering the sprint lifecycle: **plan** for sprint planning, **retro
 /sprint                    # asks which phase you're in
 ```
 
-## Modes
+## 模式
 
 ---
 
-### Plan Mode
+### Plan 模式
 
-Prepare for sprint planning with capacity estimation, story selection, and risk identification.
+通过容量估算、story 选择与风险识别，帮助完成 sprint planning。
 
-#### Workflow
+#### 工作流
 
-**Step 1: Gather Sprint Context**
-- Sprint duration (1 or 2 weeks)
-- Team composition (engineers, designers, QA — and availability)
-- Sprint goal or focus area
-- Backlog items to consider (paste, upload, or describe)
-- Any carry-over from last sprint
-- Known interruptions (holidays, on-call, meetings)
+**Step 1：收集 Sprint 背景**
+- Sprint 时长（1 周或 2 周）
+- 团队构成（engineers、designers、QA 及各自可用性）
+- Sprint goal 或重点方向
+- 待考虑的 backlog items（粘贴、上传或描述）
+- 上个 sprint 是否有遗留项
+- 已知打断因素（节假日、on-call、会议）
 
-**Step 2: Estimate Capacity**
+**Step 2：估算容量**
 
-Apply the **sprint-plan** skill:
+调用 **sprint-plan** skill：
 
-- Calculate available engineering hours/points after meetings, on-call, PTO
-- Apply a velocity adjustment based on historical data (if provided) or industry standard (70% of theoretical capacity)
-- Show capacity breakdown per team member
+- 扣除会议、on-call、PTO 之后，计算可用工程工时或 story points
+- 结合历史 velocity（如有）或通用经验值（理论容量的 70%）做修正
+- 按成员展示容量拆分
 
-**Step 3: Select and Sequence Stories**
+**Step 3：选择并排序 Stories**
 
-- Recommend which stories fit within capacity
-- Flag dependency chains (A must complete before B starts)
-- Identify risks: stories that are underspecified, have external dependencies, or need design input
-- Balance quick wins with larger items
-- Ensure every story has acceptance criteria
+- 推荐哪些 stories 能放进当前容量
+- 标出依赖链（例如 A 必须先于 B 完成）
+- 识别风险：描述不清、依赖外部团队、需要设计输入等
+- 平衡 quick wins 与大项任务
+- 确保每个 story 都有 acceptance criteria
 
-**Step 4: Generate Sprint Plan**
+**Step 4：生成 Sprint Plan**
 
 ```
 ## Sprint Plan: [Sprint Name/Number]
@@ -83,34 +82,34 @@ Apply the **sprint-plan** skill:
 
 ---
 
-### Retro Mode
+### Retro 模式
 
-Facilitate a structured retrospective that produces actionable improvements.
+组织结构化 retrospective，并产出可执行的改进动作。
 
-#### Workflow
+#### 工作流
 
-**Step 1: Gather Sprint Feedback**
+**Step 1：收集 Sprint 反馈**
 
-Accept input as:
-- Team feedback (pasted from a survey, Slack, or collaborative doc)
-- Sprint metrics (velocity, bugs, incidents)
-- The user's own observations
+可接受的输入包括：
+- 团队反馈（来自问卷、Slack 或协作文档）
+- Sprint 指标（velocity、bugs、incidents）
+- 用户自己的观察
 
-Ask: "Which retro format do you prefer?"
-- **Start/Stop/Continue** (simple, fast)
-- **4Ls** (Liked, Learned, Lacked, Longed for)
-- **Sailboat** (Wind = helps, Anchor = slows, Rocks = risks, Island = goals)
+询问：“你偏好哪种 retro 形式？”
+- **Start/Stop/Continue**（简单、快速）
+- **4Ls**（Liked、Learned、Lacked、Longed for）
+- **Sailboat**（Wind = 推进因素，Anchor = 拖慢因素，Rocks = 风险，Island = 目标）
 
-**Step 2: Analyze and Structure**
+**Step 2：分析并结构化整理**
 
-Apply the **retro** skill:
+调用 **retro** skill：
 
-- Categorize feedback into the chosen framework
-- Identify themes and patterns
-- Separate symptoms from root causes
-- Highlight wins worth celebrating
+- 按所选框架归类反馈
+- 找出主题与模式
+- 区分表面症状与根因
+- 标出值得庆祝的亮点
 
-**Step 3: Generate Retro Summary**
+**Step 3：生成 Retro Summary**
 
 ```
 ## Sprint Retrospective: [Sprint Name]
@@ -139,30 +138,30 @@ Apply the **retro** skill:
 
 ---
 
-### Release Notes Mode
+### Release Notes 模式
 
-Generate user-facing release notes from technical artifacts.
+把技术资料转换成面向用户的 release notes。
 
-#### Workflow
+#### 工作流
 
-**Step 1: Accept Release Content**
+**Step 1：接收发布内容**
 
-Accept:
-- Jira/Linear tickets or changelog
-- PRD or feature specs
-- Git commit messages or PR descriptions
-- Team's internal summary of what shipped
+接受以下任一输入：
+- Jira/Linear tickets 或 changelog
+- PRD 或 feature specs
+- Git commit messages 或 PR 描述
+- 团队内部对已发布内容的总结
 
-**Step 2: Transform**
+**Step 2：转换内容**
 
-Apply the **release-notes** skill:
+调用 **release-notes** skill：
 
-- Translate technical language into user benefits
-- Categorize as: New Features, Improvements, Bug Fixes
-- Write in the product's voice (ask about tone if not clear)
-- Highlight the most impactful change first
+- 把技术语言翻译成用户收益
+- 分类为：New Features、Improvements、Bug Fixes
+- 按产品语气写作（若语气不明确则先问）
+- 优先突出影响最大的变化
 
-**Step 3: Generate Release Notes**
+**Step 3：生成 Release Notes**
 
 ```
 ## What's New — [Version/Date]
@@ -183,11 +182,11 @@ Apply the **release-notes** skill:
 [Optional teaser for next release]
 ```
 
-Save as markdown and offer to format for different channels (blog post, in-app, email, Slack announcement).
+保存为 markdown，并可继续适配成不同渠道格式（blog post、in-app、email、Slack announcement）。
 
-## Notes
+## 说明
 
-- For plan mode: protect 20% buffer for unplanned work — teams that plan at 100% capacity always miss
-- For retro mode: focus on 2-3 high-impact action items, not 10 things nobody will do
-- For release notes: always frame changes as user benefits, not technical implementations
-- Each mode can chain to the others: plan → (sprint happens) → retro → release-notes
+- 对 plan 模式：至少保留 20% buffer 给未计划工作，按 100% 容量排满的团队通常都会超载
+- 对 retro 模式：聚焦 2 到 3 个高影响 action items，不要列 10 个没人会做的事项
+- 对 release notes：始终用用户收益来表达，而不是技术实现细节
+- 三个模式可以串起来使用：plan →（sprint 执行）→ retro → release-notes

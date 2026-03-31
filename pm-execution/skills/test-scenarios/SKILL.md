@@ -1,86 +1,85 @@
----
 name: test-scenarios
-description: "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation."
+description: "根据 user stories 生成完整的 test scenarios，包含测试目标、起始条件、用户角色、逐步操作与预期结果。适用于编写 QA test cases、创建测试计划、定义 acceptance tests，或准备功能验证。"
 ---
 # Test Scenarios
 
-Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step test actions, and expected outcomes.
+根据 user stories 生成完整的 test scenarios，包含测试目标、起始条件、用户角色、逐步测试动作与预期结果。
 
-**Use when:** Writing QA test cases, creating test plans, defining acceptance test scenarios, or validating user story implementations.
+**适用场景：** 编写 QA test cases、创建测试计划、定义 acceptance test scenarios，或验证 user story 的实现是否符合预期。
 
-**Arguments:**
+**参数：**
 - `$PRODUCT`: The product or system name
 - `$USER_STORY`: The user story to test (title and acceptance criteria)
 - `$CONTEXT`: Additional testing context or constraints
 
-## Step-by-Step Process
+## 分步流程
 
-1. **Review the user story** and acceptance criteria
-2. **Define test objectives** - What specific behavior to validate
-3. **Establish starting conditions** - System state, data setup, configurations
-4. **Identify user roles** - Who performs the test actions
-5. **Create test steps** - Break down interactions step-by-step
-6. **Define expected outcomes** - Observable results after each step
-7. **Consider edge cases** - Invalid inputs, boundary conditions
-8. **Output detailed test scenarios** - Ready for QA execution
+1. **审阅 user story** 与 acceptance criteria
+2. **定义测试目标**：明确要验证什么行为
+3. **建立起始条件**：系统状态、数据准备、配置要求
+4. **识别用户角色**：由谁执行测试动作
+5. **编写测试步骤**：把交互拆成逐步动作
+6. **定义预期结果**：每一步之后应该观察到什么
+7. **考虑 edge cases**：无效输入、边界情况等
+8. **输出完整测试场景**：让 QA 可以直接执行
 
-## Scenario Template
+## 场景模板
 
-**Test Scenario:** [Clear scenario name]
+**Test Scenario：** [清晰的场景名称]
 
-**Test Objective:** [What this test validates]
+**Test Objective：** [本测试要验证什么]
 
-**Starting Conditions:**
-- [System state required]
-- [Data or configuration needed]
-- [User setup or permissions]
+**Starting Conditions：**
+- [需要的系统状态]
+- [需要的数据或配置]
+- [需要的用户设置或权限]
 
-**User Role:** [Who performs the test]
+**User Role：** [由谁执行该测试]
 
-**Test Steps:**
-1. [First action and its expected result]
-2. [Second action and observable outcome]
-3. [Third action and system behavior]
-4. [Completion action and final state]
+**Test Steps：**
+1. [第一步动作以及预期结果]
+2. [第二步动作以及可观察到的结果]
+3. [第三步动作以及系统行为]
+4. [完成动作以及最终状态]
 
-**Expected Outcomes:**
-- [Observable result 1]
-- [Observable result 2]
-- [Observable result 3]
+**Expected Outcomes：**
+- [可观察结果 1]
+- [可观察结果 2]
+- [可观察结果 3]
 
-## Example Test Scenario
+## 示例测试场景
 
-**Test Scenario:** View Recently Viewed Products on Product Page
+**Test Scenario：** 查看商品页上的 Recently Viewed Products
 
-**Test Objective:** Verify that the 'Recently viewed' section displays correctly and excludes the current product.
+**Test Objective：** 验证 `Recently viewed` 区域正确显示，并且不包含当前商品。
 
-**Starting Conditions:**
-- User is logged in or has browser history enabled
-- User has viewed at least 2 products in the current session
-- User is now on a product page different from previously viewed items
+**Starting Conditions：**
+- 用户已登录，或浏览器允许记录历史
+- 用户在当前会话中至少浏览过 2 个商品
+- 当前所在商品页与此前浏览过的商品不同
 
-**User Role:** Online Shopper
+**User Role：** Online Shopper
 
-**Test Steps:**
-1. Navigate to any product page → Section should appear at bottom with previously viewed items
-2. Scroll to bottom of page → "Recently viewed" section is visible with product cards
-3. Verify product thumbnails → Images, titles, and prices are displayed correctly
-4. Check current product → Current product is NOT in the recently viewed list
-5. Click on a product card → User navigates to the corresponding product page
+**Test Steps：**
+1. 打开任意商品页 → 页面底部应出现 previously viewed items 区域
+2. 向下滚动到底部 → `Recently viewed` 区域可见，并显示商品卡片
+3. 检查商品缩略图 → 图片、标题和价格显示正确
+4. 检查当前商品 → 当前商品不应出现在 recently viewed 列表中
+5. 点击任一商品卡片 → 用户跳转到对应商品页
 
-**Expected Outcomes:**
-- Recently viewed section appears only after viewing at least 1 prior product
-- Section displays 4-8 product cards with complete information
-- Current product is excluded from the list
-- Each card shows "Viewed X minutes/hours ago" timestamp
-- Clicking cards navigates to correct product pages
-- Performance: Section loads within 2 seconds
+**Expected Outcomes：**
+- 用户至少浏览过 1 个先前商品后，Recently viewed 区域才会出现
+- 区域中展示 4 到 8 张商品卡片，信息完整
+- 当前商品不会出现在列表中
+- 每张卡片显示 “Viewed X minutes/hours ago” 之类时间戳
+- 点击卡片会跳转到正确商品页
+- 性能要求：该区域应在 2 秒内加载完成
 
-## Output Deliverables
+## 输出交付物
 
-- Comprehensive test scenarios for each acceptance criterion
-- Clear test objectives aligned with user story intent
-- Detailed step-by-step test actions
-- Observable expected outcomes after each step
-- Edge case and error scenario coverage
-- Ready for QA team execution and documentation
+- 针对每条 acceptance criterion 的完整测试场景
+- 与 user story 意图一致的清晰测试目标
+- 逐步、具体的测试动作
+- 每一步之后可观察的预期结果
+- 对 edge cases 和 error scenarios 的覆盖
+- 可直接交给 QA 团队执行和归档的文档

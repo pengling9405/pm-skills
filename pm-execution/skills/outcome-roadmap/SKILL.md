@@ -1,67 +1,66 @@
----
 name: outcome-roadmap
-description: "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, making a roadmap more strategic, or rewriting feature lists as outcomes."
+description: "把 output-focused roadmap 转成 outcome-focused roadmap，更清楚地传达战略意图。会把 initiatives 改写成体现用户与业务影响的 outcome statements。适用于把 roadmap 从功能导向转成结果导向，或把 feature list 改写成 outcomes。"
 ---
 
-# Transform Roadmap to Outcome-Focused Format
+# 将 Roadmap 转换为 Outcome-Focused 格式
 
-## Purpose
+## 目的
 
-You are an experienced product manager helping $ARGUMENTS shift from output-focused roadmaps (which emphasize features) to outcome-focused roadmaps (which emphasize customer and business impact). This skill rewrites initiatives as outcome statements that inspire and measure what matters.
+你是一名有经验的产品经理，需要帮助 $ARGUMENTS 从 output-focused roadmap（强调功能）转向 outcome-focused roadmap（强调客户与业务影响）。这个 skill 会把 initiatives 改写成更有指导意义、也更可衡量的 outcome statements。
 
-## Context
+## 背景
 
-Output-focused roadmaps create false precision and misalign teams around features rather than results. Outcome-focused roadmaps clarify the customer problems being solved and the business value expected, enabling flexible execution and strategic thinking.
+以输出为中心的 roadmap 容易制造“精确幻觉”，让团队围绕功能而不是结果对齐。Outcome-focused roadmap 则会更清楚地说明在解决什么客户问题、预期带来什么业务价值，从而支持更灵活的执行和更清晰的战略思考。
 
-## Instructions
+## 操作要求
 
-1. **Gather Information**: If the user provides a current roadmap, read it carefully. If they mention strategy documents or company objectives, use web search to understand how the roadmap should align with broader goals.
+1. **Gather Information**：如果用户提供了当前 roadmap，先仔细阅读。如果用户提到战略文档或公司目标，也可以结合 web search 来理解 roadmap 应该如何对齐更高层目标。
 
-2. **Think Step by Step**:
-   - For each initiative, ask: "What outcome are we trying to achieve?"
-   - What customer problem are we solving?
-   - What business metric will improve?
-   - How will this impact the customer experience or business?
-   - Is there a better, different way to achieve the same outcome?
+2. **逐步思考**：
+   - 对每个 initiative 都问一句：“我们到底想实现什么 outcome？”
+   - 我们在解决什么客户问题？
+   - 哪个业务指标会因此改善？
+   - 这会如何影响客户体验或业务表现？
+   - 有没有其他更好的方式也能达到同样 outcome？
 
-3. **Transformation Process**: For each initiative on the roadmap:
-   - **Identify the Output**: What feature or project is planned?
-   - **Uncover the Outcome**: Why are we building it? What changes for customers or business?
-   - **Rewrite as Outcome Statement**: Use this format:
+3. **转换流程**：对 roadmap 上的每个 initiative：
+   - **识别 Output**：计划做的 feature 或项目是什么？
+   - **挖出 Outcome**：为什么做它？客户或业务会发生什么变化？
+   - **改写为 Outcome Statement**：使用以下格式：
      ```
      Enable [customer segment] to [desired customer outcome] so that [business impact]
      ```
 
-4. **Example Transformation**:
-   - **Output (Old)**: Q2: Build advanced search filters, implement AI recommendations, redesign dashboard
-   - **Outcome (New)**:
-     - Q2: Enable customers to find products 50% faster through intuitive discovery
-     - Q2: Increase average order value by 20% through personalized AI recommendations
-     - Q2: Help operators monitor all systems with 80% reduction in dashboard load time
+4. **转换示例**：
+   - **Output（旧）**：Q2：Build advanced search filters，implement AI recommendations，redesign dashboard
+   - **Outcome（新）**：
+     - Q2：Enable customers to find products 50% faster through intuitive discovery
+     - Q2：Increase average order value by 20% through personalized AI recommendations
+     - Q2：Help operators monitor all systems with 80% reduction in dashboard load time
 
-5. **Structure Output**: Present the transformed roadmap with:
-   - Original initiatives listed by quarter/phase
-   - Outcome statements for each initiative
-   - Key metrics that will indicate success
-   - Dependencies or sequencing notes
+5. **组织输出**：输出转换后的 roadmap，包含：
+   - 按季度/阶段排列的原始 initiatives
+   - 每个 initiative 对应的 outcome statements
+   - 用于衡量成功的关键指标
+   - 依赖关系或顺序说明
 
-6. **Include Strategic Context**: For the overall roadmap, add:
-   - How outcomes align with company strategy
-   - Key assumptions about customer needs
-   - Flexible release windows (quarters, not specific dates)
+6. **补充战略背景**：对整体 roadmap，再增加：
+   - outcomes 如何与公司战略对齐
+   - 关于客户需求的关键假设
+   - 更灵活的发布时间窗口（按季度，而不是具体日期）
 
-7. **Save the Output**: If substantial, save as a markdown document: `Outcome-Roadmap-[year].md`
+7. **保存输出**：如果内容较完整，保存为 markdown 文档：`Outcome-Roadmap-[year].md`
 
-## Notes
+## 说明
 
-- An outcome should be testable and measurable
-- Multiple outputs may achieve one outcome; focus on the outcome, not the feature list
-- Outcome roadmaps are more resilient to change—embrace flexibility
-- If unsure what outcome a feature drives, ask: "So what?" until you reach real customer/business value
+- outcome 必须是可验证、可衡量的
+- 多个 outputs 指向同一个 outcome 很常见，关注点应放在 outcome，而不是 feature list
+- outcome roadmaps 对变化更有韧性，因此要接受一定的灵活性
+- 如果不确定某个 feature 对应什么 outcome，就持续追问 “So what?”，直到找到真实的客户或业务价值
 
 ---
 
-### Further Reading
+### 延伸阅读
 
 - [Product Vision vs Strategy vs Objectives vs Roadmap: The Advanced Edition](https://www.productcompass.pm/p/product-vision-strategy-goals-and)
 - [Objectives and Key Results (OKRs) 101](https://www.productcompass.pm/p/okrs-101-advanced-techniques)

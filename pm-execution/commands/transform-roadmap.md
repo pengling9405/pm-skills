@@ -1,54 +1,53 @@
----
-description: Convert a feature-based roadmap into an outcome-focused roadmap that communicates strategic intent
-argument-hint: "<roadmap as text, file, or list of planned features>"
+description: 把 feature-based roadmap 转成 outcome-focused roadmap，更清楚地传达战略意图
+argument-hint: "<以文本、文件或功能列表形式提供的 roadmap>"
 ---
 
 # /transform-roadmap -- Outcome-Focused Roadmap
 
-Take a list of planned features or an output-focused roadmap and rewrite it as an outcome-focused roadmap that communicates *why* instead of *what*.
+把待开发功能列表或以输出为中心的 roadmap，改写为以 outcome 为中心的 roadmap，让文档表达“为什么做”，而不是只写“做什么”。
 
-## Invocation
+## 调用方式
 
 ```
 /transform-roadmap [paste your feature list or roadmap]
 /transform-roadmap [upload a roadmap doc, spreadsheet, or screenshot]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Accept the Current Roadmap
+### Step 1：接收当前 Roadmap
 
-Accept in any format:
-- Feature list or backlog items
-- Roadmap document (Now/Next/Later, quarterly, timeline)
-- Spreadsheet or Gantt chart export
-- Screenshot of a roadmap tool
+接受任意格式：
+- Feature list 或 backlog items
+- Roadmap 文档（Now/Next/Later、季度版、时间线版）
+- 表格或 Gantt chart 导出内容
+- roadmap 工具的截图
 
-Parse each item to extract: feature name, description, target date/timeframe, and any context.
+解析每个条目，提取：feature name、description、target date / timeframe 与相关上下文。
 
-### Step 2: Understand Strategic Context
+### Step 2：理解战略背景
 
-Ask:
-- What are the product goals or OKRs for this period?
-- Who is the audience for this roadmap? (execs, engineering, customers, board)
-- What format do you prefer? (Now/Next/Later, quarterly, timeline)
+询问：
+- 当前周期的 product goals 或 OKRs 是什么？
+- 这份 roadmap 的受众是谁？（execs、engineering、customers、board）
+- 你偏好什么格式？（Now/Next/Later、quarterly、timeline）
 
-### Step 3: Transform Each Item
+### Step 3：转换每个条目
 
-Apply the **outcome-roadmap** skill:
+调用 **outcome-roadmap** skill：
 
-For each feature/output on the roadmap:
-1. Identify the **user or business outcome** it's trying to achieve
-2. Rewrite as an outcome statement: "[Verb] [metric/experience] for [user segment]"
-3. Group features that serve the same outcome under one initiative
-4. Add success metrics to each outcome
+对 roadmap 上的每个 feature / output：
+1. 找出它要实现的 **user 或 business outcome**
+2. 改写为 outcome statement：`[Verb] [metric/experience] for [user segment]`
+3. 把服务同一 outcome 的多个 feature 归到一个 initiative 下
+4. 为每个 outcome 补上 success metrics
 
-**Before → After examples:**
+**Before → After 示例：**
 - "Build SSO integration" → "Reduce enterprise onboarding friction — target: 50% faster time-to-first-value for enterprise accounts"
 - "Redesign dashboard" → "Help power users find insights faster — target: 30% reduction in time-to-insight"
 - "Add CSV export" → "Enable teams to share data outside the product — target: 25% increase in report sharing"
 
-### Step 4: Generate Transformed Roadmap
+### Step 4：生成转换后的 Roadmap
 
 ```
 ## Outcome-Focused Roadmap: [Product] — [Period]
@@ -75,22 +74,22 @@ For each feature/output on the roadmap:
 |-----------------|--------------------|-----------------|
 
 ### What Changed
-[Summary of how the roadmap narrative shifted]
+[总结 roadmap 叙事方式发生了什么变化]
 ```
 
-Save as a markdown file.
+保存为 markdown 文件。
 
-### Step 5: Review
+### Step 5：复查与后续动作
 
-Offer:
-- "Want me to **add OKR alignment** for each outcome?"
-- "Should I **draft a stakeholder presentation** of this roadmap?"
-- "Want me to **identify risks** for the Now items?"
+提供后续动作：
+- “要不要我为每个 outcome **补上 OKR alignment**？”
+- “要不要我把这份 roadmap **整理成 stakeholder presentation**？”
+- “要不要我为 `Now` 阶段的条目**识别风险**？”
 
-## Notes
+## 说明
 
-- Outcomes should be measurable and have a clear "done" state
-- Multiple features can map to one outcome — this is a feature, not a bug
-- If an output doesn't clearly serve an outcome, flag it for the user to justify or deprioritize
-- The audience matters: exec roadmaps should be outcome-only, engineering roadmaps can include deliverables under each outcome
-- "Later" items should be less specific — outcomes without committed solutions
+- Outcomes 必须可衡量，并且有清晰的“done”状态
+- 多个 features 对应同一个 outcome 是正常现象，不是问题
+- 如果某个 output 无法清楚对应一个 outcome，就应标出来，让用户决定是否保留或降级优先级
+- 受众很重要：给 execs 的 roadmap 应更偏 outcome-only，给 engineering 的版本可以在 outcome 下补 deliverables
+- `Later` 阶段应更模糊一些，只承诺 outcome，不必承诺具体 solution

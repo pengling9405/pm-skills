@@ -1,13 +1,12 @@
+description: 围绕公司目标头脑风暴 team-level OKRs，输出定性的 objectives 与可量化的 key results
+argument-hint: "<团队、产品领域或公司目标>"
 ---
-description: Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results
-argument-hint: "<team, product area, or company objective>"
----
 
-# /plan-okrs -- Team OKR Planning
+# /plan-okrs -- 团队 OKR 规划
 
-Generate well-structured OKRs that connect team work to company strategy. Produces 3 OKR sets with qualitative objectives and quantitative key results.
+生成结构良好的 OKRs，把团队工作与公司战略连接起来。输出 3 组备选 OKR，包含定性 objective 与定量 key results。
 
-## Invocation
+## 调用方式
 
 ```
 /plan-okrs Growth team Q2 — company goal is 50% ARR increase
@@ -15,41 +14,41 @@ Generate well-structured OKRs that connect team work to company strategy. Produc
 /plan-okrs [upload company OKRs or strategy doc]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Gather Context
+### Step 1：收集背景信息
 
-Ask the user:
-- What team or product area are these OKRs for?
-- What time period? (quarterly is standard, but could be annual or custom)
-- What are the company-level objectives these should ladder up to?
-- What happened last quarter? (hits, misses, learnings)
-- Any constraints or known priorities?
+询问用户：
+- 这些 OKRs 对应哪个团队或产品领域？
+- 时间周期是什么？（通常按季度，也可以是年度或自定义周期）
+- 它们要承接哪些 company-level objectives？
+- 上个周期发生了什么？（做成了什么、没做成什么、学到了什么）
+- 有没有既定约束或已知优先级？
 
-Accept company OKRs or strategy documents as uploads.
+可以接收公司 OKRs 或战略文档作为上传材料。
 
-### Step 2: Generate OKRs
+### Step 2：生成 OKRs
 
-Apply the **brainstorm-okrs** skill:
+调用 **brainstorm-okrs** skill：
 
-- Create 3 OKR sets (Objective + 3-5 Key Results each)
-- **Objectives**: Qualitative, inspiring, ambitious but achievable, action-oriented
-- **Key Results**: Quantitative, measurable, time-bound, have clear owners
-- Ensure OKRs ladder to company objectives with visible connection
-- Balance leading indicators (activity) with lagging indicators (outcomes)
+- 生成 3 组 OKR（每组为 1 个 Objective + 3 到 5 个 Key Results）
+- **Objectives**：定性、能激励人、有挑战但可达成、偏行动导向
+- **Key Results**：可量化、可测量、有时间边界，且最好有明确 owner
+- 确保这些 OKRs 能清晰承接到公司目标
+- 兼顾 leading indicators（过程）与 lagging indicators（结果）
 
-### Step 3: Validate Quality
+### Step 3：校验质量
 
-Check each OKR against best practices:
-- Is the Objective inspiring? (Would you rally a team around it?)
-- Are Key Results measurable? (Can you check completion with data, not judgment?)
-- Are targets ambitious but not demoralizing? (70% achievement = well-calibrated)
-- Are there 3-5 KRs per Objective? (More = unfocused)
-- Do KRs avoid gaming? (e.g., "ship 5 features" incentivizes shipping junk)
+按最佳实践检查每组 OKR：
+- Objective 是否足够鼓舞人？（团队会愿意围绕它行动吗？）
+- Key Results 是否可测量？（能用数据判断，而不是靠主观印象吗？）
+- 目标是否足够有挑战但不至于打击士气？（70% 达成通常是合理区间）
+- 每个 Objective 是否控制在 3 到 5 个 KR？（太多就失焦）
+- KRs 是否容易被“刷指标”？（如 “ship 5 features” 容易激励出低质量交付）
 
-Flag any issues and suggest improvements.
+把问题标出来，并给出改进建议。
 
-### Step 4: Present and Iterate
+### Step 4：展示并迭代
 
 ```
 ## Team OKRs: [Team Name] — [Period]
@@ -72,27 +71,27 @@ Flag any issues and suggest improvements.
 ### Alignment Map
 Company Objective → Team Objective → Key Results → Expected Impact
 
-### Scoring Guide
-- 0.0-0.3: Significant miss — investigate and learn
-- 0.4-0.6: Progress made but fell short
-- 0.7-0.9: Well-calibrated stretch goal — this is the target zone
-- 1.0: Either nailed it or target wasn't ambitious enough
+### 评分指南
+- 0.0-0.3：明显未达成，需要复盘与学习
+- 0.4-0.6：有进展，但没有达到目标
+- 0.7-0.9：拉伸目标校准得较好，这通常是理想区间
+- 1.0：要么执行非常出色，要么目标设得不够有挑战
 
-### Check-in Cadence
-- **Weekly**: Quick traffic-light update on each KR
-- **Mid-quarter**: Deep review, adjust targets if context changed
-- **End of quarter**: Score, reflect, feed into next quarter
+### Check-in 节奏
+- **Weekly**：对每个 KR 做一次快速红黄绿更新
+- **Mid-quarter**：做一次深入复盘，如背景变化则调整目标
+- **End of quarter**：打分、复盘，并沉淀到下个季度
 ```
 
-Offer:
-- "Want me to **adjust ambition levels** — make them more/less aggressive?"
-- "Should I **create a metrics dashboard** for tracking these?"
-- "Want me to **draft a stakeholder update** introducing these OKRs?"
+提供后续动作：
+- “要不要我**调整挑战强度**，让它更激进或更保守？”
+- “要不要我为这些 OKRs **设计一个 metrics dashboard**？”
+- “要不要我帮你**起草一版对外介绍这些 OKRs 的 stakeholder update**？”
 
-## Notes
+## 说明
 
-- OKRs should describe outcomes, not outputs ("Increase activation by 20%" not "Ship onboarding redesign")
-- If the user doesn't have company OKRs, help them derive team objectives from product strategy or business goals
-- Maximum 3 objectives per team per quarter — more means less focus
-- Key Results should be stretch goals — if you're certain you'll hit them, they're not ambitious enough
-- Flag any KR that could be gamed and suggest a counter-metric
+- OKRs 应描述 outcome，而不是 output（例如写 “Increase activation by 20%”，而不是 “Ship onboarding redesign”）
+- 如果用户没有公司级 OKRs，就帮助他们从 product strategy 或 business goals 反推团队目标
+- 一个团队一个季度最多 3 个 objectives，再多就会失焦
+- Key Results 应该是 stretch goals，如果你确信一定能完成，那它通常不够有挑战
+- 对任何可能被刷的 KR，要主动标出来，并建议一个 counter-metric

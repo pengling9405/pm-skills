@@ -1,13 +1,12 @@
+description: 把 stakeholders 映射到 Power × Interest 网格中，并生成有针对性的沟通计划
+argument-hint: "<项目、计划或发布>"
 ---
-description: Map stakeholders on a Power × Interest grid and create a tailored communication plan
-argument-hint: "<project, initiative, or launch>"
----
 
-# /stakeholder-map -- Stakeholder Mapping & Communication Plan
+# /stakeholder-map -- Stakeholder Mapping 与沟通计划
 
-Identify all stakeholders for a project, map them by influence and interest, and generate a communication plan that ensures the right people get the right information at the right time.
+识别一个项目中的全部 stakeholders，按影响力与关注度完成映射，并生成沟通计划，确保合适的人在合适时间收到合适信息。
 
-## Invocation
+## 调用方式
 
 ```
 /stakeholder-map New analytics platform launch
@@ -15,28 +14,28 @@ Identify all stakeholders for a project, map them by influence and interest, and
 /stakeholder-map [upload a project brief or org chart]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Understand the Initiative
+### Step 1：理解事项背景
 
-Ask:
-- What is the project or initiative?
-- What phase is it in? (planning, building, launching, post-launch)
-- Who are the obvious stakeholders you already know about?
-- Are there any politically sensitive dynamics to be aware of?
+询问：
+- 这是哪个项目或计划？
+- 当前处于哪个阶段？（planning、building、launching、post-launch）
+- 你已经知道哪些明显的 stakeholders？
+- 有没有需要注意的政治性或敏感组织关系？
 
-### Step 2: Identify Stakeholders
+### Step 2：识别 Stakeholders
 
-Brainstorm stakeholders the user might not have considered:
-- **Internal**: Engineering, Design, QA, Data, Legal, Finance, Marketing, Sales, Support, Leadership
-- **External**: Customers, partners, vendors, regulators, board members
-- **Often missed**: Adjacent teams, on-call engineers, customer success, documentation team
+补充用户可能没想到的 stakeholders：
+- **Internal**：Engineering、Design、QA、Data、Legal、Finance、Marketing、Sales、Support、Leadership
+- **External**：Customers、partners、vendors、regulators、board members
+- **常被忽略**：相邻团队、on-call engineers、customer success、documentation team
 
-### Step 3: Map to Power × Interest Grid
+### Step 3：映射到 Power × Interest Grid
 
-Apply the **stakeholder-map** skill:
+调用 **stakeholder-map** skill：
 
-Place each stakeholder in a quadrant:
+把每个 stakeholder 放进一个象限：
 
 ```
                     HIGH INTEREST
@@ -54,7 +53,7 @@ Place each stakeholder in a quadrant:
                     LOW INTEREST
 ```
 
-### Step 4: Generate Communication Plan
+### Step 4：生成沟通计划
 
 ```
 ## Stakeholder Map: [Initiative]
@@ -81,27 +80,27 @@ Place each stakeholder in a quadrant:
 [Minimal communication — include in broad updates only]
 
 ### Potential Conflicts
-[Where stakeholder interests may clash — with mitigation strategies]
+[哪些 stakeholder 的诉求可能冲突，并给出缓解方式]
 
 ### Escalation Path
-[Who to go to when decisions are blocked]
+[当决策被卡住时，应该向谁升级]
 
 ### RACI Matrix
 | Decision Area | Responsible | Accountable | Consulted | Informed |
 |--------------|-------------|-------------|-----------|----------|
 ```
 
-Save as markdown.
+保存为 markdown。
 
-### Step 5: Offer Next Steps
+### Step 5：提供后续动作
 
-- "Want me to **draft the first stakeholder update** for the 'Manage Closely' group?"
-- "Should I **create a meeting prep brief** for key stakeholder conversations?"
-- "Want me to **set up a communication cadence** as a recurring checklist?"
+- “要不要我为 `Manage Closely` 这组人**起草第一版 stakeholder update**？”
+- “要不要我为关键 stakeholder 会话**准备一份 meeting prep brief**？”
+- “要不要我把这个沟通节奏**整理成 recurring checklist**？”
 
-## Notes
+## 说明
 
-- The "Manage Closely" quadrant is where PMs spend most of their political capital — get these relationships right
-- "Stance" (supportive, neutral, resistant) helps prioritize where to invest relationship-building effort
-- Don't forget downstream stakeholders: support, docs, and sales enablement teams are often surprised by launches
-- Update the map as the project evolves — stakeholder interest shifts with project phase
+- `Manage Closely` 象限通常是 PM 最消耗政治资本的区域，关系处理好坏影响很大
+- `Stance`（supportive、neutral、resistant）有助于判断关系建设的投入优先级
+- 不要忘记下游 stakeholders：support、docs、sales enablement 往往最容易被发布“突然影响”
+- 随着项目推进及时更新这张图，因为 stakeholder 的 interest 会随着阶段变化
