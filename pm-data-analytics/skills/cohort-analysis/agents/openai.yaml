@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cohort Analysis"
+  short_description: "Perform cohort analysis on user engagement data — retention curves, feature adoption..."
+  default_prompt: "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights."

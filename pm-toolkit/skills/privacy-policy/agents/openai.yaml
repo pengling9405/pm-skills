@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privacy Policy"
+  short_description: "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance..."
+  default_prompt: "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review."

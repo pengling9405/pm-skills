@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Strategy"
+  short_description: "Create a comprehensive product strategy using the 9-section Product Strategy Canvas —..."
+  default_prompt: "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility."

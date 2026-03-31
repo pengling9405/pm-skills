@@ -1,0 +1,4 @@
+interface:
+  display_name: "Beachhead Segment"
+  short_description: "Identify the first beachhead market segment for a product launch. Evaluates segments..."
+  default_prompt: "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "User Personas"
+  short_description: "Create refined user personas from research data — 3 personas with JTBD, pains, gains..."
+  default_prompt: "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights."

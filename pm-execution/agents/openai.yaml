@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Execution"
+  short_description: "Execution and product management skills: PRDs, OKRs, roadmaps, sprints, pre-mortems..."
+  default_prompt: "Use PM Execution for PRDs, OKRs, roadmaps, sprints, pre-mortems, stakeholder maps, user stories, prioritization frameworks, and more."

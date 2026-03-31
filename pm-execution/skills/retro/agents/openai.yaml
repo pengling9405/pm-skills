@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retro"
+  short_description: "Facilitate a structured sprint retrospective — what went well, what didn't, and..."
+  default_prompt: "Facilitate a structured sprint retrospective — what went well, what didn't, and prioritized action items with owners and deadlines."

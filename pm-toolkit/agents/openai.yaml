@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Toolkit"
+  short_description: "PM utility skills: resume review, NDA drafting, privacy policy generation, and..."
+  default_prompt: "Use PM Toolkit for resume review, NDA drafting, privacy policy generation, and grammar/flow checking. Essential tools for product managers beyond core product work."

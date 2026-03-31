@@ -1,0 +1,4 @@
+interface:
+  display_name: "Positioning Ideas"
+  short_description: "Brainstorm product positioning ideas differentiated from competitors. Identifies top..."
+  default_prompt: "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Outcome Roadmap"
+  short_description: "Transform an output-focused roadmap into an outcome-focused one that communicates..."
+  default_prompt: "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts."

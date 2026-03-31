@@ -1,0 +1,4 @@
+interface:
+  display_name: "Porters Five Forces"
+  short_description: "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer..."
+  default_prompt: "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants."

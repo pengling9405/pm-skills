@@ -1,0 +1,4 @@
+interface:
+  display_name: "GTM Motions"
+  short_description: "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid..."
+  default_prompt: "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG."

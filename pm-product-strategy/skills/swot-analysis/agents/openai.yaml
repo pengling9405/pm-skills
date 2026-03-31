@@ -1,0 +1,4 @@
+interface:
+  display_name: "Swot Analysis"
+  short_description: "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats..."
+  default_prompt: "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations."

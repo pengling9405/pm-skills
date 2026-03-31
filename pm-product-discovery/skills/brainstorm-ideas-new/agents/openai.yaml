@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brainstorm Ideas (New Product)"
+  short_description: "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and..."
+  default_prompt: "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives."

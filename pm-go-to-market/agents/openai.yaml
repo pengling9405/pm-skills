@@ -1,0 +1,4 @@
+interface:
+  display_name: "Go To Market"
+  short_description: "Go-to-market skills for PMs: GTM strategy, growth loops, GTM motions, beachhead..."
+  default_prompt: "Use Go To Market for GTM strategy, growth loops, GTM motions, beachhead segments, and ideal customer profiles."

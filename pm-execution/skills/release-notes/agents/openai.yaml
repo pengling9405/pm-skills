@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Notes"
+  short_description: "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear..."
+  default_prompt: "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes)."

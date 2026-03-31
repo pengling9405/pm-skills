@@ -1,0 +1,4 @@
+interface:
+  display_name: "Competitive Battlecard"
+  short_description: "Create sales-ready competitive battlecards comparing your product against a specific..."
+  default_prompt: "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns."

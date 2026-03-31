@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Assumptions (New Product)"
+  short_description: "Identify risky assumptions for a new product idea across 8 risk categories including..."
+  default_prompt: "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team."

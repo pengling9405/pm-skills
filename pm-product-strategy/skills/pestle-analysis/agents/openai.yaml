@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pestle Analysis"
+  short_description: "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal..."
+  default_prompt: "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors."

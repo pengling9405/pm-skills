@@ -1,0 +1,4 @@
+interface:
+  display_name: "Value Proposition"
+  short_description: "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What..."
+  default_prompt: "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives."

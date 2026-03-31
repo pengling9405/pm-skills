@@ -1,0 +1,43 @@
+{
+  "name": "pm-execution",
+  "version": "1.0.1",
+  "description": "Execution and product management skills: PRDs, OKRs, roadmaps, sprints, pre-mortems, stakeholder maps, user stories, prioritization frameworks, and more.",
+  "author": {
+    "name": "Paweł Huryn",
+    "email": "pawel@productcompass.pm",
+    "url": "https://www.productcompass.pm"
+  },
+  "homepage": "https://www.productcompass.pm",
+  "repository": "https://github.com/phuryn/pm-skills",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "execution",
+    "prd",
+    "okrs",
+    "roadmap",
+    "sprint",
+    "pre-mortem",
+    "user-stories",
+    "backlog",
+    "prioritization",
+    "agile"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PM Execution",
+    "shortDescription": "Execution and product management skills: PRDs, OKRs, roadmaps, sprints, pre-mortems...",
+    "longDescription": "Execution and product management skills: PRDs, OKRs, roadmaps, sprints, pre-mortems, stakeholder maps, user stories, prioritization frameworks, and more.",
+    "developerName": "Paweł Huryn",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.productcompass.pm",
+    "defaultPrompt": "Use PM Execution for PRDs, OKRs, roadmaps, sprints, pre-mortems, stakeholder maps, user stories, prioritization frameworks, and more.",
+    "brandColor": "#059669",
+    "screenshots": []
+  }
+}

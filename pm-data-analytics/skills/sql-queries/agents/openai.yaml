@@ -1,0 +1,4 @@
+interface:
+  display_name: "SQL Queries"
+  short_description: "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL..."
+  default_prompt: "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "User Segmentation"
+  short_description: "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least..."
+  default_prompt: "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments."

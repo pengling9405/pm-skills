@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Analytics"
+  short_description: "Data analytics skills for PMs: SQL query generation and cohort analysis. Analyze user..."
+  default_prompt: "Use Data Analytics for SQL query generation and cohort analysis. Analyze user data, generate queries, and identify retention patterns."

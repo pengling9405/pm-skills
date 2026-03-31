@@ -1,0 +1,4 @@
+interface:
+  display_name: "WWAS"
+  short_description: "Create product backlog items in Why-What-Acceptance format — independent, valuable..."
+  default_prompt: "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context."

@@ -4,11 +4,11 @@
 
 # PM Skills Marketplace: The AI Operating System for Better Product Decisions
 
-> 65 PM skills and 36 chained workflows across 8 plugins. Claude Code, Cowork, and more. From discovery to strategy, execution, launch, and growth. 
+> 65 PM skills and 36 chained workflows across 8 plugins. Claude Code, Codex, Cowork, and more. From discovery to strategy, execution, launch, and growth. 
 
 ![Plugin overview](.docs/images/plugins-overview.webp)
 
-Designed for Claude Code and Cowork. Skills compatible with other AI assistants.
+Designed for Claude Code, Codex, and Cowork. Skills and prompt-style commands are portable across compatible assistants.
 
 ## Start Here
 
@@ -30,17 +30,17 @@ The result: better product decisions, not just faster documents.
 
 ## How It Works (Skills, Commands, Plugins)
 
-**Skills** are the building blocks of the marketplace. Each skill gives Claude domain knowledge, analytical frameworks, or a guided workflow for a specific PM task. Some skills also work as reusable foundations that multiple commands share. 
+**Skills** are the building blocks of the marketplace. Each skill gives the assistant domain knowledge, analytical frameworks, or a guided workflow for a specific PM task. Some skills also work as reusable foundations that multiple commands share.
 
-Skills are loaded automatically when relevant to the conversation — no explicit invocation needed. If needed (e.g., prioritizing skills over general knowledge), you can **force loading skills** with `/plugin-name:skill-name` or `/skill-name` (Claude will add the prefix).
+Skills are loaded automatically when relevant to the conversation. In assistants that expose explicit skill invocation, you can also force-load the relevant skill by name.
 
-**Commands** are user-triggered workflows invoked with `/command-name`. They chain one or more skills into an end-to-end process. For example, `/discover` chains four skills together: brainstorm-ideas → identify-assumptions → prioritize-assumptions → brainstorm-experiments.
+**Commands** are user-triggered workflows invoked with `/command-name` (or copied into a prompt/command directory such as `.codex/prompts/`). They chain one or more skills into an end-to-end process. For example, `/discover` chains four skills together: brainstorm-ideas → identify-assumptions → prioritize-assumptions → brainstorm-experiments.
 
-**Plugins** group related skills and commands into installable packages. Each plugin covers a PM domain — discovery, strategy, execution, and so on. Installing the marketplace gives you all 8 plugins at once.
+**Plugins** group related skills and commands into installable packages. Each plugin covers a PM domain — discovery, strategy, execution, and so on. Each `pm-*` directory now includes both Claude plugin metadata and Codex plugin metadata.
 
 ![How skills work](.docs/images/how-skills-work.webp)
 
-Commands use skills. Some skills serve multiple commands. Some skills (like `prioritization-frameworks` or `opportunity-solution-tree`) are standalone references that Claude draws on whenever relevant — no command needed.
+Commands use skills. Some skills serve multiple commands. Some skills (like `prioritization-frameworks` or `opportunity-solution-tree`) are standalone references that compatible assistants can draw on whenever relevant — no command needed.
 
 Commands are designed to flow into each other, matching the PM workflow. After any command completes, it suggests relevant next commands — just follow the prompts.
 
@@ -74,16 +74,52 @@ claude plugin install pm-go-to-market@pm-skills
 claude plugin install pm-execution@pm-skills
 ```
 
+### Codex
+
+Each `pm-*` plugin now ships with:
+
+- `.codex-plugin/plugin.json` for Codex plugin packaging
+- `agents/openai.yaml` at plugin level for Codex plugin UI metadata
+- `skills/*/agents/openai.yaml` for Codex skill metadata
+- existing `commands/*.md` files, which already match Codex prompt frontmatter (`description` + `argument-hint`)
+
+For Codex, use the non-destructive installer first. It skips any existing skill or prompt instead of overwriting it.
+
+```bash
+# Default: install into <repo>/.codex/
+./scripts/install_codex.sh
+
+# Install into ${CODEX_HOME:-$HOME/.codex}/
+./scripts/install_codex.sh --scope global
+
+# Install into both locations
+./scripts/install_codex.sh --scope both
+
+# Preview actions without writing files
+./scripts/install_codex.sh --dry-run
+```
+
+If you prefer manual setup, copy the skills into `.codex/skills/` and the commands into `.codex/prompts/`:
+
+```bash
+for plugin in pm-*/; do
+  mkdir -p .codex/skills/ .codex/prompts/
+  cp -r "$plugin/skills/"* .codex/skills/ 2>/dev/null
+  cp "$plugin/commands/"*.md .codex/prompts/ 2>/dev/null
+done
+```
+
+All skill names and command names are unique across the repo, so flattening them into `.codex/skills/` and `.codex/prompts/` is safe.
+
 ### Other AI assistants (skills only)
 
-The `skills/*/SKILL.md` files follow the universal skill format and work with any tool that reads it. Commands (`/slash-commands`) are Claude-specific.
+The `skills/*/SKILL.md` files follow the universal skill format and work with any tool that reads it. The tools below only support skills in this repo.
 
 | Tool | How to use | What works |
 |------|-----------|------------|
 | **Gemini CLI** | Copy skill folders to `.gemini/skills/` | Skills only |
 | **OpenCode** | Copy skill folders to `.opencode/skills/` | Skills only |
 | **Cursor** | Copy skill folders to `.cursor/skills/` | Skills only |
-| **Codex CLI** | Copy skill folders to `.codex/skills/` | Skills only |
 | **Kiro** | Copy skill folders to `.kiro/skills/` | Skills only |
 
 ```bash

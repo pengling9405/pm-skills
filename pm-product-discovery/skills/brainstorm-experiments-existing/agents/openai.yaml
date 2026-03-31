@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brainstorm Experiments (Existing Product)"
+  short_description: "Design experiments to test assumptions for an existing product — prototypes, A/B tests..."
+  default_prompt: "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods."

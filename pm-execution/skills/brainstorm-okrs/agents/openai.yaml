@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brainstorm OKRs"
+  short_description: "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with..."
+  default_prompt: "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results."

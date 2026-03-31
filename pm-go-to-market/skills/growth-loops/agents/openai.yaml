@@ -1,0 +1,4 @@
+interface:
+  display_name: "Growth Loops"
+  short_description: "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types..."
+  default_prompt: "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral."

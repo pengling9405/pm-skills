@@ -1,0 +1,4 @@
+interface:
+  display_name: "Market Research"
+  short_description: "Market research skills for PMs: user personas, market segmentation, sentiment analysis..."
+  default_prompt: "Use Market Research for user personas, market segmentation, sentiment analysis, and competitive analysis."

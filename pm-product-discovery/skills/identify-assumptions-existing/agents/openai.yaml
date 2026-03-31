@@ -1,0 +1,4 @@
+interface:
+  display_name: "Identify Assumptions (Existing Product)"
+  short_description: "Identify risky assumptions for a feature idea in an existing product across Value..."
+  default_prompt: "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking."

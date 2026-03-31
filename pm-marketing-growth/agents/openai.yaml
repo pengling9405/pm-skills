@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Growth"
+  short_description: "Product marketing and growth skills: marketing ideas, value proposition statements..."
+  default_prompt: "Use Marketing Growth for marketing ideas, value proposition statements, North Star metrics, product naming, and positioning."

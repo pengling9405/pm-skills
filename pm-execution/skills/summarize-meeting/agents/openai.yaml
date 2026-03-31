@@ -1,0 +1,4 @@
+interface:
+  display_name: "Summarize Meeting"
+  short_description: "Summarize a meeting transcript into structured notes with date, participants, topic, key..."
+  default_prompt: "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items."

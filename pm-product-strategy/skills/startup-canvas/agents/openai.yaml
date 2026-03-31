@@ -1,0 +1,4 @@
+interface:
+  display_name: "Startup Canvas"
+  short_description: "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model..."
+  default_prompt: "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model."

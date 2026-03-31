@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prioritization Frameworks"
+  short_description: "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and..."
+  default_prompt: "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more."

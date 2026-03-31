@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sprint Plan"
+  short_description: "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk..."
+  default_prompt: "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification."

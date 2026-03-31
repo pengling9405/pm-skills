@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brainstorm Experiments (New Product)"
+  short_description: "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses..."
+  default_prompt: "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders."
