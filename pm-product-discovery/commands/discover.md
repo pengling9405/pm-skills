@@ -1,131 +1,103 @@
 ---
-description: Run a full product discovery cycle — from ideation through assumption mapping to experiment design
-argument-hint: "<product or feature idea>"
+description: 运行完整 discovery 流程，从想法发散到假设映射，再到实验设计
+argument-hint: "<产品或功能想法>"
 ---
 
 # /discover -- Full Discovery Cycle
 
-Run a structured product discovery process that moves from divergent thinking to focused validation. This command chains multiple skills into a single end-to-end workflow.
+运行一套完整的产品 discovery 流程，从发散思考走到聚焦验证。这个命令会把多个 skill 串成一条端到端工作流。
 
 ## Invocation
 
-```
-/discover Smart notification system for our project management tool
-/discover New product: AI writing assistant for non-native speakers
-/discover                    # asks what you're discovering
+```text
+/discover 我们的项目管理工具需要一个智能提醒系统
+/discover 新产品：给非母语用户的 AI 写作助手
+/discover
 ```
 
 ## Workflow
 
 ### Step 1: Understand the Discovery Context
 
-Determine whether this is:
-- **Existing product** — continuous discovery on a known product with real users
-- **New product** — initial discovery for a concept without validated demand
+先判断是：
+- **Existing product**：在已有产品上做持续 discovery
+- **New product**：针对新概念做初始 discovery
 
-Ask the user:
-- What are you exploring? (product idea, feature area, opportunity space)
-- What do you already know? (prior research, customer feedback, data)
-- What decisions will this discovery inform? (build/kill, prioritize, pivot)
+补充问题：
+- 你在探索什么？
+- 已经知道什么？
+- 这次 discovery 要支撑什么决策？
 
-Accept context from uploaded files (research, PRDs, transcripts, data), links, or conversation.
+可以接受研究材料、PRD、访谈纪要、数据、链接等上下文。
 
 ### Step 2: Brainstorm Ideas (Divergent Phase)
 
-Apply the **brainstorm-ideas-existing** or **brainstorm-ideas-new** skill:
+调用：
+- `brainstorm-ideas-existing` 或
+- `brainstorm-ideas-new`
 
-- Generate ideas from PM, Designer, and Engineer perspectives
-- Present the top 10 ideas with brief rationale
-- Ask the user to select 3-5 ideas to carry forward, or accept all
-
-**Checkpoint**: "Here are 10 ideas. Which ones should we stress-test? Pick 3-5, or I can carry all forward."
+输出一组候选方向，并要求用户选择值得继续推进的 3-5 个。
 
 ### Step 3: Identify Assumptions (Critical Thinking Phase)
 
-For each selected idea, apply the **identify-assumptions-existing** or **identify-assumptions-new** skill:
+对选中的方向调用：
+- `identify-assumptions-existing` 或
+- `identify-assumptions-new`
 
-- Surface assumptions across risk categories:
-  - **Value**: Will users want this?
-  - **Usability**: Can users figure it out?
-  - **Feasibility**: Can we build it?
-  - **Viability**: Does the business case work?
-  - **Go-to-Market** (new products only): Can we reach and convert users?
-- Use devil's advocate multi-perspective analysis
-- Compile a master list of all assumptions across all ideas
+识别风险假设：
+- Value
+- Usability
+- Feasibility
+- Viability
+- Go-to-Market（新产品时）
 
 ### Step 4: Prioritize Assumptions (Focus Phase)
 
-Apply the **prioritize-assumptions** skill:
-
-- Map assumptions on an Impact × Risk matrix
-- Identify the "leap of faith" assumptions — high impact, high uncertainty
-- Rank assumptions by test priority
-- Group related assumptions that can be tested together
-
-**Checkpoint**: "Here are your riskiest assumptions. Which ones feel most critical to validate first?"
+调用 `prioritize-assumptions`：
+- 用 Impact × Risk 矩阵排序
+- 找出 leap-of-faith assumptions
+- 明确最先要验证什么
 
 ### Step 5: Design Experiments (Validation Phase)
 
-For the top-priority assumptions, apply **brainstorm-experiments-existing** or **brainstorm-experiments-new** skill:
+调用：
+- `brainstorm-experiments-existing` 或
+- `brainstorm-experiments-new`
 
-- Design 1-2 experiments per critical assumption
-- For existing products: A/B tests, fake doors, prototypes, user tests, data analysis
-- For new products: XYZ hypotheses, pretotypes, landing pages, concierge MVPs
-- Include success criteria, timeline, and effort for each
-- Sequence experiments by dependency and effort
+为高优先级假设设计验证实验，并说明：
+- 方法
+- 成功标准
+- 时间
+- 成本 / 工作量
 
 ### Step 6: Create Discovery Plan
 
-Compile everything into a discovery plan document:
+整理成一份 discovery plan：
 
-```
+```markdown
 ## Discovery Plan: [Topic]
 
-**Date**: [today]
-**Product Stage**: [existing/new]
-**Discovery Question**: [what we're trying to learn]
-
 ### Ideas Explored
-[Summary of brainstormed ideas with brief descriptions]
-
 ### Selected Ideas for Validation
-[3-5 ideas carried forward with rationale]
-
 ### Critical Assumptions
-| # | Assumption | Category | Impact | Uncertainty | Priority |
-|---|-----------|----------|--------|-------------|----------|
-
 ### Validation Experiments
-| # | Tests Assumption | Method | Success Criteria | Effort | Timeline |
-|---|-----------------|--------|-----------------|--------|----------|
-
 ### Experiment Details
-[For each experiment: hypothesis, setup, measurement, decision criteria]
-
 ### Discovery Timeline
-Week 1: [experiments]
-Week 2: [experiments]
-Week 3: [analysis and decision]
-
 ### Decision Framework
-- If [experiment] succeeds → proceed to [next step]
-- If [experiment] fails → [pivot/kill/investigate further]
 ```
 
-Save the plan as a markdown file to the user's workspace.
+保存为 Markdown 文件。
 
 ### Step 7: Offer Next Steps
 
-- "Want me to **create a PRD** for the top idea?"
-- "Should I **design an interview script** to supplement these experiments?"
-- "Want me to **set up metrics** to track the experiments?"
-- "Should I **estimate effort** and create user stories for the MVP?"
+- 继续产出 PRD
+- 补 interview script
+- 建 metrics dashboard
+- 拆 MVP stories
 
 ## Notes
 
-- This is a 15-30 minute structured workflow — let the user know upfront
-- At each checkpoint, the user can redirect, skip, or go deeper
-- If the user has research data, pull insights from it before brainstorming
-- The discovery plan should be a living document — offer to update it as experiments run
-- For new products, emphasize desirability validation before feasibility
-- For existing products, check if there's usage data that can inform assumptions
+- 这是一个 15-30 分钟的结构化流程
+- 每个 checkpoint 用户都可以改方向、跳步或深入
+- 新产品优先验证 desirability
+- 已有产品优先结合真实使用数据

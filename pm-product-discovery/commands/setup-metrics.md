@@ -1,119 +1,65 @@
 ---
-description: Design a product metrics dashboard with North Star metric, input metrics, health metrics, and alert thresholds
-argument-hint: "<product or feature area>"
+description: 为产品或功能设计指标体系与 dashboard 规格
+argument-hint: "<产品、功能或目标>"
 ---
 
 # /setup-metrics -- Product Metrics Dashboard Design
 
-Design a comprehensive metrics framework for your product or feature — from selecting the right North Star to defining alert thresholds that catch problems early.
+这个命令用于定义指标体系、预警阈值与 dashboard 结构。
 
 ## Invocation
 
-```
-/setup-metrics SaaS project management tool
-/setup-metrics New checkout flow we just launched
-/setup-metrics             # asks what you're measuring
+```text
+/setup-metrics 新用户激活
+/setup-metrics 付费转化漏斗
+/setup-metrics AI 搜索体验
 ```
 
 ## Workflow
 
 ### Step 1: Understand What to Measure
 
-Ask the user:
-- What product or feature area are you setting up metrics for?
-- What stage is it in? (pre-launch, recently launched, mature)
-- What are the current business goals or OKRs?
-- Do you have existing metrics? What's missing or broken?
-- What analytics tools are you using? (helps tailor implementation advice)
+先问清：
+- 想追踪哪个产品目标
+- 指标要支撑什么决策
+- 当前是否已有埋点或数据源
 
 ### Step 2: Define the Metrics Framework
 
-Apply the **metrics-dashboard** skill:
-
-**North Star Metric:**
-- Identify the single metric that best captures the value your product delivers to users
-- Validate against criteria: measures value delivery, is a leading indicator, is actionable
-- Define the metric precisely (formula, data source, time window)
-
-**Input Metrics (3-5):**
-- Identify the levers that drive the North Star
-- Each input metric should be directly actionable by a team
-- Map the causal chain: Input → North Star → Business Outcome
-
-**Health Metrics (3-5):**
-- Metrics that should stay stable — if they degrade, something is wrong
-- Examples: error rates, latency, support ticket volume, NPS, churn rate
-- Define "healthy" ranges and degradation thresholds
-
-**Counter-Metrics (1-2):**
-- Metrics that could indicate you're optimizing the wrong way
-- Example: if North Star is "daily active users", counter-metric is "session quality" to prevent empty engagement
+划分：
+- 输入指标
+- 健康指标
+- 反向指标
+- 北极星 / 核心结果指标
 
 ### Step 3: Design Alert Thresholds
 
-For each metric:
-
-| Metric | Green | Yellow | Red | Check Frequency |
-|--------|-------|--------|-----|----------------|
-| [metric] | [healthy range] | [warning] | [critical] | [daily/weekly] |
-
-- **Yellow**: Investigate — something may be off
-- **Red**: Act immediately — page someone or escalate
+为关键指标定义：
+- 正常范围
+- 异常阈值
+- 需要人工关注的触发条件
 
 ### Step 4: Create Dashboard Spec
 
-```
+```markdown
 ## Metrics Dashboard: [Product/Feature]
 
-**North Star**: [metric name]
-**Definition**: [precise formula]
-**Current value**: [if known]
-**Target**: [goal]
-
 ### Input Metrics
-| Metric | Definition | Owner | Target | Current |
-|--------|-----------|-------|--------|---------|
-
 ### Health Metrics
-| Metric | Healthy Range | Yellow Threshold | Red Threshold |
-|--------|-------------|-----------------|---------------|
-
 ### Counter-Metrics
-| Metric | Why It Matters | Watch For |
-|--------|---------------|-----------|
-
 ### Metrics Tree
-North Star: [metric]
-├── Input: [metric 1] → driven by [team/action]
-├── Input: [metric 2] → driven by [team/action]
-├── Input: [metric 3] → driven by [team/action]
-└── Counter: [metric] → watch for [degradation signal]
-
 ### Implementation Notes
-- Data sources: [where each metric comes from]
-- Refresh frequency: [real-time / hourly / daily]
-- Tool recommendations: [based on user's stack]
-
 ### Review Cadence
-- **Daily**: Glance at North Star and health metrics
-- **Weekly**: Review input metrics trends, discuss in team standup
-- **Monthly**: Deep dive — are inputs driving the North Star as expected?
-- **Quarterly**: Reassess the metrics framework itself
 ```
-
-Save as a markdown file to the user's workspace.
 
 ### Step 5: Offer Next Steps
 
-- "Want me to **write SQL queries** to compute these metrics?"
-- "Should I **create OKRs** based on this metrics framework?"
-- "Want me to **build a cohort analysis** to set realistic baselines?"
-- "Should I **set up a weekly metrics review template**?"
+- 补 tracking plan
+- 设计埋点事件
+- 补 AB test 评估指标
 
 ## Notes
 
-- A good North Star is rare — most teams pick vanity metrics. Push for a metric that captures *user value delivered*, not just engagement
-- Input metrics should be MECE (mutually exclusive, collectively exhaustive) in explaining the North Star
-- If the product is pre-launch, define metrics now but note that baselines will need calibration after launch
-- Counter-metrics prevent Goodhart's Law — when a metric becomes a target, it ceases to be a good metric
-- Recommend starting with fewer metrics, well-instrumented, over a sprawling dashboard nobody checks
+- 指标应服务决策，而不是为了“看起来全面”
+- 尽量避免 vanity metrics
+- counter-metrics 用于防止单一优化带来副作用
