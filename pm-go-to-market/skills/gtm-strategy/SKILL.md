@@ -1,94 +1,52 @@
 ---
 name: gtm-strategy
-description: "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new market."
+description: "制定 go-to-market 策略，覆盖渠道、信息、成功指标与发布计划。"
 ---
+
 # GTM Strategy
 
 ## Overview
-Create a comprehensive go-to-market strategy for a product launch. This skill covers marketing channels, messaging development, success metrics definition, and launch planning.
+
+这个 skill 用于把 ICP、定位、渠道和发布策略整合成一份可执行 GTM 方案。
 
 ## When to Use
-- Planning a product launch
-- Creating a GTM plan from scratch
-- Defining a launch strategy for a new market
-- Developing product-to-market fit strategy
-- Preparing a product go-live roadmap
+
+- 产品或功能上线前
+- 想系统规划渠道与信息
+- 需要 launch playbook
 
 ## How It Works
 
 ### Step 1: Gather Research Data
-The system will help you load and analyze early research about your product and target market. Provide:
-- Product description and key features
-- Target market segment details
-- Market research or validation data
-- Competitive landscape information
-- Any available customer interviews or survey data
-
 ### Step 2: Define Marketing Channels
-Evaluate which channels best reach your target audience:
-- Digital marketing channels (paid search, social media, display)
-- Content and inbound channels (blog, SEO, thought leadership)
-- Sales and outbound channels (direct outreach, partnerships)
-- Community and grassroots channels
-- Product-led and viral channels
-
 ### Step 3: Develop Messaging
-Create audience-specific messaging that resonates:
-- Core value proposition for target segment
-- Key differentiators and competitive advantages
-- Pain point validation and solution mapping
-- Proof points and social proof strategies
-- Channel-specific messaging variations
-
 ### Step 4: Define Success Metrics
-Establish measurable KPIs to track launch success:
-- Awareness metrics (impressions, reach, brand recall)
-- Engagement metrics (CTR, cost per engagement, time on site)
-- Conversion metrics (signups, demos requested, trials started)
-- Revenue metrics (MRR, customer acquisition cost, lifetime value)
-- Market metrics (market share, segment penetration)
-
 ### Step 5: Create Launch Plan
-Build a phased launch timeline:
-- Pre-launch preparation (messaging, channels, timeline)
-- Launch day activities and announcements
-- Post-launch momentum (content, partnerships, communities)
-- Measurement and optimization cadence
-- Success criteria and go/no-go decision points
 
 ## Input Format
-Use $ARGUMENTS to pass:
-- Product name and description
-- Target market segment
-- Research data or file path
-- Launch timeline and constraints
-- Budget or resource limitations
+
+- 产品 / 功能
+- ICP
+- 发布目标
+- 约束条件
 
 ## Output
-A structured GTM strategy document including:
-- Recommended marketing channels with justification
-- Channel-specific messaging and positioning
-- Launch timeline with key milestones
-- KPI targets and measurement framework
-- Risk mitigation strategies
-- 90-day execution roadmap
+
+- GTM 计划
+- 渠道策略
+- 关键 messaging
+- 时间线与指标
 
 ## Framework
-This skill applies Product Compass GTM strategy methodology, focusing on market selection, channel fit, and message-market fit for sustainable product growth.
+
+先锁定 beachhead 与 ICP，再设计渠道与发布节奏。
 
 ## Tips
-- Start with your most confident customer segment
-- Validate assumptions through customer interviews before full launch
-- Focus on a few channels excellently rather than many channels poorly
-- Establish baseline metrics before launch to measure impact
-- Plan for feedback loops and optimization
+
+- 信息与渠道必须围绕同一受众展开
 
 ---
 
 ### Further Reading
 
-- [5 GTM Principles You Should Know as a PM](https://www.productcompass.pm/p/5-gtm-principles-with-frameworks-templates)
-- [OpenAI’s Product Leader Shares 3-Layer Distribution Framework To Win Mind & Market Share in the AI World](https://www.productcompass.pm/p/distribution-framework-ai-products)
-- [Product-Led Growth 101, Part 1/2](https://www.productcompass.pm/p/product-led-growth-101-12)
-- [How to Design a Value Proposition Customers Can't Resist?](https://www.productcompass.pm/p/how-to-design-value-proposition-template)
-- [How to Achieve Product-Market Fit? Part I: Market and Value Proposition](https://www.productcompass.pm/p/how-to-achieve-the-product-market)
+- GTM planning

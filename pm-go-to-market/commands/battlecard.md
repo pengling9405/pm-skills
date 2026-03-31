@@ -1,111 +1,59 @@
 ---
-description: Create a sales-ready competitive battlecard — positioning, feature comparison, objection handling, and win strategies
-argument-hint: "<your product> vs <competitor>"
+description: 生成一份面向销售或创始人的竞品 battlecard
+argument-hint: "<我们的产品> vs <竞品>"
 ---
 
 # /battlecard -- Competitive Battlecard
 
-Create a concise, sales-ready battlecard that helps your team win deals against a specific competitor. Includes positioning, feature comparison, objection handling, and conversation strategies.
+生成一份实战导向的竞品 battlecard，帮助你在销售、对外沟通或产品定位讨论中快速抓住要点。
 
 ## Invocation
 
-```
-/battlecard Our CRM vs Salesforce
-/battlecard ProjectFlow vs Monday.com for mid-market teams
-/battlecard [upload competitor materials or win/loss data]
+```text
+/battlecard 我们 vs Notion
+/battlecard 我们的客服 AI vs Intercom
 ```
 
 ## Workflow
 
 ### Step 1: Identify the Matchup
 
-Ask:
-- Your product and the specific competitor
-- Who is the typical buyer choosing between you?
-- Do you have win/loss data or sales feedback?
-- What deal stage does this typically come up? (early evaluation, final decision, displacement)
+确认：
+- 你的产品是谁
+- 对比竞品是谁
+- battlecard 用于什么场景
 
 ### Step 2: Research the Competitor
 
-Apply the **competitive-battlecard** skill with web research:
-
-- Current product capabilities and recent launches
-- Pricing model and published pricing
-- Target market and positioning
-- Known weaknesses (from reviews, forums, customer feedback)
-- Recent company news (funding, leadership, strategy shifts)
+重点收集：
+- 定位
+- 核心功能
+- 定价
+- 优势与弱点
+- 典型 objection
 
 ### Step 3: Generate Battlecard
 
-```
+```markdown
 ## Competitive Battlecard: [Your Product] vs [Competitor]
-
-**Last updated**: [today]
-**Use when**: [situation where this competitor comes up]
-
 ### Quick Summary
-**We win when**: [buyer profile and situation where you have advantage]
-**We lose when**: [buyer profile and situation where competitor has advantage]
-**Key differentiator**: [one sentence]
-
 ### Positioning
-**How they position**: [their messaging]
-**How we position against them**: [our counter-positioning]
-
 ### Feature Comparison
-| Capability | Us | Them | Verdict |
-|-----------|-----|------|---------|
-| [capability] | [status] | [status] | [advantage] |
-
 ### Pricing Comparison
-| Dimension | Us | Them | Notes |
-|----------|-----|------|-------|
-
 ### Objection Handling
-| Objection | Response | Proof Point |
-|----------|---------|------------|
-| "They have [feature]" | [response] | [evidence] |
-| "They're cheaper" | [response] | [TCO analysis] |
-| "They're more established" | [response] | [counter] |
-
 ### Landmines to Plant
-[Questions to ask the prospect that expose competitor weaknesses]
-1. "Ask them about [topic] — their answer will reveal [weakness]"
-
 ### Trap Questions to Expect
-[Questions the competitor will encourage the prospect to ask you]
-1. "[Question]" — How to respond: [response]
-
 ### Win/Loss Patterns
-**We typically win because**: [top 3 reasons]
-**We typically lose because**: [top 3 reasons]
-
 ### Conversation Starters
-**If they're already using [Competitor]**:
-- [approach for displacement deals]
-
-**If they're evaluating both**:
-- [approach for competitive evaluations]
-
 ### Resources
-- [Customer story / case study that counters this competitor]
-- [Third-party comparison or review]
-- [Demo script optimized for this competitive situation]
 ```
-
-Save as markdown.
 
 ### Step 4: Offer Next Steps
 
-- "Want me to **create battlecards for other competitors**?"
-- "Should I **run a full competitive analysis** of the market?"
-- "Want me to **draft customer-facing comparison content** based on this?"
-- "Should I **update the positioning** based on competitive insights?"
+- 继续补 positioning
+- 输出对外 comparison page 框架
+- 补销售话术
 
 ## Notes
 
-- Battlecards should be updated quarterly — competitors change fast
-- "Landmines" are the most valuable section for sales — teach reps what questions to ask
-- Never trash the competitor in front of the prospect — position on your strengths, not their weaknesses
-- Win/loss data from real deals is worth 10x any analysis — encourage the user to add it
-- Keep it to one page equivalent — sales reps won't read a 10-page document during a call
+- battlecard 要服务真实对话，不要写成空泛调研稿
