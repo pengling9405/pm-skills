@@ -1,74 +1,90 @@
 ---
 name: job-stories
-description: "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user situations and motivations."
+description: "使用 'When [situation], I want to [motivation], so I can [outcome]' 格式创建 job stories，并附带详细验收标准。适用于 JTBD 风格需求拆解与表达用户情境和动机。"
 ---
 # Job Stories
 
-Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format. Generates stories with detailed acceptance criteria focused on user situations and outcomes.
+使用 `When... I want to... so I can...` 格式创建 job stories，强调用户所处情境、动机与期望结果。
 
-**Use when:** Writing job stories, expressing user situations and motivations, creating JTBD-style backlog items, or focusing on user context rather than roles.
+**Use when：**
+- 编写 job stories
+- 采用 JTBD 风格拆解需求
+- 想突出用户情境而不是角色
 
-**Arguments:**
-- `$PRODUCT`: The product or system name
-- `$FEATURE`: The new feature to break into job stories
-- `$DESIGN`: Link to design files (Figma, Miro, etc.)
-- `$CONTEXT`: User situations or job scenarios
+**Arguments：**
+- `$PRODUCT`：产品或系统名
+- `$FEATURE`：要拆分的功能
+- `$DESIGN`：设计稿链接
+- `$CONTEXT`：用户情境或典型任务场景
 
 ## Step-by-Step Process
 
-1. **Identify user situations** that trigger the need
-2. **Define motivations** underlying the user's behavior
-3. **Clarify outcomes** the user wants to achieve
-4. **Apply JTBD framework:** Focus on the job, not the role
-5. **Create acceptance criteria** that validate the outcome is achieved
-6. **Use observable, measurable language**
-7. **Link to design mockups** or prototypes
-8. **Output job stories** with detailed acceptance criteria
+1. **Identify user situations**
+   - 找出会触发需求的真实情境
+
+2. **Define motivations**
+   - 说明行为背后的动机
+
+3. **Clarify outcomes**
+   - 明确用户想实现的结果
+
+4. **Apply JTBD**
+   - 聚焦用户要完成的“任务”，而不是身份标签
+
+5. **Create acceptance criteria**
+   - 以“结果是否达成”为标准来写验收项
+
+6. **Use measurable language**
+   - 采用可观察、可验证的表达
+
+7. **Link to design**
+   - 有原型或设计稿时建立引用
+
+8. **Output job stories**
+   - 以结构化格式输出
 
 ## Story Template
 
-**Title:** [Job outcome or result]
+**Title:** [结果或任务标题]
 
 **Description:** When [situation], I want to [motivation], so I can [outcome].
 
 **Design:** [Link to design files]
 
 **Acceptance Criteria:**
-1. [Situation is properly recognized]
-2. [System enables the desired motivation]
-3. [Progress or feedback is visible]
-4. [Outcome is achieved efficiently]
-5. [Edge cases are handled gracefully]
-6. [Integration and notifications work]
+1. [系统识别情境]
+2. [支持用户动机]
+3. [过程反馈清晰]
+4. [结果高效达成]
+5. [边界情况处理合理]
+6. [相关集成与通知可用]
 
 ## Example Job Story
 
 **Title:** Track Weekly Snack Spending
 
-**Description:** When I'm preparing my weekly allowance for snacks (situation), I want to quickly see how much I've spent so far (motivation), so I can make sure I don't run out of money before the weekend (outcome).
+**Description:** When I'm planning my weekly snack budget, I want to quickly see how much I've spent so far, so I can avoid running out of money before the weekend.
 
 **Design:** [Figma link]
 
 **Acceptance Criteria:**
-1. Display Spending Summary with 'Weekly Spending Overview' section
-2. Real-Time Update when expense logged
-3. Progress Indicator (progress bar showing 0-100% of weekly budget)
-4. Remaining Budget Highlight in prominent color
-5. Detailed Spending Log with breakdown by category
-6. Notifications at 80% budget threshold
-7. Weekend-Specific Reminder at 90% by Thursday evening
-8. Easy Access and Navigation to detailed breakdown
+1. 显示每周支出概览
+2. 新支出记账后实时更新
+3. 展示预算进度条
+4. 明显标出剩余预算
+5. 提供按类别分解的支出记录
+6. 在接近预算上限时提供提醒
 
 ## Output Deliverables
 
-- Complete set of job stories for the feature
-- Each story follows the 'When...I want...so I can' format
-- 6-8 acceptance criteria focused on outcomes
-- Stories emphasize user situations and motivations
-- Clear links to design and prototypes
+- 功能对应的一整组 job stories
+- 每条 story 均采用 `When / I want / so I can` 格式
+- 6-8 条面向结果的验收标准
+- 强调用户情境与动机
+- 可关联设计稿与原型
 
 ---
 
 ### Further Reading
 
-- [Jobs-to-be-Done Masterclass with Tony Ulwick and Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with) (video course)
+- [Jobs-to-be-Done Masterclass with Tony Ulwick and Sabeen Sattar](https://www.productcompass.pm/p/jobs-to-be-done-masterclass-with)

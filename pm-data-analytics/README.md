@@ -1,23 +1,26 @@
-# pm-data-analytics
+# pm-data-analytics 中文整理版
 
-Data analytics skills for PMs: SQL query generation and cohort analysis. Analyze user data, generate queries, and identify retention patterns.
+产品数据分析插件，面向 PM 的 SQL、A/B 测试与 cohort 分析能力。
 
-## Skills (3)
+## Skills（3）
 
-- **ab-test-analysis** — Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and actionable recommendations.
-- **cohort-analysis** — Perform cohort analysis on user engagement data.
-- **sql-queries** — Generate SQL queries from natural language descriptions.
+- `ab-test-analysis`：分析 A/B 测试结果，包括统计显著性、样本量校验、置信区间与可执行建议
+- `cohort-analysis`：对用户参与度与留存做 cohort 分析
+- `sql-queries`：把自然语言需求转成 SQL 查询
 
-## Commands (3)
+## Commands（3）
 
-- `/pm-data-analytics:analyze-cohorts` — Perform cohort analysis on user data — retention curves, feature adoption, and engagement trends.
-- `/pm-data-analytics:analyze-test` — Analyze A/B test results — statistical significance, sample size validation, and ship/extend/stop recommendations.
-- `/pm-data-analytics:write-query` — Generate SQL queries from natural language — supports BigQuery, PostgreSQL, MySQL, and more.
+- `/pm-data-analytics:analyze-cohorts`：分析用户 cohort，包括留存曲线、功能采用与参与趋势
+- `/pm-data-analytics:analyze-test`：分析 A/B 测试，包括显著性、样本量与 ship / extend / stop 建议
+- `/pm-data-analytics:write-query`：把自然语言问题转成 SQL，支持 BigQuery、PostgreSQL、MySQL 等
 
-## Author
+## 适用场景
 
-Paweł Huryn — [The Product Compass Newsletter](https://www.productcompass.pm)
+- 想快速验证实验结果
+- 想做 retention / activation 分析
+- 需要和数据团队对齐 SQL 草稿
 
-## License
+## 相关文件
 
-MIT
+- 英文原文：[README.md](/Users/zhanyu/projects/pm-skills/pm-data-analytics/README.md)
+

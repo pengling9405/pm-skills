@@ -1,73 +1,97 @@
-![GitHub stars](https://img.shields.io/github/stars/phuryn/pm-skills)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://github.com/phuryn/pm-skills/blob/main/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](https://github.com/phuryn/pm-skills/blob/main/CONTRIBUTING.md)
+# PM Skills Marketplace 中文整理版
 
-# PM Skills Marketplace: The AI Operating System for Better Product Decisions
+> 说明：这是 `pm-skills` 的中文整理版入口文档，方便中文读者快速理解这套 PM 技能市场的结构与用法。英文原文保持不变。
 
-> 65 PM skills and 36 chained workflows across 8 plugins. Claude Code, Codex, Cowork, and more. From discovery to strategy, execution, launch, and growth. 
+## 这是什么
 
-![Plugin overview](.docs/images/plugins-overview.webp)
+`pm-skills` 是一套面向产品经理与 founder 的 AI 工作系统，围绕产品决策而不是单纯文档生成来设计。
 
-Designed for Claude Code, Codex, and Cowork. Skills and prompt-style commands are portable across compatible assistants.
+它的核心不是“让 AI 多写几页字”，而是把成熟的 PM 框架编码成技能与工作流，让你在以下环节更有结构：
 
-## Start Here
+- discovery
+- strategy
+- market research
+- GTM
+- execution
+- analytics
+- marketing / growth
+- toolkit 类通用能力
 
-New idea? → `/discover`  
-Need strategic clarity? → `/strategy`  
-Writing a PRD? → `/write-prd`  
-Planning a launch? → `/plan-launch`  
-Defining metrics? → `/north-star`
+当前仓库包含：
 
-If this project helps you, ⭐ the repo.
+- 65 个 skills
+- 36 条链式 workflows
+- 8 个插件目录
 
-## Why PM Skills Marketplace?
+## 为什么有价值
 
-Generic AI gives you text. PM Skills Marketplace gives you structure.
+通用 AI 往往只能给你一段看似合理的文字。  
+`pm-skills` 的价值在于：它把一整套 PM 方法论以 skill 的形式固定下来，让你在日常工作中直接调用。
 
-Each skill encodes a proven PM framework — discovery, assumption mapping, prioritization, strategy — and walks you through it step by step. You get the rigor of Teresa Torres, Marty Cagan, and Alberto Savoia built into your daily workflow, not sitting on a bookshelf.
+典型用途包括：
 
-The result: better product decisions, not just faster documents.
+- 把模糊点子跑成结构化 discovery
+- 把 feature 想法变成 PRD、用户故事、测试场景
+- 用 strategy / canvas / pricing 框架看清方向
+- 做市场研究、竞争分析、用户画像、细分市场分析
+- 做 GTM、growth、North Star、content / positioning 相关工作
 
-## How It Works (Skills, Commands, Plugins)
+## 从哪里开始
 
-**Skills** are the building blocks of the marketplace. Each skill gives the assistant domain knowledge, analytical frameworks, or a guided workflow for a specific PM task. Some skills also work as reusable foundations that multiple commands share.
+仓库建议的几个入口命令是：
 
-Skills are loaded automatically when relevant to the conversation. In assistants that expose explicit skill invocation, you can also force-load the relevant skill by name.
+- 新想法：`/discover`
+- 想理清战略：`/strategy`
+- 写 PRD：`/write-prd`
+- 规划发布：`/plan-launch`
+- 定义指标：`/north-star`
 
-**Commands** are user-triggered workflows invoked with `/command-name` (or copied into a prompt/command directory such as `.codex/prompts/`). They chain one or more skills into an end-to-end process. For example, `/discover` chains four skills together: brainstorm-ideas → identify-assumptions → prioritize-assumptions → brainstorm-experiments.
+## 它是怎么组织的
 
-**Plugins** group related skills and commands into installable packages. Each plugin covers a PM domain — discovery, strategy, execution, and so on. Each `pm-*` directory now includes both Claude plugin metadata and Codex plugin metadata.
+### Skills
 
-![How skills work](.docs/images/how-skills-work.webp)
+Skills 是基础能力单元。每个 skill 负责一个 PM 任务、分析框架或引导式工作流。
 
-Commands use skills. Some skills serve multiple commands. Some skills (like `prioritization-frameworks` or `opportunity-solution-tree`) are standalone references that compatible assistants can draw on whenever relevant — no command needed.
+### Commands
 
-Commands are designed to flow into each other, matching the PM workflow. After any command completes, it suggests relevant next commands — just follow the prompts.
+Commands 是由用户显式触发的链式流程，会把多个 skills 串起来，形成端到端工作流。
 
-## Installation
+### Plugins
 
-### Claude Cowork (recommended for non-developers)
+仓库把不同 PM 领域拆成 8 个插件：
 
-1. Open **Customize** (bottom-left)
-2. Go to **Browse plugins** → **Personal** → **+**
-3. Select **Add marketplace from GitHub**
-4. Enter: `phuryn/pm-skills`
+- `pm-product-discovery`
+- `pm-product-strategy`
+- `pm-market-research`
+- `pm-go-to-market`
+- `pm-marketing-growth`
+- `pm-data-analytics`
+- `pm-execution`
+- `pm-toolkit`
 
-All 8 plugins install automatically. You get both commands (`/discover`, `/strategy`, etc.) and skills.
+每个插件既有 skill，也有 command。
 
-![Installing PM Skills in Claude Cowork](.docs/images/pm-skills-install.gif)
+## 安装方式
+
+### Claude Cowork
+
+1. 打开 `Customize`
+2. 进入 `Browse plugins`
+3. 选择 `Personal` → `+`
+4. 选择从 GitHub 添加 marketplace
+5. 输入：`phuryn/pm-skills`
 
 ### Claude Code (CLI)
 
 ```bash
-# Step 1: Add the marketplace
+# 添加 marketplace
 claude plugin marketplace add phuryn/pm-skills
 
-# Step 2: Install individual plugins
+# 安装各插件
 claude plugin install pm-toolkit@pm-skills
 claude plugin install pm-product-strategy@pm-skills
-claude plugin install pm-product-discovery@pm-skills 
-claude plugin install pm-market-research@pm-skills 
+claude plugin install pm-product-discovery@pm-skills
+claude plugin install pm-market-research@pm-skills
 claude plugin install pm-data-analytics@pm-skills
 claude plugin install pm-marketing-growth@pm-skills
 claude plugin install pm-go-to-market@pm-skills
@@ -76,414 +100,89 @@ claude plugin install pm-execution@pm-skills
 
 ### Codex
 
-Each `pm-*` plugin now ships with:
+这个仓库已经提供了 Codex 所需的插件元数据与安装脚本。
 
-- `.codex-plugin/plugin.json` for Codex plugin packaging
-- `agents/openai.yaml` at plugin level for Codex plugin UI metadata
-- `skills/*/agents/openai.yaml` for Codex skill metadata
-- existing `commands/*.md` files, which already match Codex prompt frontmatter (`description` + `argument-hint`)
-
-For Codex, use the non-destructive installer first. It skips any existing skill or prompt instead of overwriting it.
+推荐先用非破坏性安装脚本：
 
 ```bash
-# Default: install into <repo>/.codex/
 ./scripts/install_codex.sh
-
-# Install into ${CODEX_HOME:-$HOME/.codex}/
 ./scripts/install_codex.sh --scope global
-
-# Install into both locations
 ./scripts/install_codex.sh --scope both
-
-# Preview actions without writing files
 ./scripts/install_codex.sh --dry-run
 ```
 
-If you prefer manual setup, copy the skills into `.codex/skills/` and the commands into `.codex/prompts/`:
-
-```bash
-for plugin in pm-*/; do
-  mkdir -p .codex/skills/ .codex/prompts/
-  cp -r "$plugin/skills/"* .codex/skills/ 2>/dev/null
-  cp "$plugin/commands/"*.md .codex/prompts/ 2>/dev/null
-done
-```
-
-All skill names and command names are unique across the repo, so flattening them into `.codex/skills/` and `.codex/prompts/` is safe.
-
-### Other AI assistants (skills only)
-
-The `skills/*/SKILL.md` files follow the universal skill format and work with any tool that reads it. The tools below only support skills in this repo.
-
-| Tool | How to use | What works |
-|------|-----------|------------|
-| **Gemini CLI** | Copy skill folders to `.gemini/skills/` | Skills only |
-| **OpenCode** | Copy skill folders to `.opencode/skills/` | Skills only |
-| **Cursor** | Copy skill folders to `.cursor/skills/` | Skills only |
-| **Kiro** | Copy skill folders to `.kiro/skills/` | Skills only |
-
-```bash
-# Example: copy all skills for OpenCode (project-level)
-for plugin in pm-*/; do
-  mkdir -p .opencode/skills/
-  cp -r "$plugin/skills/"* .opencode/skills/ 2>/dev/null
-done
-
-# Example: copy all skills for Gemini CLI (global)
-for plugin in pm-*/; do
-  cp -r "$plugin/skills/"* ~/.gemini/skills/ 2>/dev/null
-done
-```
-
----
-
-## Available Plugins
-
-<details>
-<summary><strong>1. pm-product-discovery</strong> — Ideation, experiments, assumption testing, OSTs, interviews (13 skills, 5 commands)</summary>
-
-**Skills (13):**
-
-- `brainstorm-ideas-existing` — Multi-perspective ideation for existing products (PM, Designer, Engineer)
-- `brainstorm-ideas-new` — Ideation for new products in initial discovery
-- `brainstorm-experiments-existing` — Design experiments to test assumptions for existing products
-- `brainstorm-experiments-new` — Design lean startup pretotypes for new products (Alberto Savoia)
-- `identify-assumptions-existing` — Identify risky assumptions across Value, Usability, Viability, and Feasibility
-- `identify-assumptions-new` — Identify risky assumptions across 8 risk categories including Go-to-Market, Strategy, and Team
-- `prioritize-assumptions` — Prioritize assumptions using an Impact × Risk matrix with experiment suggestions
-- `prioritize-features` — Prioritize a feature backlog based on impact, effort, risk, and strategic alignment
-- `analyze-feature-requests` — Analyze and categorize customer feature requests by theme and strategic fit
-- `opportunity-solution-tree` — Build an Opportunity Solution Tree (Teresa Torres) — outcome → opportunities → solutions → experiments
-- `interview-script` — Create a structured customer interview script with JTBD probing questions
-- `summarize-interview` — Summarize an interview transcript into JTBD, satisfaction signals, and action items
-- `metrics-dashboard` — Design a product metrics dashboard with North Star, input metrics, and alert thresholds
-
-**Commands (5):**
-
-- `/discover` — Full discovery cycle: ideation → assumption mapping → prioritization → experiment design
-- `/brainstorm` — Multi-perspective ideation (`ideas|experiments` × `existing|new`)
-- `/triage-requests` — Analyze and prioritize a batch of feature requests
-- `/interview` — Prepare an interview script or summarize a transcript (`prep|summarize`)
-- `/setup-metrics` — Design a product metrics dashboard
-
-**Examples:**
-
-Skills:
-- `What are the riskiest assumptions for our AI writing assistant idea?`
-- `Help me build an Opportunity Solution Tree for improving user activation`
-- `Prioritize these 12 feature requests from our enterprise customers [attach CSV]`
-
-Commands:
-- `/discover AI-powered meeting summarizer for remote teams`
-- `/brainstorm experiments existing — We need to reduce churn in our onboarding flow`
-- `/interview prep — We're interviewing enterprise buyers about their procurement workflow`
-
-</details>
-
-<details>
-<summary><strong>2. pm-product-strategy</strong> — Vision, business models, pricing, competitive landscape (12 skills, 5 commands)</summary>
-
-Product strategy, vision, business models, pricing, and macro environment analysis. Covers the full strategic toolkit from vision crafting through competitive landscape scanning.
-
-**Skills (12):**
-
-- `product-strategy` — Comprehensive 9-section Product Strategy Canvas (vision → defensibility)
-- `startup-canvas` — Startup Canvas combining Product Strategy (9 sections) + Business Model — an alternative to BMC and Lean Canvas for new products
-- `product-vision` — Craft an inspiring, achievable, and emotional product vision
-- `value-proposition` — 6-part JTBD value proposition (Who, Why, What before, How, What after, Alternatives)
-- `lean-canvas` — Lean Canvas business model for startups and new products
-- `business-model` — Business Model Canvas with all 9 building blocks
-- `monetization-strategy` — Brainstorm 3–5 monetization strategies with validation experiments
-- `pricing-strategy` — Pricing models, competitive analysis, willingness-to-pay, and price elasticity
-- `swot-analysis` — SWOT analysis with actionable recommendations
-- `pestle-analysis` — Macro environment: Political, Economic, Social, Technological, Legal, Environmental
-- `porters-five-forces` — Competitive forces analysis (rivalry, suppliers, buyers, substitutes, new entrants)
-- `ansoff-matrix` — Growth strategy mapping across markets and products
-
-**Commands (5):**
-
-- `/strategy` — Create a complete 9-section Product Strategy Canvas
-- `/business-model` — Explore business models (`lean|full|startup|value-prop|all`)
-- `/value-proposition` — Design a value proposition using the 6-part JTBD template
-- `/market-scan` — Macro environment analysis combining SWOT + PESTLE + Porter's + Ansoff
-- `/pricing` — Design a pricing strategy with competitive analysis and experiments
+也可以手动把 skills 拷到 `.codex/skills/`，把 commands 拷到 `.codex/prompts/`。
 
-**Examples:**
-
-Skills:
-- `Compare Lean Canvas vs Business Model Canvas vs Startup Canvas for my marketplace startup`
-- `Design a value proposition for our AI writing assistant targeting non-native English speakers`
-- `Run a Porter's Five Forces analysis for the project management SaaS market`
+### 其他 AI 助手
 
-Commands:
-- `/strategy B2B project management tool for agencies`
-- `/business-model startup — AI writing tool for non-native English speakers`
-- `/value-proposition SaaS onboarding tool for enterprise customers`
+对于只支持 skills 的工具，也可以直接复用 `skills/*/SKILL.md`：
 
-</details>
+- Gemini CLI
+- OpenCode
+- Cursor
+- Kiro
 
-<details>
-<summary><strong>3. pm-execution</strong> — PRDs, OKRs, roadmaps, sprints, retros, release notes, stakeholder management (15 skills, 10 commands)</summary>
+## 插件一览
 
-Day-to-day product management: PRDs, OKRs, roadmaps, sprints, retrospectives, release notes, pre-mortems, stakeholder management, user stories, and prioritization frameworks.
+### 1. `pm-product-discovery`
 
-**Skills (15):**
+负责点子、实验、假设、访谈、需求优先级、指标等 discovery 工作。
 
-- `create-prd` — Comprehensive 8-section PRD template
-- `brainstorm-okrs` — Team-level OKRs aligned with company objectives
-- `outcome-roadmap` — Transform a feature list into an outcome-focused roadmap
-- `sprint-plan` — Sprint planning with capacity estimation, story selection, and risk identification
-- `retro` — Structured sprint retrospective facilitation
-- `release-notes` — User-facing release notes from tickets, PRDs, or changelogs
-- `pre-mortem` — Risk analysis with Tigers/Paper Tigers/Elephants classification
-- `stakeholder-map` — Power × Interest grid with tailored communication plan
-- `summarize-meeting` — Meeting transcript → decisions + action items
-- `user-stories` — User stories following the 3 C's and INVEST criteria
-- `job-stories` — Job stories: When [situation], I want to [motivation], so I can [outcome]
-- `wwas` — Product backlog items in Why-What-Acceptance format
-- `test-scenarios` — Test scenarios: happy paths, edge cases, error handling
-- `dummy-dataset` — Realistic dummy datasets as CSV, JSON, SQL, or Python
-- `prioritization-frameworks` — Reference guide to 9 prioritization frameworks (Opportunity Score, ICE, RICE, MoSCoW, Kano, etc.)
+### 2. `pm-product-strategy`
 
-**Commands (10):**
+负责愿景、价值主张、商业模式、市场扫描、定价与增长战略。
 
-- `/write-prd` — Create a PRD from a feature idea or problem statement
-- `/plan-okrs` — Brainstorm team-level OKRs
-- `/transform-roadmap` — Convert a feature-based roadmap into outcome-focused
-- `/sprint` — Sprint lifecycle (`plan|retro|release`)
-- `/pre-mortem` — Pre-mortem risk analysis on a PRD or launch plan
-- `/meeting-notes` — Summarize a meeting transcript into structured notes
-- `/stakeholder-map` — Map stakeholders and create a communication plan
-- `/write-stories` — Break features into backlog items (`user|job|wwa`)
-- `/test-scenarios` — Generate test scenarios from user stories
-- `/generate-data` — Create realistic dummy datasets
+### 3. `pm-market-research`
 
-**Examples:**
+负责用户画像、细分市场、情绪分析、竞品研究、客户旅程地图等。
 
-Skills:
-- `Which prioritization framework should I use for a 50-item backlog?`
-- `Map our stakeholders for the platform migration project`
-- `What's the difference between Opportunity Score, ICE, and RICE?`
+### 4. `pm-go-to-market`
 
-Commands:
-- `/write-prd Smart notification system that reduces alert fatigue`
-- `/sprint retro — Here are the notes from our last sprint`
-- `/write-stories job — Break down the "team dashboard" feature into job stories`
+负责 ICP、beachhead segment、GTM motions、growth loops、launch plan。
 
-</details>
+### 5. `pm-marketing-growth`
 
-<details>
-<summary><strong>4. pm-market-research</strong> — Personas, segmentation, journey maps, market sizing, competitor analysis (7 skills, 3 commands)</summary>
+负责 positioning、营销点子、North Star、命名、价值主张表达。
 
-User research and competitive analysis: personas, segmentation, journey maps, market sizing, competitor analysis, and feedback analysis.
+### 6. `pm-data-analytics`
 
-**Skills (7):**
+负责 SQL、A/B test 分析、cohort analysis 等数据分析工作。
 
-- `user-personas` — Create refined user personas from research data
-- `market-segments` — Identify 3–5 customer segments with demographics, JTBD, and product fit
-- `user-segmentation` — Segment users from feedback data based on behavior, JTBD, and needs
-- `customer-journey-map` — End-to-end journey map with stages, touchpoints, emotions, and pain points
-- `market-sizing` — TAM, SAM, SOM with top-down and bottom-up approaches
-- `competitor-analysis` — Competitor strengths, weaknesses, and differentiation opportunities
-- `sentiment-analysis` — Sentiment analysis and theme extraction from user feedback
+### 7. `pm-execution`
 
-**Commands (3):**
+负责 PRD、OKR、roadmap、retro、stories、stakeholder map、test scenarios 等执行层能力。
 
-- `/research-users` — Build personas, segment users, and map the customer journey
-- `/competitive-analysis` — Analyze the competitive landscape
-- `/analyze-feedback` — Sentiment analysis and segment insights from user feedback
+### 8. `pm-toolkit`
 
-**Examples:**
+负责 NDA、隐私政策、简历审阅、语法检查等辅助工具。
 
-Skills:
-- `Estimate TAM/SAM/SOM for an AI code review tool in the US market`
-- `Create a customer journey map for our e-commerce checkout flow`
-- `Segment these survey respondents by behavior and needs [attach CSV]`
+## 推荐用法
 
-Commands:
-- `/research-users We have interview data from 12 users of our fitness app`
-- `/competitive-analysis Figma competitors in the design tool space`
-- `/analyze-feedback Here's 200 NPS responses from Q4 [attach file]`
+如果你是 founder 或 solo builder，推荐优先从这几块开始：
 
-</details>
+- `pm-product-discovery`
+- `pm-product-strategy`
+- `pm-go-to-market`
+- `pm-marketing-growth`
+- `pm-execution`
 
-<details>
-<summary><strong>5. pm-data-analytics</strong> — SQL generation, cohort analysis, A/B test analysis (3 skills, 3 commands)</summary>
+如果你是偏数据驱动 PM，再补：
 
-Data analytics for PMs: SQL query generation, cohort analysis, and A/B test analysis.
+- `pm-data-analytics`
+- `pm-market-research`
 
-**Skills (3):**
+## 中文整理范围
 
-- `sql-queries` — Generate SQL from natural language (BigQuery, PostgreSQL, MySQL)
-- `cohort-analysis` — Retention curves, feature adoption, and engagement trends by cohort
-- `ab-test-analysis` — Statistical significance, sample size validation, and ship/extend/stop recommendations
+本分支已新增：
 
-**Commands (3):**
+- 根 README 中文版
+- 各插件 README 中文版
 
-- `/write-query` — Generate SQL queries from natural language
-- `/analyze-cohorts` — Cohort analysis on user engagement data
-- `/analyze-test` — Analyze A/B test results
+后续如果你需要，我还可以继续把高价值 skill 进一步做中文化。
 
-**Examples:**
+## 相关文件
 
-Skills:
-- `How large a sample do I need for 95% confidence with a 2% MDE?`
-- `What retention metrics should I track for a subscription app?`
+- 英文原文：[README.md](/Users/zhanyu/projects/pm-skills/README.md)
+- 发现类插件：[pm-product-discovery/README.md](/Users/zhanyu/projects/pm-skills/pm-product-discovery/README.md)
+- 执行类插件：[pm-execution/README.md](/Users/zhanyu/projects/pm-skills/pm-execution/README.md)
 
-Commands:
-- `/write-query Show me monthly active users by country for Q4 2025 (BigQuery)`
-- `/analyze-test Here are the results from our checkout flow A/B test [attach CSV]`
-- `/analyze-cohorts Weekly retention for users who signed up in January vs February`
-
-</details>
-
-<details>
-<summary><strong>6. pm-go-to-market</strong> — Beachhead segments, ICPs, messaging, growth loops, GTM motions, battlecards (6 skills, 3 commands)</summary>
-
-Go-to-market strategy: beachhead segments, ideal customer profiles, messaging, growth loops, GTM motions, and competitive battlecards.
-
-**Skills (6):**
-
-- `gtm-strategy` — Full GTM strategy: channels, messaging, success metrics, and launch plan
-- `beachhead-segment` — Identify the first beachhead market segment
-- `ideal-customer-profile` — ICP with demographics, behaviors, JTBD, and needs
-- `growth-loops` — Design sustainable growth loops (flywheels)
-- `gtm-motions` — Evaluate GTM motions and tools (product-led, sales-led, etc.)
-- `competitive-battlecard` — Sales-ready battlecard with objection handling and win strategies
-
-**Commands (3):**
-
-- `/plan-launch` — Full GTM strategy from beachhead to launch plan
-- `/growth-strategy` — Design growth loops and evaluate GTM motions
-- `/battlecard` — Create a competitive battlecard
-
-**Examples:**
-
-Skills:
-- `What's the best beachhead segment for a developer productivity tool?`
-- `Design a growth loop for a B2B SaaS with a freemium tier`
-- `Define our ICP for an AI-powered HR screening platform`
-
-Commands:
-- `/plan-launch AI code review tool targeting mid-size engineering teams`
-- `/battlecard Our CRM vs Salesforce for the SMB market`
-- `/growth-strategy Two-sided marketplace for connecting freelancers with startups`
-
-</details>
-
-<details>
-<summary><strong>7. pm-marketing-growth</strong> — Marketing ideas, positioning, value props, naming, North Star metrics (5 skills, 2 commands)</summary>
-
-Product marketing and growth: marketing ideas, positioning, value proposition statements, product naming, and North Star metrics.
-
-**Skills (5):**
-
-- `marketing-ideas` — Creative, cost-effective marketing ideas with channels and messaging
-- `positioning-ideas` — Product positioning differentiated from competitors
-- `value-prop-statements` — Value proposition statements for marketing, sales, and onboarding
-- `product-name` — Product name brainstorming aligned to brand values and audience
-- `north-star-metric` — North Star Metric + input metrics with business game classification
-
-**Commands (2):**
-
-- `/market-product` — Brainstorm marketing ideas, positioning, value props, and product names
-- `/north-star` — Define your North Star Metric and supporting input metrics
-
-**Examples:**
-
-Skills:
-- `Brainstorm 5 positioning angles that differentiate us from Notion`
-- `What's a good North Star Metric for a two-sided marketplace?`
-- `Generate value prop statements for our sales team's pitch deck`
-
-Commands:
-- `/market-product B2B analytics dashboard for e-commerce managers`
-- `/north-star Two-sided marketplace connecting freelancers with clients`
-
-</details>
-
-<details>
-<summary><strong>8. pm-toolkit</strong> — Resume review, legal documents, proofreading (4 skills, 5 commands)</summary>
-
-PM utilities beyond core product work: resume review, legal documents, and proofreading.
-
-**Skills (4):**
-
-- `review-resume` — PM resume review and tailoring against 10 best practices (XYZ+S formula, keywords, structure)
-- `draft-nda` — Non-Disclosure Agreement with jurisdiction-appropriate clauses
-- `privacy-policy` — Privacy policy covering GDPR/CCPA compliance
-- `grammar-check` — Grammar, logic, and flow checking with targeted fixes
-
-**Commands (5):**
-
-- `/review-resume` — Comprehensive PM resume review
-- `/tailor-resume` — Tailor a resume to a specific job description
-- `/draft-nda` — Draft an NDA
-- `/privacy-policy` — Draft a privacy policy
-- `/proofread` — Check grammar, logic, and flow
-
-**Examples:**
-
-Skills:
-- `Review my PM resume against best practices [attach PDF]`
-- `Check this product announcement for grammar and clarity`
-
-Commands:
-- `/review-resume [attach your PM resume]`
-- `/tailor-resume [attach resume + paste job description]`
-- `/proofread Here's the draft of our Q1 investor update`
-
-</details>
-
----
-
-## About
-
-This marketplace evolves with product practice and AI capabilities.
-
-Selected skills based on the work of:
-
-- Teresa Torres — [*Continuous Discovery Habits*](https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products/dp/1736633309/)
-- Marty Cagan — [*INSPIRED*](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507/) and [*TRANSFORMED*](https://www.amazon.com/dp/1119697336/)
-- Alberto Savoia — [*The Right It*](https://www.amazon.com/Right-Many-Ideas-Yours-Succeed/dp/0062884654)
-- Dan Olsen — [*The Lean Product Playbook*](https://www.amazon.com/dp/1118960874/)
-- Roger L. Martin — [*Playing to Win*](https://www.amazon.com/Playing-Win-Expanded-Bonus-Articles/dp/B0F25SDYWV/)
-- Ash Maurya — [*Running Lean*](https://www.amazon.com/dp/B004J4XGN6/)
-- Strategyzer — [*Business Model Generation*](https://www.amazon.com/dp/0470876417/) and [*Value Proposition Design*](https://www.amazon.com/dp/1118968050/)
-- Christina Wodtke — [*Radical Focus*](https://www.amazon.com/Radical-Focus-Achieving-Important-Objectives/dp/0996006052)
-- Anthony W. Ulwick — [*Jobs to Be Done*](https://jobs-to-be-done-book.com/)
-- Alistair Croll & Benjamin Yoskovitz — [*Lean Analytics*](https://www.amazon.com/Lean-Analytics-Better-Startup-Faster/dp/1449335675/)
-- Sean Ellis — [*Hacking Growth*](https://www.amazon.com/Hacking-Growth-Fastest-Growing-Companies-Breakout/dp/045149721X/)
-- Maja Voje — [*Go-To-Market Strategist*](https://gtmstrategist.com/)
-
-Curated by Paweł Huryn from [The Product Compass Newsletter](https://www.productcompass.pm).
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Known Issue on Windows
-
-If your Cowork is unstable and can't start a VM ([claude-code/issues/27010](https://github.com/anthropics/claude-code/issues/27010)), try:
-
-```powershell
-$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-WindowStyle Hidden -Command `"if ((Get-Service CoworkVMService).Status -ne 'Running') { Start-Service CoworkVMService }`""
-
-$trigger = New-ScheduledTaskTrigger -RepetitionInterval (New-TimeSpan -Minutes 1) -Once -At (Get-Date)
-
-$settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
-
-Register-ScheduledTask -TaskName "CoworkVMServiceMonitor" `
-  -Action $action `
-  -Trigger $trigger `
-  -Settings $settings `
-  -RunLevel Highest `
-  -User "SYSTEM"
-```
-
-It solves 90% of the issues on Windows.
-The remaining 10%: open services.msc > start "Claude" service manually
-
-## License
-
-MIT — see [LICENSE](LICENSE).

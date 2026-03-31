@@ -1,26 +1,29 @@
-# pm-toolkit
+# pm-toolkit 中文整理版
 
-PM utility skills: resume review, NDA drafting, privacy policy generation, and grammar/flow checking. Essential tools for product managers beyond core product work.
+通用 PM 工具插件，覆盖 NDA、隐私政策、简历审阅与语法 / 逻辑校对等辅助能力。
 
-## Skills (4)
+## Skills（4）
 
-- **draft-nda** — Draft a detailed Non-Disclosure Agreement between two parties.
-- **grammar-check** — Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text.
-- **privacy-policy** — Draft a detailed privacy policy for a product covering data types, jurisdiction, compliance considerations, and clauses needing legal review.
-- **review-resume** — Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure.
+- `draft-nda`：起草 NDA
+- `grammar-check`：检查文本中的语法、逻辑与表达流畅性
+- `privacy-policy`：起草隐私政策
+- `review-resume`：审阅并优化 PM 简历
 
-## Commands (5)
+## Commands（5）
 
-- `/pm-toolkit:draft-nda` — Draft a Non-Disclosure Agreement between two parties with jurisdiction-appropriate clauses.
-- `/pm-toolkit:privacy-policy` — Draft a privacy policy covering data collection, usage, storage, and compliance requirements.
-- `/pm-toolkit:proofread` — Check grammar, logic, and flow in any text — targeted fixes without rewriting.
-- `/pm-toolkit:review-resume` — Comprehensive PM resume review against 10 best practices — structure, impact metrics, keywords, and actionable feedback.
-- `/pm-toolkit:tailor-resume` — Tailor a PM resume to a specific job description — keyword alignment, experience reframing, and strategic optimization.
+- `/pm-toolkit:draft-nda`
+- `/pm-toolkit:privacy-policy`
+- `/pm-toolkit:proofread`
+- `/pm-toolkit:review-resume`
+- `/pm-toolkit:tailor-resume`
 
-## Author
+## 适用场景
 
-Paweł Huryn — [The Product Compass Newsletter](https://www.productcompass.pm)
+- 需要快速完成法务草稿或通用文档
+- 需要校对 PM 文案、求职材料或说明文本
+- 需要在核心产品工作之外补齐常用辅助能力
 
-## License
+## 相关文件
 
-MIT
+- 英文原文：[README.md](/Users/zhanyu/projects/pm-skills/pm-toolkit/README.md)
+

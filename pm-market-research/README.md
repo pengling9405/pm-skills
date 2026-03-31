@@ -1,27 +1,30 @@
-# pm-market-research
+# pm-market-research 中文整理版
 
-Market research skills for PMs: user personas, market segmentation, sentiment analysis, and competitive analysis.
+市场研究插件，覆盖用户画像、细分市场、情绪分析、竞品分析与客户旅程地图。
 
-## Skills (7)
+## Skills（7）
 
-- **competitor-analysis** — Analyze competitors with strengths, weaknesses, and differentiation opportunities.
-- **customer-journey-map** — Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities.
-- **market-segments** — Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis.
-- **market-sizing** — Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches.
-- **sentiment-analysis** — Analyze user feedback data to identify market segments with sentiment scores, JTBD, and product satisfaction insights.
-- **user-personas** — Create refined user personas from research data.
-- **user-segmentation** — Segment users from feedback data based on behavior, JTBD, and needs.
+- `competitor-analysis`：分析竞品的优劣势与差异化空间
+- `customer-journey-map`：构建端到端客户旅程地图
+- `market-segments`：识别 3 到 5 个潜在细分市场
+- `market-sizing`：估算 TAM / SAM / SOM
+- `sentiment-analysis`：对用户反馈做情绪与主题分析
+- `user-personas`：构建用户画像
+- `user-segmentation`：基于行为与需求做用户分群
 
-## Commands (3)
+## Commands（3）
 
-- `/pm-market-research:analyze-feedback` — Analyze user feedback at scale — sentiment analysis, theme extraction, and segment-level insights.
-- `/pm-market-research:competitive-analysis` — Analyze the competitive landscape — identify competitors, compare strengths and weaknesses, find differentiation opportunities.
-- `/pm-market-research:research-users` — Comprehensive user research — build personas, segment users, and map the customer journey from research data.
+- `/pm-market-research:analyze-feedback`
+- `/pm-market-research:competitive-analysis`
+- `/pm-market-research:research-users`
 
-## Author
+## 适用场景
 
-Paweł Huryn — [The Product Compass Newsletter](https://www.productcompass.pm)
+- 想更系统地理解用户、市场与竞品
+- 想把零散反馈归纳成结构化洞察
+- 想给 strategy 和 GTM 提供更扎实的输入
 
-## License
+## 相关文件
 
-MIT
+- 英文原文：[README.md](/Users/zhanyu/projects/pm-skills/pm-market-research/README.md)
+

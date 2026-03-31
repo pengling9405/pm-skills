@@ -1,42 +1,45 @@
-# pm-execution
+# pm-execution 中文整理版
 
-Execution and product management skills: PRDs, OKRs, roadmaps, sprints, pre-mortems, stakeholder maps, user stories, prioritization frameworks, and more.
+执行与项目推进插件，覆盖 PRD、OKR、roadmap、retro、stories、stakeholder map、测试场景等。
 
-## Skills (15)
+## Skills（15）
 
-- **brainstorm-okrs** — Brainstorm team-level OKRs aligned with company objectives.
-- **create-prd** — Create a Product Requirements Document using a comprehensive 8-section template covering summary, background, objectives, market segments, value propositions, solution details, and release planning.
-- **dummy-dataset** — Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script).
-- **job-stories** — Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria.
-- **outcome-roadmap** — Transform an output-focused roadmap into an outcome-focused one.
-- **pre-mortem** — Run a pre-mortem analysis on a PRD.
-- **prioritization-frameworks** — Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates.
-- **release-notes** — Generate user-facing release notes from tickets, PRDs, or changelogs.
-- **retro** — Facilitate a structured sprint retrospective.
-- **sprint-plan** — Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification.
-- **stakeholder-map** — Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan.
-- **summarize-meeting** — Summarize a meeting transcript into a structured template with date, participants, topic, summary points, and action items.
-- **test-scenarios** — Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes.
-- **user-stories** — Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria.
-- **wwas** — Create product backlog items in Why-What-Acceptance format.
+- `brainstorm-okrs`：围绕公司目标头脑风暴团队级 OKR
+- `create-prd`：用 8 段式模板创建 PRD
+- `dummy-dataset`：生成测试用假数据
+- `job-stories`：按 Job Story 格式拆需求
+- `outcome-roadmap`：把 feature roadmap 改写成 outcome roadmap
+- `pre-mortem`：对 PRD 或计划做 pre-mortem
+- `prioritization-frameworks`：提供 9 种优先级框架参考
+- `release-notes`：生成面向用户的 release notes
+- `retro`：主持结构化 sprint retrospective
+- `sprint-plan`：做 sprint 规划
+- `stakeholder-map`：绘制 stakeholder map
+- `summarize-meeting`：把会议记录整理成结构化摘要
+- `test-scenarios`：从用户故事或 feature 生成测试场景
+- `user-stories`：按 3C 与 INVEST 写用户故事
+- `wwas`：按 Why / What / Acceptance 拆 backlog item
 
-## Commands (10)
+## Commands（10）
 
-- `/pm-execution:generate-data` — Generate realistic dummy datasets for testing — CSV, JSON, SQL inserts, or Python scripts.
-- `/pm-execution:meeting-notes` — Summarize a meeting transcript into structured notes with decisions, action items, and follow-ups.
-- `/pm-execution:plan-okrs` — Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results.
-- `/pm-execution:pre-mortem` — Run a pre-mortem risk analysis on a PRD, launch plan, or feature — identify what could go wrong before it does.
-- `/pm-execution:sprint` — Sprint lifecycle — plan a sprint, run a retrospective, or generate release notes.
-- `/pm-execution:stakeholder-map` — Map stakeholders on a Power × Interest grid and create a tailored communication plan.
-- `/pm-execution:test-scenarios` — Generate comprehensive test scenarios from user stories or feature specs — happy paths, edge cases, and error handling.
-- `/pm-execution:transform-roadmap` — Convert a feature-based roadmap into an outcome-focused roadmap that communicates strategic intent.
-- `/pm-execution:write-prd` — Create a comprehensive Product Requirements Document from a feature idea or problem statement.
-- `/pm-execution:write-stories` — Break a feature into backlog items — user stories, job stories, or WWA format with acceptance criteria.
+- `/pm-execution:generate-data`
+- `/pm-execution:meeting-notes`
+- `/pm-execution:plan-okrs`
+- `/pm-execution:pre-mortem`
+- `/pm-execution:sprint`
+- `/pm-execution:stakeholder-map`
+- `/pm-execution:test-scenarios`
+- `/pm-execution:transform-roadmap`
+- `/pm-execution:write-prd`
+- `/pm-execution:write-stories`
 
-## Author
+## 适用场景
 
-Paweł Huryn — [The Product Compass Newsletter](https://www.productcompass.pm)
+- 需要把模糊想法整理成可执行文档
+- 需要把战略意图落到 sprint 和 backlog
+- 需要为跨团队协作准备结构化材料
 
-## License
+## 相关文件
 
-MIT
+- 英文原文：[README.md](/Users/zhanyu/projects/pm-skills/pm-execution/README.md)
+
