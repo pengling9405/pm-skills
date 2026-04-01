@@ -60,7 +60,7 @@ argument-hint: "<产品、功能或发布主题>"
 ### Step 6: Offer 下一步
 
 - 写 launch assets
-- 写 landing page copy
+- 写 落地页 copy
 - 做 growth experiments
 
 ## Notes

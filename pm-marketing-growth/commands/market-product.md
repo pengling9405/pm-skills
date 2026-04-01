@@ -47,7 +47,7 @@ argument-hint: "<产品、功能或营销目标>"
 ### 步骤 4: Offer 下一步
 
 - 深化某个定位方向
-- 生成 landing page copy
+- 生成 落地页 copy
 - 生成 launch plan
 
 ## Notes

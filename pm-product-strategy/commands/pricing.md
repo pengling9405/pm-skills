@@ -11,7 +11,7 @@ argument-hint: "<产品或定价问题>"
 ```
 /pricing SaaS project management tool moving from free to paid
 /pricing Should we switch from per-seat to usage-based pricing?
-/pricing [upload competitor pricing pages or current pricing data]
+/pricing [upload competitor 定价页s or current pricing data]
 ```
 
 ## 工作流

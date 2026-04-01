@@ -89,7 +89,7 @@ description: "生成 Lean Canvas，涵盖 problem、solution、metrics、cost st
 8. 估算成本结构
 9. 找出 3 到 5 个需要持续跟踪的关键指标
 10. 标出关键假设
-11. 给出验证实验建议（landing page、访谈、MVP 等）
+11. 给出验证实验建议（落地页、访谈、MVP 等）
 
 ### 领域背景
 

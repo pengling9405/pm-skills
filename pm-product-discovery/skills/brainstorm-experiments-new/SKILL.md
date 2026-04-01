@@ -1,6 +1,6 @@
 ---
 name: brainstorm-experiments-new
-description: "为新产品构想设计精益实验（pretotype），如 landing 页面、explainer、pre-order、concierge MVP 等。"
+description: "为新产品构想设计精益实验（pretotype），如 落地页、explainer、pre-order、concierge MVP 等。"
 ---
 
 ## 设计 Lean Startup Experiments (New Product)
@@ -14,7 +14,7 @@ description: "为新产品构想设计精益实验（pretotype），如 landing 
 1. 把核心假设写成可验证命题
 2. 设计最小实验来验证需求是否存在
 3. 优先选择：
-   - landing page
+   - 落地页
    - concierge MVP
    - waitlist
    - explainer

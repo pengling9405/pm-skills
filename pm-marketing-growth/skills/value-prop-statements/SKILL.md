@@ -7,7 +7,7 @@ description: "从已有价值主张中提炼适用于营销、销售与 onboardi
 
 ## When to Use
 
-- 需要首页或 landing page 核心文案
+- 需要首页或 落地页 核心文案
 - 需要销售与 onboarding 口径
 - 需要把抽象价值主张说得更清楚
 

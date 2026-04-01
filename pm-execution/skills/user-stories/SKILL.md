@@ -67,7 +67,7 @@ description: "按照 3C（Card、Conversation、Confirmation）与 INVEST 标准
 
 **Title:** Recently Viewed Section
 
-**Description:** As an online shopper, I want to see a "Recently viewed" section on the product page, so that I can quickly revisit products I considered.
+**Description:** As an online shopper, I want to see a "Recently viewed" section on the 产品页, so that I can quickly revisit products I considered.
 
 **Design:** [Figma link]
 

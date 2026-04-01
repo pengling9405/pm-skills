@@ -19,7 +19,7 @@ argument-hint: "[plan|retro|release-notes] <上下文>"
 
 ---
 
-### 计划 模式
+### 计划模式
 
 通过容量估算、story 选择与风险识别，帮助完成 sprint planning。
 
