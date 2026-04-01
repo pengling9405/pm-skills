@@ -1,3 +1,4 @@
+---
 name: business-model
 description: "生成包含 9 个模块的 Business Model Canvas。适用于创建商业模式、说明企业如何创造价值，或分析已有商业模式。"
 ---

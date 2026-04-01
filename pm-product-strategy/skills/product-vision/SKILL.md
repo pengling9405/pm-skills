@@ -1,3 +1,4 @@
+---
 name: product-vision
 description: "头脑风暴一条既鼓舞人心、又可实现、且有情感张力的 product vision，用来激励团队并对齐利益相关方。适用于定义或打磨产品愿景、撰写愿景陈述或统一团队方向。"
 ---

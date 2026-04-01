@@ -1,3 +1,4 @@
+---
 name: lean-canvas
 description: "生成 Lean Canvas，涵盖 problem、solution、metrics、cost structure、UVP、unfair advantage、channels、segments 与 revenue。适用于探索创业假设、验证商业模式或搭建新业务轮廓。"
 ---

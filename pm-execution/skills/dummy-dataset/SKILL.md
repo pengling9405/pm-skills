@@ -1,3 +1,4 @@
+---
 name: dummy-dataset
 description: "生成真实感较强的 dummy datasets，用于测试，并支持自定义字段、约束与输出格式（CSV、JSON、SQL、Python script）。适用于创建测试数据、搭建 mock datasets，或为开发和演示生成样例数据。"
 ---

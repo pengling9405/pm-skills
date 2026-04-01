@@ -1,3 +1,4 @@
+---
 name: wwas
 description: "使用 Why-What-Acceptance 格式创建 product backlog items，确保条目独立、有价值、可测试，并带有战略背景。适用于编写结构化 backlog items、把功能拆成 work items，或使用 WWA 格式表达需求。"
 ---

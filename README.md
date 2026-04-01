@@ -1,26 +1,26 @@
-# PM 技能 Marketplace 中文整理版
+# PM 技能市场中文版
 
 > 说明：这是 `pm-skills` 的中文整理版入口文档，方便中文读者快速理解这套 PM 技能市场的结构与用法。英文原文保持不变。
 
 ## 这是什么
 
-`pm-skills` 是一套面向产品经理与 founder 的 AI 工作系统，围绕产品决策而不是单纯文档生成来设计。
+`pm-skills` 是一套面向产品经理与创始人的 AI 工作系统，围绕产品决策而不是单纯文档生成来设计。
 
 它的核心不是“让 AI 多写几页字”，而是把成熟的 PM 框架编码成技能与工作流，让你在以下环节更有结构：
 
-- discovery
-- strategy
-- market research
+- 需求发现
+- 产品战略
+- 市场研究
 - GTM
-- execution
-- analytics
-- marketing / growth
+- 执行落地
+- 数据分析
+- 营销 / 增长
 - toolkit 类通用能力
 
 当前仓库包含：
 
-- 65 个 skills
-- 36 条链式 workflows
+- 65 个技能
+- 36 条链式工作流
 - 8 个插件目录
 
 ## 为什么有价值
@@ -30,8 +30,8 @@
 
 典型用途包括：
 
-- 把模糊点子跑成结构化 discovery
-- 把 feature 想法变成 PRD、用户故事、测试场景
+- 把模糊点子跑成结构化需求发现
+- 把功能想法变成 PRD、用户故事、测试场景
 - 用 strategy / canvas / pricing 框架看清方向
 - 做市场研究、竞争分析、用户画像、细分市场分析
 - 做 GTM、growth、North Star、content / positioning 相关工作
@@ -50,13 +50,13 @@
 
 ### 技能
 
-Skills 是基础能力单元。每个 skill 负责一个 PM 任务、分析框架或引导式工作流。
+技能是基础能力单元。每个技能负责一个 PM 任务、分析框架或引导式工作流。
 
-### Commands
+### 命令
 
-Commands 是由用户显式触发的链式流程，会把多个 skills 串起来，形成端到端工作流。
+命令是由用户显式触发的链式流程，会把多个技能串起来，形成端到端工作流。
 
-### Plugins
+### 插件
 
 仓库把不同 PM 领域拆成 8 个插件：
 
@@ -69,7 +69,7 @@ Commands 是由用户显式触发的链式流程，会把多个 skills 串起来
 - `pm-execution`
 - `pm-toolkit`
 
-每个插件既有 skill，也有 command。
+每个插件既有技能，也有命令。
 
 ## 安装方式
 
@@ -185,4 +185,3 @@ claude plugin install pm-execution@pm-skills
 - 英文原文：[README.md](/Users/zhanyu/projects/pm-skills/README.md)
 - 发现类插件：[pm-product-discovery/README.md](/Users/zhanyu/projects/pm-skills/pm-product-discovery/README.md)
 - 执行类插件：[pm-execution/README.md](/Users/zhanyu/projects/pm-skills/pm-execution/README.md)
-

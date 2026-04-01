@@ -1,3 +1,4 @@
+---
 name: summarize-meeting
 description: "把会议转录整理成结构化笔记，包含日期、参会人、主题、关键决策、摘要要点与行动项。适用于处理会议录音、生成 meeting notes、撰写会议纪要或总结讨论内容。"
 ---

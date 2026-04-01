@@ -1,3 +1,4 @@
+---
 name: prioritization-frameworks
 description: "9 种 prioritization frameworks 的参考指南，包含公式、适用场景与模板，如 RICE、ICE、Kano、MoSCoW、Opportunity Score 等。适用于选择优先级方法、比较不同框架，或学习它们的使用方式。"
 ---

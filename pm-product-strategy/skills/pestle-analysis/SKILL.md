@@ -1,3 +1,4 @@
+---
 name: pestle-analysis
 description: "执行 PESTLE analysis，覆盖 Political、Economic、Social、Technological、Legal、Environmental 六类因素。适用于评估宏观环境、做战略规划或判断外部因素如何影响业务。"
 ---

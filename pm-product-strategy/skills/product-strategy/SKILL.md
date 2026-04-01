@@ -1,3 +1,4 @@
+---
 name: product-strategy
 description: "使用 9 部分 Product Strategy Canvas 创建完整的 product strategy，覆盖 vision、segments、costs、value propositions、trade-offs、metrics、growth、capabilities 与 defensibility。适用于制定产品战略、撰写战略方案或明确产品方向。"
 ---

@@ -1,3 +1,4 @@
+---
 name: startup-canvas
 description: "为新产品生成 Startup Canvas，把 Product Strategy（9 个部分）与 Business Model（costs + revenue）整合在一起。它是 BMC 与 Lean Canvas 的替代方案，会把战略和商业模式拆开。适用于启动新产品或评估创业想法。"
 ---

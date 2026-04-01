@@ -1,3 +1,4 @@
+---
 name: ansoff-matrix
 description: "生成 Ansoff Matrix 分析，覆盖 market penetration、market development、product development 与 diversification 四类增长路径。适用于评估增长选项、规划市场扩张或比较不同增长策略。"
 ---

@@ -1,3 +1,4 @@
+---
 name: pre-mortem
 description: "对 PRD 或发布计划执行 pre-mortem 风险分析，把风险分为 Tigers（真实问题）、Paper Tigers（被放大的担忧）和 Elephants（未被正面讨论的问题），并继续分类为 launch-blocking、fast-follow 或 track。适用于发布前准备、压力测试产品计划，或识别潜在失败点。"
 ---

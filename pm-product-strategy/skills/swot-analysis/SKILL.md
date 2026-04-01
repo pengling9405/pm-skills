@@ -1,3 +1,4 @@
+---
 name: swot-analysis
 description: "执行详细的 SWOT analysis，输出 strengths、weaknesses、opportunities 与 threats，并附带可执行建议。适用于战略评估、竞争分析或判断产品/业务位置。"
 ---

@@ -1,3 +1,4 @@
+---
 name: value-proposition
 description: "使用 6 部分 JTBD 模板设计详细的 value proposition，包括 Who、Why、What before、How、What after 与 Alternatives。适用于构建价值主张、分析客户价值，或说明客户为什么应该选择你的产品。"
 ---

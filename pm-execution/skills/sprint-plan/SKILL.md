@@ -1,3 +1,4 @@
+---
 name: sprint-plan
 description: "通过容量估算、story 选择、依赖映射和风险识别来规划 sprint。适用于准备 sprint planning、估算团队容量、挑选 stories，或平衡 sprint scope 与 velocity。"
 ---

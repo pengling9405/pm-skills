@@ -1,3 +1,4 @@
+---
 name: brainstorm-okrs
 description: "围绕公司目标头脑风暴 team-level OKRs，输出定性的 objectives 与可量化的 key results。适用于制定季度 OKRs、让团队目标对齐公司战略、起草 objectives，或学习如何写出高质量 OKRs。"
 ---

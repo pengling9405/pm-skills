@@ -1,3 +1,4 @@
+---
 name: retro
 description: "组织结构化的 sprint retrospective，沉淀做得好的地方、做得不好的地方，以及带 owner 和 deadline 的优先行动项。适用于执行 retrospective、复盘 sprint、根据团队反馈生成行动项，或学习如何做好 retro。"
 ---

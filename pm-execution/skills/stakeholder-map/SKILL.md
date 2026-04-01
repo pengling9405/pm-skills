@@ -1,3 +1,4 @@
+---
 name: stakeholder-map
 description: "使用 power/interest 网格构建 stakeholder map，识别各象限的沟通策略，并生成沟通计划。适用于管理 stakeholders、准备上线、对齐跨职能团队，或规划 stakeholder engagement。"
 ---

@@ -1,3 +1,4 @@
+---
 name: release-notes
 description: "根据 tickets、PRDs 或 changelogs 生成面向用户的 release notes，按 new features、improvements、fixes 等类别输出清晰、可读的总结。适用于撰写 release notes、changelog、发布公告，或概括本次上线内容。"
 ---

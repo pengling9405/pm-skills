@@ -1,3 +1,4 @@
+---
 name: porters-five-forces
 description: "执行 Porter's Five Forces analysis，覆盖 competitive rivalry、supplier power、buyer power、threat of substitutes 与 threat of new entrants。适用于分析行业结构、竞争力量和市场吸引力。"
 ---
