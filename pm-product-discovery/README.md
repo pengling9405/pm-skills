@@ -2,7 +2,7 @@
 
 产品发现插件，覆盖点子、实验、假设识别、优先级、客户访谈与指标设计。
 
-## Skills（13）
+## 技能（13）
 
 - `analyze-feature-requests`
 - `brainstorm-experiments-existing`

@@ -2,7 +2,7 @@
 
 产品数据分析插件，面向 PM 的 SQL、A/B 测试与 cohort 分析能力。
 
-## Skills（3）
+## 技能（3）
 
 - `ab-test-analysis`：分析 A/B 测试结果，包括统计显著性、样本量校验、置信区间与可执行建议
 - `cohort-analysis`：对用户参与度与留存做 cohort 分析

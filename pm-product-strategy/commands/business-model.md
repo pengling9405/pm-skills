@@ -153,7 +153,7 @@ argument-hint: "[lean|full|startup|value-prop] <产品或业务>"
 
 ## 工作流（所有模式通用）
 
-### Step 1：收集上下文
+### 步骤 1：收集上下文
 
 询问：
 - 产品或商业想法是什么？
@@ -161,11 +161,11 @@ argument-hint: "[lean|full|startup|value-prop] <产品或业务>"
 - 是否已有商业模式需要优化？
 - 目标客户是谁？
 
-### Step 2：生成所选框架
+### 步骤 2：生成所选框架
 
 按上面的说明调用对应的 skill。
 
-### Step 3：保存并继续迭代
+### 步骤 3：保存并继续迭代
 
 保存为 markdown。并继续提供后续动作：
 - “要不要我用 SWOT 或 PESTLE 来**压力测试这个模型**？”

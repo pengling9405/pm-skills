@@ -16,7 +16,7 @@ argument-hint: "<项目、计划或发布>"
 
 ## 工作流
 
-### Step 1：理解事项背景
+### 步骤 1：理解事项背景
 
 询问：
 - 这是哪个项目或计划？
@@ -24,14 +24,14 @@ argument-hint: "<项目、计划或发布>"
 - 你已经知道哪些明显的 stakeholders？
 - 有没有需要注意的政治性或敏感组织关系？
 
-### Step 2：识别 Stakeholders
+### 步骤 2：识别 Stakeholders
 
 补充用户可能没想到的 stakeholders：
 - **Internal**：Engineering、Design、QA、Data、Legal、Finance、Marketing、Sales、Support、Leadership
 - **External**：Customers、partners、vendors、regulators、board members
 - **常被忽略**：相邻团队、on-call engineers、customer success、documentation team
 
-### Step 3：映射到 Power × Interest Grid
+### 步骤 3：映射到 Power × Interest Grid
 
 调用 **stakeholder-map** skill：
 
@@ -53,7 +53,7 @@ argument-hint: "<项目、计划或发布>"
                     LOW INTEREST
 ```
 
-### Step 4：生成沟通计划
+### 步骤 4：生成沟通计划
 
 ```
 ## Stakeholder Map: [Initiative]
@@ -62,7 +62,7 @@ argument-hint: "<项目、计划或发布>"
 | Stakeholder | Role | Power | Interest | Quadrant | Stance |
 |------------|------|-------|----------|----------|--------|
 
-### Communication Plan
+### Communication 计划
 
 #### Manage Closely (High Power, High Interest)
 | Stakeholder | Channel | Frequency | Content | Owner |

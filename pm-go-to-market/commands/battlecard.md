@@ -7,23 +7,23 @@ argument-hint: "<我们的产品> vs <竞品>"
 
 生成一份实战导向的竞品 battlecard，帮助你在销售、对外沟通或产品定位讨论中快速抓住要点。
 
-## Invocation
+## 调用方式
 
 ```text
 /battlecard 我们 vs Notion
 /battlecard 我们的客服 AI vs Intercom
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Identify the Matchup
+### 步骤 1: Identify the Matchup
 
 确认：
 - 你的产品是谁
 - 对比竞品是谁
 - battlecard 用于什么场景
 
-### Step 2: Research the Competitor
+### 步骤 2: Research the Competitor
 
 重点收集：
 - 定位
@@ -32,13 +32,13 @@ argument-hint: "<我们的产品> vs <竞品>"
 - 优势与弱点
 - 典型 objection
 
-### Step 3: Generate Battlecard
+### 步骤 3: Generate Battlecard
 
 ```markdown
 ## Competitive Battlecard: [Your Product] vs [Competitor]
-### Quick Summary
+### Quick 摘要
 ### Positioning
-### Feature Comparison
+### 功能 Comparison
 ### Pricing Comparison
 ### Objection Handling
 ### Landmines to Plant
@@ -48,7 +48,7 @@ argument-hint: "<我们的产品> vs <竞品>"
 ### Resources
 ```
 
-### Step 4: Offer Next Steps
+### 步骤 4: Offer 下一步
 
 - 继续补 positioning
 - 输出对外 comparison page 框架

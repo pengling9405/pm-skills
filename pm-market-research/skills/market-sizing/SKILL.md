@@ -9,7 +9,7 @@ description: "用 TAM、SAM、SOM 估算市场空间，并结合 top-down 与 bo
 
 帮助用户对市场机会建立量级判断，而不是拍脑袋估算。
 
-## Instructions
+## 使用说明
 
 ### Input
 

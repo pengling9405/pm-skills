@@ -1,7 +1,7 @@
 name: test-scenarios
 description: "根据 user stories 生成完整的 test scenarios，包含测试目标、起始条件、用户角色、逐步操作与预期结果。适用于编写 QA test cases、创建测试计划、定义 acceptance tests，或准备功能验证。"
 ---
-# Test Scenarios
+# 测试 Scenarios
 
 根据 user stories 生成完整的 test scenarios，包含测试目标、起始条件、用户角色、逐步测试动作与预期结果。
 

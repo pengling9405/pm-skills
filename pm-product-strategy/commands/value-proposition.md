@@ -16,7 +16,7 @@ argument-hint: "<产品或功能>"
 
 ## 工作流
 
-### Step 1：理解产品与市场
+### 步骤 1：理解产品与市场
 
 可接受的上下文来源：
 - 产品描述（口头或文字）
@@ -28,7 +28,7 @@ argument-hint: "<产品或功能>"
 - 今天用户的替代方案或临时解决办法是什么？
 - 你现在掌握了哪些客户洞察或研究？
 
-### Step 2：构建 Value Proposition
+### 步骤 2：构建 Value Proposition
 
 调用 **value-proposition** skill，生成 6 部分模板：
 
@@ -55,7 +55,7 @@ argument-hint: "<产品或功能>"
 
 如果用户有多个 segment，就为每个 segment 单独输出一版 value proposition。
 
-### Step 3：保存并提供后续动作
+### 步骤 3：保存并提供后续动作
 
 保存为 markdown。并继续提供：
 - “要不要我用 Value Curve 帮你**对比竞争对手**？”

@@ -2,7 +2,7 @@ description: 围绕公司目标头脑风暴 team-level OKRs，输出定性的 ob
 argument-hint: "<团队、产品领域或公司目标>"
 ---
 
-# /plan-okrs -- 团队 OKR 规划
+# /计划-okrs -- 团队 OKR 规划
 
 生成结构良好的 OKRs，把团队工作与公司战略连接起来。输出 3 组备选 OKR，包含定性 objective 与定量 key results。
 
@@ -16,7 +16,7 @@ argument-hint: "<团队、产品领域或公司目标>"
 
 ## 工作流
 
-### Step 1：收集背景信息
+### 步骤 1：收集背景信息
 
 询问用户：
 - 这些 OKRs 对应哪个团队或产品领域？
@@ -27,7 +27,7 @@ argument-hint: "<团队、产品领域或公司目标>"
 
 可以接收公司 OKRs 或战略文档作为上传材料。
 
-### Step 2：生成 OKRs
+### 步骤 2：生成 OKRs
 
 调用 **brainstorm-okrs** skill：
 
@@ -37,7 +37,7 @@ argument-hint: "<团队、产品领域或公司目标>"
 - 确保这些 OKRs 能清晰承接到公司目标
 - 兼顾 leading indicators（过程）与 lagging indicators（结果）
 
-### Step 3：校验质量
+### 步骤 3：校验质量
 
 按最佳实践检查每组 OKR：
 - Objective 是否足够鼓舞人？（团队会愿意围绕它行动吗？）
@@ -48,7 +48,7 @@ argument-hint: "<团队、产品领域或公司目标>"
 
 把问题标出来，并给出改进建议。
 
-### Step 4：展示并迭代
+### 步骤 4：展示并迭代
 
 ```
 ## Team OKRs: [Team Name] — [Period]

@@ -59,7 +59,7 @@ description: "使用 'When [situation], I want to [motivation], so I can [outcom
 5. [边界情况处理合理]
 6. [相关集成与通知可用]
 
-## Example Job Story
+## 示例 Job Story
 
 **Title:** Track Weekly Snack Spending
 

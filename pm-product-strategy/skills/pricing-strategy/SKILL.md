@@ -2,7 +2,7 @@ name: pricing-strategy
 description: "分析并设计定价策略，包括 pricing model、竞品定价分析、支付意愿估算与价格弹性。适用于制定价格、评估定价模型、准备调价，或比较 freemium 与 paid 方案。"
 ---
 
-## Pricing Strategy
+## Pricing 策略
 
 围绕价值交付、竞争定位与支付意愿设计定价策略。
 

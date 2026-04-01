@@ -5,7 +5,7 @@ description: "评估多种 GTM motion，包括 inbound、outbound、paid、commu
 
 # GTM Motions
 
-## Overview
+## 概览
 
 这个 skill 用于选择最适合当前产品阶段的获客与销售动作组合。
 
@@ -27,11 +27,11 @@ description: "评估多种 GTM motion，包括 inbound、outbound、paid、commu
 
 ## How It Works
 
-### Step 1: Understand Your Product
-### Step 2: Evaluate Market Conditions
-### Step 3: Score Each Motion
-### Step 4: Design Motion Stack
-### Step 5: Build Execution Plan
+### 步骤 1: Understand Your Product
+### 步骤 2: Evaluate Market Conditions
+### 步骤 3: Score Each Motion
+### 步骤 4: 设计 Motion Stack
+### Step 5: 构建 Execution 计划
 
 ## Input Format
 

@@ -19,7 +19,7 @@ description: "从已有价值主张中提炼适用于营销、销售与 onboardi
 - 帮他们解决什么问题
 - 为什么比替代方案更好
 
-## Example Framework (Canva)
+## 示例 Framework (Canva)
 
 可参考：
 - For [who]

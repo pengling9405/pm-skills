@@ -5,11 +5,11 @@ description: "将客户访谈记录总结为结构化模板，包括洞察、JTB
 
 ## Summarize Customer Interview
 
-### Context
+### 背景
 
 这个 skill 用于把原始访谈记录转成可用于产品决策的结构化摘要。
 
-### Instructions
+### 使用说明
 
 1. 提炼关键洞察
 2. 识别用户任务、现有流程与痛点
@@ -19,10 +19,10 @@ description: "将客户访谈记录总结为结构化模板，包括洞察、JTB
 ### Output Template
 
 ```markdown
-## Interview Summary
+## Interview 摘要
 ### Key Insights
 ### Jobs to Be Done
-### Current Workflow
+### Current 工作流
 ### Pain Points
 ### Satisfaction Signals
 ### Notable Quotes

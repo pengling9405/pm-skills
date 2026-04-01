@@ -7,7 +7,7 @@ argument-hint: "<功能想法或问题描述>"
 
 将一个功能想法、问题陈述或研究材料整理成结构化 PRD，用于对齐干系人并指导后续开发。
 
-## Invocation
+## 调用方式
 
 ```text
 /write-prd 企业客户需要 SSO 支持
@@ -15,9 +15,9 @@ argument-hint: "<功能想法或问题描述>"
 /write-prd [上传 brief、研究文档或策略 deck]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Understand the Feature
+### 步骤 1: Understand the 功能
 
 接受任意形式输入：
 - 功能名（如 “SSO support”）
@@ -26,7 +26,7 @@ argument-hint: "<功能想法或问题描述>"
 - 模糊想法（如 “我们需要处理 onboarding 流失”）
 - 上传文档（brief、研究、Slack 讨论、邮件）
 
-### Step 2: Gather Context
+### 步骤 2: Gather 背景
 
 以对话方式补上下文，优先问最关键的问题：
 
@@ -39,7 +39,7 @@ argument-hint: "<功能想法或问题描述>"
 
 如果用户已经给了背景文档，先提取已有信息，只针对缺口追问。
 
-### Step 3: Generate the PRD
+### 步骤 3: Generate the PRD
 
 调用 **create-prd** skill，产出 8 部分 PRD：
 
@@ -51,10 +51,10 @@ argument-hint: "<功能想法或问题描述>"
 **Status**: Draft
 **Stakeholders**: [如已知]
 
-### 1. Executive Summary
+### 1. Executive 摘要
 [2-3 句：做什么、给谁做、为什么现在做]
 
-### 2. Background & Context
+### 2. Background & 背景
 [问题空间、已有研究、市场背景、触发原因]
 
 ### 3. Objectives & Success Metrics
@@ -68,13 +68,13 @@ argument-hint: "<功能想法或问题描述>"
 | Metric | Current | Target | Measurement |
 |--------|---------|--------|-------------|
 
-### 4. Target Users & Segments
+### 4. Target 用户 & Segments
 [目标用户、画像、规模、约束]
 
-### 5. User Stories & Requirements
+### 5. 用户 Stories & Requirements
 P0 / P1 / P2 分层列出用户故事与验收标准
 
-### 6. Solution Overview
+### 6. Solution 概览
 [高层方案、关键设计选择、技术路径]
 
 ### 7. Open Questions
@@ -85,7 +85,7 @@ P0 / P1 / P2 分层列出用户故事与验收标准
 [里程碑、依赖、分阶段发布]
 ```
 
-### Step 4: Review and Iterate
+### 步骤 4: 审查 and Iterate
 
 生成后继续给用户下一步选项：
 - “要不要我帮你**收紧范围**，把部分 P1 下调成 P2？”

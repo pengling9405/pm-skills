@@ -1,8 +1,8 @@
 ---
 name: user-stories
-description: "按照 3C（Card、Conversation、Confirmation）与 INVEST 标准创建 user stories，并附带描述、设计链接和验收标准。适用于编写用户故事、拆分功能需求和定义验收条件。"
+description: "按照 3C（Card、Conversation、Confirmation）与 INVEST 标准创建 用户 stories，并附带描述、设计链接和验收标准。适用于编写用户故事、拆分功能需求和定义验收条件。"
 ---
-# User Stories
+# 用户 Stories
 
 按照 3C 与 INVEST 标准创建 user stories，输出标题、描述、设计引用与验收标准。
 
@@ -63,7 +63,7 @@ description: "按照 3C（Card、Conversation、Confirmation）与 INVEST 标准
 5. [性能或可访问性要求]
 6. [必要集成点]
 
-## Example User Story
+## 示例 用户 Story
 
 **Title:** Recently Viewed Section
 

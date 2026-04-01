@@ -15,11 +15,11 @@ argument-hint: "<PRD、计划或功能描述>"
 
 ## 工作流
 
-### Step 1：接收计划内容
+### 步骤 1：接收计划内容
 
 接受任意格式：PRD、feature spec、launch plan、project brief 或口头描述。输入越具体，风险分析就越有价值。
 
-### Step 2：识别风险
+### 步骤 2：识别风险
 
 调用 **pre-mortem** skill：
 
@@ -30,7 +30,7 @@ argument-hint: "<PRD、计划或功能描述>"
 - **Operational**：支持压力、文档缺口、培训需求
 - **Dependencies**：第三方服务、跨团队交接、监管依赖
 
-### Step 3：分类风险
+### 步骤 3：分类风险
 
 对每个风险分类：
 
@@ -48,10 +48,10 @@ argument-hint: "<PRD、计划或功能描述>"
 - 主动把政治性、组织性或令人不舒服的问题抬出来
 - 用建设性的方式表达，并给出建议的讨论切口
 
-### Step 4：生成 Pre-Mortem 报告
+### 步骤 4：生成 Pre-Mortem 报告
 
 ```
-## Pre-Mortem: [Feature/Launch]
+## Pre-Mortem: [功能/Launch]
 
 **Date**: [today]
 **Status**: [Draft / Reviewed]

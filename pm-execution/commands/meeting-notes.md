@@ -15,7 +15,7 @@ argument-hint: "<会议转录或会议笔记>"
 
 ## 工作流
 
-### Step 1：接收会议内容
+### 步骤 1：接收会议内容
 
 接受任意格式：
 - 完整转录（来自 Otter、Fireflies、Google Meet、Zoom 等）
@@ -25,7 +25,7 @@ argument-hint: "<会议转录或会议笔记>"
 
 如果输入信息不完整，就基于现有内容整理，并明确指出缺失之处。
 
-### Step 2：提取并结构化整理
+### 步骤 2：提取并结构化整理
 
 调用 **summarize-meeting** skill：
 
@@ -38,17 +38,17 @@ argument-hint: "<会议转录或会议笔记>"
 - **Key quotes**：值得原文保留的重要表述
 - **Context**：会议类型、项目背景与上下文
 
-### Step 3：生成会议摘要
+### 步骤 3：生成会议摘要
 
 ```
-## Meeting Summary
+## Meeting 摘要
 
 **Date**: [date if known]
 **Participants**: [names/roles]
 **Meeting type**: [standup, planning, review, 1:1, stakeholder, etc.]
 **Topic**: [primary subject]
 
-### Summary
+### 摘要
 [用 3 到 5 句话概括讨论内容与最终结论]
 
 ### Key Decisions
@@ -66,14 +66,14 @@ argument-hint: "<会议转录或会议笔记>"
 ### Open Questions
 - [问题] — 需要 [person/team] 提供输入
 
-### Next Steps
+### 下一步
 - [接下来做什么]
 - Next meeting: [如有提及]
 ```
 
 保存为 markdown。
 
-### Step 4：提供后续动作
+### 步骤 4：提供后续动作
 
 - “要不要我把这些纪要**整理成邮件**发给参会人？”
 - “要不要我把这些 action items **转成 tickets**？”

@@ -7,7 +7,7 @@ argument-hint: "<产品、功能或机会空间>"
 
 用结构化方式从 PM、设计、工程等不同视角发散想法，适合在 discovery 早期快速铺开选项。
 
-## Invocation
+## 调用方式
 
 ```text
 /brainstorm 新用户激活流程
@@ -15,15 +15,15 @@ argument-hint: "<产品、功能或机会空间>"
 /brainstorm 新产品：面向独立开发者的 AI 研究助手
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Determine Mode
+### 步骤 1: Determine 模式
 
 先判断当前是：
 - 需要**想法**，还是
 - 需要**实验方案**
 
-### Step 2: Gather Context
+### 步骤 2: Gather 背景
 
 补充以下上下文：
 - 目标产品 / 功能是什么
@@ -31,7 +31,7 @@ argument-hint: "<产品、功能或机会空间>"
 - 已知痛点、限制、现有数据
 - 希望推动什么结果
 
-### Step 3: Generate Output
+### 步骤 3: Generate Output
 
 如果是想法模式：
 - 从 PM、Designer、Engineer 三个视角各给出候选方向
@@ -41,7 +41,7 @@ argument-hint: "<产品、功能或机会空间>"
 - 先提出关键假设
 - 再设计低成本验证方式
 
-### Step 4: Deepen and Iterate
+### 步骤 4: Deepen and Iterate
 
 生成首轮结果后继续：
 - 收紧范围
@@ -49,41 +49,41 @@ argument-hint: "<产品、功能或机会空间>"
 - 指出高风险项
 - 给出最值得先验证的 3-5 个方向
 
-## Output Format
+## 输出格式
 
 ### For Ideas:
 
 ```markdown
-## Brainstorm: [Product/Feature Area]
+## Brainstorm: [Product/功能 Area]
 
-### PM Perspective
+### PM 视角
 - ...
 
-### Designer Perspective
+### 设计师视角
 - ...
 
-### Engineer Perspective
+### 工程师视角
 - ...
 
-### Top 5 Recommendations
+### 前 5 条建议
 1. ...
 
-### Next Steps
+### 下一步
 - ...
 ```
 
 ### For Experiments:
 
 ```markdown
-## Experiment Design: [Product/Feature Area]
+## Experiment 设计: [Product/功能 Area]
 
 ### Hypotheses
 - ...
 
-### Recommended Experiments
+### 推荐实验
 - ...
 
-### Experiment Details
+### 实验细节
 - ...
 ```
 

@@ -3,13 +3,13 @@ name: user-segmentation
 description: "根据行为、任务、需求与反馈把用户拆分成若干有意义的分群。"
 ---
 
-# User Segmentation
+# 用户 Segmentation
 
 ## Purpose
 
 这个 skill 用于把“用户整体”拆成更有决策价值的 segment。
 
-## Instructions
+## 使用说明
 
 ### Input
 

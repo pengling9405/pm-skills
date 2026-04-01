@@ -7,26 +7,26 @@ argument-hint: "<需要审校的文本>"
 
 对文本做轻量审校，识别语法、逻辑和表达流畅性问题。
 
-## Invocation
+## 调用方式
 
 ```text
 /proofread [粘贴一段文本]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Accept Text
-### Step 2: Analyze
-### Step 3: Report Issues
+### 步骤 1: Accept Text
+### 步骤 2: Analyze
+### 步骤 3: 报告 Issues
 
 ```markdown
-## Proofread Report
+## Proofread 报告
 ### Issues
 #### 1. [Category: Grammar/Logic/Flow]
-### Summary
+### 摘要
 ```
 
-### Step 4: Offer
+### 步骤 4: Offer
 
 - 继续重写
 - 保留原意做 polish

@@ -2,7 +2,7 @@
 
 产品营销与增长插件，覆盖营销点子、North Star、定位、命名与价值主张表达。
 
-## Skills（5）
+## 技能（5）
 
 - `marketing-ideas`：生成低成本、可执行的营销想法
 - `north-star-metric`：定义 North Star Metric 与输入指标

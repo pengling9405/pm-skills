@@ -22,11 +22,11 @@ description: "起草 NDA 草稿，覆盖主要条款并标出法律复核点。"
 
 ## Process
 
-### Step 1: Clarify Requirements
-### Step 2: Structure the NDA
-### Step 3: Use Plain Language
-### Step 4: Highlight Clauses Needing Legal Review
-### Step 5: Provide Context
+### 步骤 1: Clarify Requirements
+### 步骤 2: Structure the NDA
+### 步骤 3: Use Plain Language
+### 步骤 4: Highlight Clauses Needing Legal 审查
+### Step 5: Provide 背景
 
 ## NDA Template Structure
 
@@ -40,7 +40,7 @@ description: "起草 NDA 草稿，覆盖主要条款并标出法律复核点。"
 
 ## Key Sections to Include
 
-### Preamble
+### 前置步骤
 ### Definitions
 ### Obligations
 ### Permitted Disclosures
@@ -49,15 +49,15 @@ description: "起草 NDA 草稿，覆盖主要条款并标出法律复核点。"
 ### Remedies
 ### General Provisions
 
-## Content Guidelines
+## 内容 Guidelines
 
 - 语言清晰
 - 条款范围明确
 - 不替代法律判断
 
-## Output Format
+## 输出格式
 
-### Part 1: Summary
+### Part 1: 摘要
 ### Part 2: Full NDA Document
 ### Part 3: Customization Notes
 

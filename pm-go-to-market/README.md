@@ -2,7 +2,7 @@
 
 GTM 插件，覆盖 ICP、beachhead segment、growth loops、GTM motions 与完整 launch strategy。
 
-## Skills（6）
+## 技能（6）
 
 - `beachhead-segment`：识别产品最初的滩头市场
 - `competitive-battlecard`：生成面向销售的竞品 battlecard

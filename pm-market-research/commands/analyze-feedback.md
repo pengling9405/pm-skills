@@ -3,20 +3,20 @@ description: 对用户反馈做情绪、主题、分群与行动建议分析
 argument-hint: "<反馈数据、评论、调查或支持工单>"
 ---
 
-# /analyze-feedback -- User Feedback Analysis
+# /analyze-feedback -- 用户 Feedback Analysis
 
 把用户反馈转成可执行洞察，而不是只做情绪概括。
 
-## Invocation
+## 调用方式
 
 ```text
 /analyze-feedback [上传评论、问卷、客服记录]
 /analyze-feedback 最近 100 条 App Store 评论
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Accept Feedback Data
+### 步骤 1: Accept Feedback Data
 
 接受：
 - 评论
@@ -25,7 +25,7 @@ argument-hint: "<反馈数据、评论、调查或支持工单>"
 - NPS 开放题
 - 客服或销售访谈摘录
 
-### Step 2: Analyze
+### 步骤 2: Analyze
 
 从以下维度分析：
 - 情绪倾向
@@ -34,10 +34,10 @@ argument-hint: "<反馈数据、评论、调查或支持工单>"
 - 关键 quote
 - 时间变化趋势
 
-### Step 3: Generate Analysis Report
+### 步骤 3: Generate Analysis 报告
 
 ```markdown
-## Feedback Analysis Report
+## Feedback Analysis 报告
 ### Overall Sentiment
 ### Top Themes
 ### Theme Deep-Dive
@@ -48,7 +48,7 @@ argument-hint: "<反馈数据、评论、调查或支持工单>"
 ### Gaps
 ```
 
-### Step 4: Offer Next Steps
+### 步骤 4: Offer 下一步
 
 - 提炼 personas
 - 形成 feature request triage

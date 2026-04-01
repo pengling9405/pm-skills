@@ -16,7 +16,7 @@ argument-hint: "<产品或定价问题>"
 
 ## 工作流
 
-### Step 1：理解定价背景
+### 步骤 1：理解定价背景
 
 询问：
 - 这是什么产品？它交付的核心价值是什么？
@@ -25,7 +25,7 @@ argument-hint: "<产品或定价问题>"
 - 目标客户画像以及他们的预算环境
 - 有没有限制条件？（合同约束、市场预期、竞争定位）
 
-### Step 2：分析定价模型
+### 步骤 2：分析定价模型
 
 调用 **pricing-strategy** 与 **monetization-strategy** skill：
 
@@ -39,7 +39,7 @@ argument-hint: "<产品或定价问题>"
 
 对每个相关模型说明：优点、缺点、与产品的匹配度、收入预测方式。
 
-### Step 3：竞品定价分析
+### 步骤 3：竞品定价分析
 
 结合 web research：
 - 对标 3 到 5 个竞争对手的价格
@@ -47,7 +47,7 @@ argument-hint: "<产品或定价问题>"
 - 记录定价趋势（例如 B2B SaaS 从 per-seat 转向 usage-based）
 - 收集定价页截图与关键数据点
 
-### Step 4：支付意愿估算
+### 步骤 4：支付意愿估算
 
 如果用户有问卷数据或客户反馈：
 - 应用 Van Westendorp 分析（前提是数据足够）
@@ -60,7 +60,7 @@ argument-hint: "<产品或定价问题>"
 ### Step 5：输出定价建议
 
 ```
-## Pricing Strategy: [Product]
+## Pricing 策略: [Product]
 
 **Date**: [today]
 **Current pricing**: [if applicable]

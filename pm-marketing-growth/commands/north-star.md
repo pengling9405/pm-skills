@@ -7,30 +7,30 @@ argument-hint: "<产品或功能>"
 
 为产品定义 North Star Metric，以及一组真正驱动它的输入指标。
 
-## Invocation
+## 调用方式
 
 ```text
 /north-star 团队协作产品
 /north-star AI 搜索功能
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Understand the Product
+### 步骤 1: Understand the Product
 
 先了解：
 - 产品核心价值
 - 用户获得价值的关键时刻
 - 商业模式与阶段
 
-### Step 2: Classify the Business Game
+### 步骤 2: Classify the Business Game
 
 判断业务更偏向：
 - Attention
 - Transaction
 - Productivity
 
-### Step 3: Define the North Star
+### 步骤 3: Define the North Star
 
 提出候选 NSM，并验证它是否：
 - 反映用户价值
@@ -38,7 +38,7 @@ argument-hint: "<产品或功能>"
 - 可衡量
 - 不易被 vanity metrics 误导
 
-### Step 4: Define Input Metrics
+### 步骤 4: Define Input Metrics
 
 补一组 supporting metrics，解释哪些行为驱动 NSM。
 
@@ -54,7 +54,7 @@ argument-hint: "<产品或功能>"
 ### Anti-Patterns Avoided
 ```
 
-### Step 6: Offer Next Steps
+### Step 6: Offer 下一步
 
 - 继续设计 dashboard
 - 写 tracking plan

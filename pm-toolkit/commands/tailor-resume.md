@@ -7,18 +7,18 @@ argument-hint: "<简历 + JD>"
 
 把现有简历按目标职位描述做针对性优化。
 
-## Invocation
+## 调用方式
 
 ```text
 /tailor-resume [上传简历和职位描述]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Accept Both Documents
-### Step 2: Analyze the Job Description
-### Step 3: Tailor the Resume
-### Step 4: Generate Tailored Resume + Analysis
+### 步骤 1: Accept Both Documents
+### 步骤 2: Analyze the Job 描述
+### 步骤 3: Tailor the Resume
+### 步骤 4: Generate Tailored Resume + Analysis
 
 ```markdown
 ## Resume Tailoring: [Job Title] at [Company]

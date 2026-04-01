@@ -7,7 +7,7 @@ argument-hint: "<产品或功能想法>"
 
 运行一套完整的产品 discovery 流程，从发散思考走到聚焦验证。这个命令会把多个 skill 串成一条端到端工作流。
 
-## Invocation
+## 调用方式
 
 ```text
 /discover 我们的项目管理工具需要一个智能提醒系统
@@ -15,9 +15,9 @@ argument-hint: "<产品或功能想法>"
 /discover
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Understand the Discovery Context
+### 步骤 1: Understand the Discovery 背景
 
 先判断是：
 - **Existing product**：在已有产品上做持续 discovery
@@ -30,7 +30,7 @@ argument-hint: "<产品或功能想法>"
 
 可以接受研究材料、PRD、访谈纪要、数据、链接等上下文。
 
-### Step 2: Brainstorm Ideas (Divergent Phase)
+### 步骤 2: Brainstorm Ideas (Divergent Phase)
 
 调用：
 - `brainstorm-ideas-existing` 或
@@ -38,7 +38,7 @@ argument-hint: "<产品或功能想法>"
 
 输出一组候选方向，并要求用户选择值得继续推进的 3-5 个。
 
-### Step 3: Identify Assumptions (Critical Thinking Phase)
+### 步骤 3: Identify Assumptions (Critical Thinking Phase)
 
 对选中的方向调用：
 - `identify-assumptions-existing` 或
@@ -51,14 +51,14 @@ argument-hint: "<产品或功能想法>"
 - Viability
 - Go-to-Market（新产品时）
 
-### Step 4: Prioritize Assumptions (Focus Phase)
+### 步骤 4: Prioritize Assumptions (Focus Phase)
 
 调用 `prioritize-assumptions`：
 - 用 Impact × Risk 矩阵排序
 - 找出 leap-of-faith assumptions
 - 明确最先要验证什么
 
-### Step 5: Design Experiments (Validation Phase)
+### Step 5: 设计 Experiments (Validation Phase)
 
 调用：
 - `brainstorm-experiments-existing` 或
@@ -70,25 +70,25 @@ argument-hint: "<产品或功能想法>"
 - 时间
 - 成本 / 工作量
 
-### Step 6: Create Discovery Plan
+### Step 6: Create Discovery 计划
 
 整理成一份 discovery plan：
 
 ```markdown
-## Discovery Plan: [Topic]
+## Discovery 计划: [Topic]
 
 ### Ideas Explored
 ### Selected Ideas for Validation
 ### Critical Assumptions
 ### Validation Experiments
-### Experiment Details
+### 实验细节
 ### Discovery Timeline
 ### Decision Framework
 ```
 
 保存为 Markdown 文件。
 
-### Step 7: Offer Next Steps
+### Step 7: Offer 下一步
 
 - 继续产出 PRD
 - 补 interview script

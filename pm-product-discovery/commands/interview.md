@@ -3,11 +3,11 @@ description: 为客户访谈做准备，或对已有访谈记录做总结
 argument-hint: "[prep|summarize] <研究主题或访谈记录>"
 ---
 
-# /interview -- Customer Interview Prep & Summary
+# /interview -- Customer Interview Prep & 摘要
 
 这个命令支持两种模式：访谈准备和访谈总结。
 
-## Invocation
+## 调用方式
 
 ```text
 /interview prep 新用户 onboarding 体验
@@ -18,9 +18,9 @@ argument-hint: "[prep|summarize] <研究主题或访谈记录>"
 
 ---
 
-### Prep Mode
+### Prep 模式
 
-#### Workflow
+#### 工作流
 
 - 明确研究主题与访谈目标
 - 识别受访者类型
@@ -40,9 +40,9 @@ argument-hint: "[prep|summarize] <研究主题或访谈记录>"
 
 ---
 
-### Summarize Mode
+### Summarize 模式
 
-#### Workflow
+#### 工作流
 
 - 读取访谈原始记录
 - 提炼关键洞察
@@ -50,10 +50,10 @@ argument-hint: "[prep|summarize] <研究主题或访谈记录>"
 - 输出后续行动建议
 
 ```markdown
-## Interview Summary
+## Interview 摘要
 ### Key Insights
 ### Jobs to Be Done
-### Current Workflow
+### Current 工作流
 ### Pain Points
 ### Satisfaction Signals
 ### Notable Quotes

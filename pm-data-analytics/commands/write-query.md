@@ -7,19 +7,19 @@ argument-hint: "<分析问题>"
 
 把业务问题翻译成可执行 SQL，并解释查询意图与假设。
 
-## Invocation
+## 调用方式
 
 ```text
 /write-query 最近 30 天按注册周看留存
 /write-query 找出使用新功能后 7 天内付费的用户
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Understand the Question
-### Step 2: Determine Schema
-### Step 3: Generate Query
-### Step 4: Present and Iterate
+### 步骤 1: Understand the Question
+### 步骤 2: Determine Schema
+### 步骤 3: Generate Query
+### 步骤 4: Present and Iterate
 
 ```markdown
 ## SQL Query: [What It Does]

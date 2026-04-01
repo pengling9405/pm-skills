@@ -19,7 +19,7 @@ argument-hint: "[plan|retro|release-notes] <上下文>"
 
 ---
 
-### Plan 模式
+### 计划 模式
 
 通过容量估算、story 选择与风险识别，帮助完成 sprint planning。
 
@@ -52,7 +52,7 @@ argument-hint: "[plan|retro|release-notes] <上下文>"
 **Step 4：生成 Sprint Plan**
 
 ```
-## Sprint Plan: [Sprint Name/Number]
+## Sprint 计划: [Sprint Name/Number]
 
 **Duration**: [dates]
 **Sprint Goal**: [one sentence]
@@ -175,7 +175,7 @@ argument-hint: "[plan|retro|release-notes] <上下文>"
 ### Improvements
 - **[Improvement]** — [what's better now]
 
-### Bug Fixes
+### 缺陷 Fixes
 - Fixed [issue] that caused [user impact]
 
 ### Coming Soon

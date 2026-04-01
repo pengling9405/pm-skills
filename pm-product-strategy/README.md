@@ -1,8 +1,8 @@
-# pm-product-strategy 中文整理版
+# pm-product-策略 中文整理版
 
 产品战略插件，覆盖愿景、战略画布、价值主张、商业模式、定价与宏观环境分析。
 
-## Skills（12）
+## 技能（12）
 
 - `ansoff-matrix`
 - `business-model`

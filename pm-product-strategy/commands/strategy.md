@@ -2,7 +2,7 @@ description: 使用 9 部分 Strategy Canvas 创建完整 product strategy，从
 argument-hint: "<产品或公司>"
 ---
 
-# /strategy -- Product Strategy Canvas
+# /策略 -- Product 策略 Canvas
 
 使用 9 部分 Product Strategy Canvas 生成完整的 product strategy 文档，覆盖 vision、segments、value propositions、trade-offs、metrics、growth、capabilities 与 defensibility。
 
@@ -16,7 +16,7 @@ argument-hint: "<产品或公司>"
 
 ## 工作流
 
-### Step 1：理解产品
+### 步骤 1：理解产品
 
 可接受的上下文来源：
 - 产品描述（口头或文字）
@@ -29,7 +29,7 @@ argument-hint: "<产品或公司>"
 - 商业模式是什么？
 - 为什么现在需要 strategy 文档？（新产品、转向、年度规划、融资）
 
-### Step 2：构建 Strategy Canvas
+### 步骤 2：构建 策略 Canvas
 
 调用 **product-strategy** 与 **product-vision** skill：
 
@@ -47,10 +47,10 @@ argument-hint: "<产品或公司>"
 
 每一部分都要输出具体内容，而不是泛泛建议。
 
-### Step 3：生成战略文档
+### 步骤 3：生成战略文档
 
 ```
-## Product Strategy: [Product Name]
+## Product 策略: [Product Name]
 
 **Date**: [today]
 **Stage**: [idea / MVP / growth / mature]
@@ -95,13 +95,13 @@ argument-hint: "<产品或公司>"
 ### Strategic Risks
 [最可能让这套战略失效的 3 个风险]
 
-### Next Steps
+### 下一步
 [拿这份战略接下来要做什么：同步、验证、落地]
 ```
 
 保存为 markdown。
 
-### Step 4：提供后续动作
+### 步骤 4：提供后续动作
 
 - “要不要我基于它继续做一版 **Lean Canvas** 或 **Business Model Canvas**？”
 - “要不要我把它进一步转成与战略一致的 **roadmap**？”

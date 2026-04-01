@@ -15,7 +15,7 @@ argument-hint: "<以文本、文件或功能列表形式提供的 roadmap>"
 
 ## 工作流
 
-### Step 1：接收当前 Roadmap
+### 步骤 1：接收当前 Roadmap
 
 接受任意格式：
 - Feature list 或 backlog items
@@ -25,14 +25,14 @@ argument-hint: "<以文本、文件或功能列表形式提供的 roadmap>"
 
 解析每个条目，提取：feature name、description、target date / timeframe 与相关上下文。
 
-### Step 2：理解战略背景
+### 步骤 2：理解战略背景
 
 询问：
 - 当前周期的 product goals 或 OKRs 是什么？
 - 这份 roadmap 的受众是谁？（execs、engineering、customers、board）
 - 你偏好什么格式？（Now/Next/Later、quarterly、timeline）
 
-### Step 3：转换每个条目
+### 步骤 3：转换每个条目
 
 调用 **outcome-roadmap** skill：
 
@@ -47,7 +47,7 @@ argument-hint: "<以文本、文件或功能列表形式提供的 roadmap>"
 - "Redesign dashboard" → "Help power users find insights faster — target: 30% reduction in time-to-insight"
 - "Add CSV export" → "Enable teams to share data outside the product — target: 25% increase in report sharing"
 
-### Step 4：生成转换后的 Roadmap
+### 步骤 4：生成转换后的 Roadmap
 
 ```
 ## Outcome-Focused Roadmap: [Product] — [Period]

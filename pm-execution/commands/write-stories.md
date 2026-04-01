@@ -1,5 +1,5 @@
 ---
-description: 将一个功能拆成待办项，可输出 user stories、job stories 或 WWA 格式，并附带验收标准
+description: 将一个功能拆成待办项，可输出 用户 stories、job stories 或 WWA 格式，并附带验收标准
 argument-hint: "[user|job|wwa] <功能描述或 PRD>"
 ---
 
@@ -7,7 +7,7 @@ argument-hint: "[user|job|wwa] <功能描述或 PRD>"
 
 把功能需求拆成结构化 backlog items。支持三种格式：user stories、job stories、WWA。
 
-## Invocation
+## 调用方式
 
 ```text
 /write-stories user 允许用户将报告导出为 PDF 和 CSV
@@ -19,7 +19,7 @@ argument-hint: "[user|job|wwa] <功能描述或 PRD>"
 
 ## Formats
 
-### User Stories
+### 用户 Stories
 **格式**：`As a [user type], I want [capability], so that [benefit]`
 
 调用 **user-stories** skill：
@@ -43,9 +43,9 @@ argument-hint: "[user|job|wwa] <功能描述或 PRD>"
 - 输出独立、可验证、可交付的条目
 - 适合需要业务上下文的跨职能团队
 
-## Workflow
+## 工作流
 
-### Step 1: Accept the Feature
+### 步骤 1: Accept the 功能
 
 输入可以是：
 - PRD
@@ -55,14 +55,14 @@ argument-hint: "[user|job|wwa] <功能描述或 PRD>"
 
 如果提供了 PRD，先抽取需求，再做拆解。
 
-### Step 2: Determine Format
+### 步骤 2: Determine Format
 
 如果调用里没指定格式，先问：
 - 团队用 **user stories**、**job stories** 还是 **WWA**？
 
 如果用户不确定，默认推荐 user stories。
 
-### Step 3: Decompose the Feature
+### 步骤 3: Decompose the 功能
 
 - 拆成 5 到 15 个独立条目
 - 每个条目都应该独立产生价值
@@ -70,10 +70,10 @@ argument-hint: "[user|job|wwa] <功能描述或 PRD>"
 - 每个条目写 3 到 5 条验收标准
 - 标记需要设计输入或技术 spike 的项
 
-### Step 4: Generate Stories
+### 步骤 4: Generate Stories
 
 ```markdown
-## Backlog: [Feature Name]
+## Backlog: [功能 Name]
 
 **Format**: [User Stories / Job Stories / WWA]
 **Total stories**: [count]
@@ -96,7 +96,7 @@ Priority: [P0/P1/P2] | Effort: [S/M/L] | Dependencies: [none or list]
 
 保存为 Markdown 文件。
 
-### Step 5: Offer Next Steps
+### Step 5: Offer 下一步
 
 - “要不要我继续为这些 stories **生成测试场景**？”
 - “要不要我为开发与测试准备 **dummy data**？”

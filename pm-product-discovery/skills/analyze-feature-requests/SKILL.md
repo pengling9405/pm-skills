@@ -3,20 +3,20 @@ name: analyze-feature-requests
 description: "按主题、战略一致性、影响、投入与风险分析一组功能请求。适用于 backlog 归类、需求分流与优先级讨论。"
 ---
 
-## Analyze Feature Requests
+## Analyze 功能 Requests
 
-### Context
+### 背景
 
 你正在分析一组功能请求，目标不是简单投票，而是理解背后的用户问题、模式与优先级。
 
-### Domain Context
+### Domain 背景
 
 重点关注：
 - 哪些请求反映真实且重复出现的问题
 - 哪些只是个别客户的解决方案偏好
 - 哪些与当前战略方向一致
 
-### Instructions
+### 使用说明
 
 1. 先按主题归类
 2. 识别重复问题与高频模式

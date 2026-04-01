@@ -5,7 +5,7 @@ description: "识别和设计增长循环，覆盖 viral、usage、collaboration
 
 # Growth Loops
 
-## Overview
+## 概览
 
 增长循环强调“一个用户行为如何带来下一个用户或下一次使用”。
 
@@ -19,16 +19,16 @@ description: "识别和设计增长循环，覆盖 viral、usage、collaboration
 ### 1. Viral Loop
 ### 2. Usage Loop
 ### 3. Collaboration Loop
-### 4. User-Generated Loop
+### 4. 用户-Generated Loop
 ### 5. Referral Loop
 
 ## How It Works
 
-### Step 1: Define Product Value
-### Step 2: Evaluate Loop Fit
-### Step 3: Design Loop Mechanics
-### Step 4: Calculate Loop Coefficient
-### Step 5: Build the Loop
+### 步骤 1: Define Product Value
+### 步骤 2: Evaluate Loop Fit
+### 步骤 3: 设计 Loop Mechanics
+### 步骤 4: Calculate Loop Coefficient
+### Step 5: 构建 the Loop
 
 ## Input Format
 

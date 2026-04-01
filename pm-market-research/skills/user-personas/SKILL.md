@@ -3,13 +3,13 @@ name: user-personas
 description: "基于研究数据构建用户画像，包含任务、痛点、动机与代表性特征。"
 ---
 
-# User Personas
+# 用户 Personas
 
 ## Purpose
 
 帮助用户把原始研究材料提炼成可用于产品讨论的 persona。
 
-## Instructions
+## 使用说明
 
 ### Input
 

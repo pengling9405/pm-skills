@@ -16,7 +16,7 @@ argument-hint: "<产品、市场或行业>"
 
 ## 工作流
 
-### Step 1：理解背景
+### 步骤 1：理解背景
 
 询问：
 - 你在分析什么产品、公司或市场？
@@ -24,7 +24,7 @@ argument-hint: "<产品、市场或行业>"
 - 有没有特别想聚焦的框架？还是四个都跑？
 - 你当前在这个市场中的位置是什么？
 
-### Step 2：执行分析
+### 步骤 2：执行分析
 
 按顺序运行四个 skill，后一个基于前一个的发现继续推进：
 
@@ -45,7 +45,7 @@ argument-hint: "<产品、市场或行业>"
 - market penetration、market development、product development、diversification
 - 识别经过风险校正后的增长机会
 
-### Step 3：综合归纳
+### 步骤 3：综合归纳
 
 交叉对照四个框架的发现，识别：
 - **Converging signals**：多个框架都指向的共同结论
@@ -53,7 +53,7 @@ argument-hint: "<产品、市场或行业>"
 - **Key risks**：需要重点化解的威胁与力量
 - **Growth opportunities**：风险收益比最好的增长机会
 
-### Step 4：生成报告
+### 步骤 4：生成报告
 
 ```
 ## Strategic Market Scan: [Market/Product]
@@ -104,7 +104,7 @@ argument-hint: "<产品、市场或行业>"
 2. ...
 3. ...
 
-### Monitoring Plan
+### Monitoring 计划
 | Signal | What to Watch | Source | Check Frequency |
 |--------|-------------|--------|----------------|
 ```

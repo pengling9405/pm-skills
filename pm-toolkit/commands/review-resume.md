@@ -3,24 +3,24 @@ description: 审阅 PM 简历并给出结构化反馈
 argument-hint: "<简历内容或文件>"
 ---
 
-# /review-resume -- PM Resume Review
+# /审查-resume -- PM Resume 审查
 
 从 PM 岗位视角审阅简历，输出结构化改进建议。
 
-## Invocation
+## 调用方式
 
 ```text
 /review-resume [上传简历]
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Accept the Resume
-### Step 2: Evaluate Against 10 Best Practices
-### Step 3: Generate Review
+### 步骤 1: Accept the Resume
+### 步骤 2: Evaluate Against 10 Best Practices
+### 步骤 3: Generate 审查
 
 ```markdown
-## Resume Review
+## Resume 审查
 ### Scorecard
 ### Top 3 Improvements
 ### Section-by-Section Feedback
@@ -28,7 +28,7 @@ argument-hint: "<简历内容或文件>"
 ### Keywords to Add
 ```
 
-### Step 4: Offer Next Steps
+### 步骤 4: Offer 下一步
 
 - 针对 JD 定制
 - 重写 summary

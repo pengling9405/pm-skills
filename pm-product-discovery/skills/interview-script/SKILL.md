@@ -1,22 +1,22 @@
 ---
 name: interview-script
-description: "创建结构化用户访谈提纲，包含暖场、核心探索、收尾与记录模板，并遵循 The Mom Test 风格。"
+description: "创建结构化用户访谈提纲，包含暖场、核心探索、收尾与记录模板，并遵循 The Mom 测试 风格。"
 ---
 
 ## Customer Interview Script
 
-### Domain Context
+### Domain 背景
 
 好访谈的目标不是“让用户评价你的想法”，而是理解他们的真实行为、痛点与现有替代方案。
 
-### Context
+### 背景
 
 适用于：
 - discovery 访谈
 - problem interview
 - solution interview 前的准备
 
-### Instructions
+### 使用说明
 
 1. 明确研究目标与用户段
 2. 设计暖场问题

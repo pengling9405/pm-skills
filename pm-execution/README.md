@@ -2,7 +2,7 @@
 
 执行与项目推进插件，覆盖 PRD、OKR、roadmap、retro、stories、stakeholder map、测试场景等。
 
-## Skills（15）
+## 技能（15）
 
 - `brainstorm-okrs`：围绕公司目标头脑风暴团队级 OKR
 - `create-prd`：用 8 段式模板创建 PRD

@@ -1,38 +1,38 @@
 ---
-description: 分析 A/B test 结果，检查样本量、显著性与业务影响
+description: 分析 A/B 测试 结果，检查样本量、显著性与业务影响
 argument-hint: "<实验数据或实验说明>"
 ---
 
-# /analyze-test -- A/B Test Analysis
+# /analyze-测试 -- A/B 测试 Analysis
 
 对实验结果做结构化分析，输出是否应 ship、extend 或 stop。
 
-## Invocation
+## 调用方式
 
 ```text
 /analyze-test [上传实验结果]
 /analyze-test onboarding 文案实验
 ```
 
-## Workflow
+## 工作流
 
-### Step 1: Accept Test Data
-### Step 2: Validate Test Design
-### Step 3: Analyze Results
-### Step 4: Generate Analysis
+### 步骤 1: Accept 测试 Data
+### 步骤 2: Validate 测试 设计
+### 步骤 3: Analyze Results
+### 步骤 4: Generate Analysis
 
 ```markdown
-## A/B Test Analysis: [Test Name]
-### Results Summary
+## A/B 测试 Analysis: [测试 Name]
+### Results 摘要
 ### Statistical Analysis
 ### Sample Size Check
 ### Decision
-### Business Impact Estimate
+### Business 影响 Estimate
 ### Caveats
 ### Follow-Up
 ```
 
-### Step 5: Offer Next Steps
+### Step 5: Offer 下一步
 
 - 继续设计 follow-up 实验
 - 写 release notes / decision memo

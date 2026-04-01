@@ -11,10 +11,10 @@ description: "根据自然语言分析需求生成 SQL，适用于 BigQuery、Po
 
 ## How It Works
 
-### Step 1: Understand Your Database Schema
-### Step 2: Process Your Request
-### Step 3: Generate Optimized Query
-### Step 4: Explain and Test
+### 步骤 1: Understand Your Database Schema
+### 步骤 2: Process Your Request
+### 步骤 3: Generate Optimized Query
+### 步骤 4: Explain and 测试
 
 ## Usage Examples
 
@@ -33,7 +33,7 @@ description: "根据自然语言分析需求生成 SQL，适用于 BigQuery、Po
 - 提供 schema 能显著提高质量
 - 含糊的问题先澄清维度和口径
 
-## Output Format
+## 输出格式
 
 - SQL
 - 返回内容说明

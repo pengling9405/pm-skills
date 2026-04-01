@@ -16,19 +16,19 @@ description: "识别文本中的语法、逻辑与流畅度问题，并给出针
 
 ## Process
 
-### Step 1: Understand Context
-### Step 2: Scan for Errors
-### Step 3: Categorize Errors
-### Step 4: Create Fix Suggestions
+### 步骤 1: Understand 背景
+### 步骤 2: Scan for Errors
+### 步骤 3: Categorize Errors
+### 步骤 4: Create Fix Suggestions
 ### Step 5: Prioritize
 
-## Error Categories and Examples
+## 错误 Categories and Examples
 
 ### Grammar Errors
 ### Logical Errors
 ### Flow Errors
 
-## Output Format
+## 输出格式
 
 - 问题分类
 - 具体句子
@@ -39,7 +39,7 @@ description: "识别文本中的语法、逻辑与流畅度问题，并给出针
 - 不要无理由重写整篇
 - 保持原意优先
 
-## Checklist for Review
+## Checklist for 审查
 
 - 语法正确
 - 逻辑顺
